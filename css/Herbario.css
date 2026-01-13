@@ -1,0 +1,653 @@
+/*CONFIGURAÇÕES GERAIS*/
+html {
+  scroll-behavior: smooth;
+
+}
+  
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #416939;
+            --primary-light: #3d5732;
+            --primary-dark: #344e41;
+            --secondary: #f3f3f3;
+            --light: #f5f7f2;
+            --dark: #333;
+            --text: #212121;
+            --text-light: #757575;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+
+
+        body {
+            background-image: url(../imagens/site-imagem/background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*MENU*/
+        header {
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        /*PARTE PRICNIPAL*/
+
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+   
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            color: #fafafa;
+           
+        }
+
+        .university-name {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;           
+        }
+
+        nav a {
+            color: #283618;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 18pt;
+        }
+
+            nav a::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 0%;
+            height: 2px;
+            background: #fefae0;
+            transition: width 0.3s;
+        }
+        nav a:hover::after {
+            width: 3%;
+            margin-left: 10px;
+        }
+
+        /*  CABEÇALHO/TITULO  */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            color: #fefae0;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-bottom: 2rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        .hero h2 {
+            font-size: 3.0rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        /*  botão explorar plantas    */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fefae0;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #283618;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+        }
+        /** BARRA DE PESQUISA   **/
+        #search-btn {
+            padding: 10px;
+            font-weight: 600;
+            font-size: 12pt;
+            background-color: green;
+            color: #f2f2f2;
+            border: none;
+        }
+
+        #search-btn:hover{
+            box-shadow: 1px 1px 12px silver;
+        }
+        .search-bar {
+            position: relative;
+            display: flex;
+            margin: 2rem 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #search-bar {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: #212121;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        box-sizing: border-box
+        }
+
+        #search-bar:focus {
+        border-color: #607060;
+        box-shadow: 0 0 6px rgba(88,129,87,0.6);
+        }
+        .search-bar:focus-within {
+        border-color: var(--medium);
+        border-radius: 30%;
+        box-shadow: 0 0 15px burlywood;
+        }
+
+        /*AUTOCOMPLETE*/
+        .autocomplete-list {
+        position: absolute;
+        top: 100%;          
+        width: 100%;
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        background-color: #fff;
+
+        border-radius: 4px;
+
+        max-height: 220px;
+        overflow-y: auto;
+
+        z-index: 1000;
+        }
+
+        .autocomplete-list li {
+            border-radius: 30px 0 0 30px;
+        padding: 8px 10px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        }
+        .autocomplete-list strong {
+        font-weight: 600;
+        color: #2b2b2b;
+        }
+
+        .autocomplete-list li:hover {
+        background-color: #f2f2f2;
+        }
+
+
+        /** você quis dizer **/
+        div#did-you-mean{
+            background-color: #f5f7f2;
+            color: #2b2b2b;
+            display: block;
+            text-align: center;
+            font-size: 18pt;
+            width: 40%;
+            margin-left: 22%;
+            width: 55%;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+        span#vqd{
+            color: darkgreen;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        span#vqd:hover{
+            cursor: pointer;
+            color: green;
+        }  
+        
+        span#again{
+            color: red;
+            font-weight: bold;
+        }
+        /**BOTÃO DE FILTROS**/
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            background-color: #fefae0;
+            border: 1px solid #52796f;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 12pt;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #52796f;
+            color: #fefae0;
+
+ 
+        }
+        /*  parte central */
+            main#centro {
+            background-color: #40573d;
+            padding: 40px;
+            border: 4px solid #344e41;
+            border-radius: 25px;      /* Arredondamento fixo */
+            width: 90%;               /* Ocupa 90% da tela */
+            max-width: 1200px;        /* Limita o tamanho máximo */
+            margin: 40px auto;        /* Centraliza e separa do rodapé */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            flex: 1;
+        }
+
+        /*  CARDS   */
+        .plants-grid { /*ESPAÇO DOS CARDS*/
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: flex-start; /* força o alinhamento à esquerda */
+        gap: 1.5rem;
+        margin-left: 2rem;
+        }
+
+        .plant-card {
+            background-color: #fefae0;
+            overflow: hidden;
+            margin-left: 0;
+            border: 2px solid var(--dark);
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100%;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .plant-card:hover .plant-img {
+        transform: scale(1.05);
+        transition: transform 0.4s ease;
+        }
+        .plants-grid a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        figure{
+            width: 100%;
+            min-height: 200px;
+        }
+
+        figcaption{
+        font-size: 12px;
+        }
+
+
+        .plant-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+                }
+
+        .plant-img {
+        width: 100%;
+        height: 200px;         /* altura uniforme para todas */
+        object-fit: cover;     /* evita distorção */
+        border-radius: 10px;
+        }
+
+        .plant-info {
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .plant-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+            text-align: left;
+            min-height: 3rem;
+        }
+
+        .plant-scientific {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .plant-description {
+            font-size: 0.7rem;
+            color: var(--text);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .plant-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25pt;
+            letter-spacing: 3px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 350px;
+            height: 3px;
+            background-color: #283618;
+            margin: 10px auto;
+        }
+        /*  SOBRE   */
+        .about {
+            padding: 3rem 0;
+            margin: 3rem 0;
+         
+        }
+
+        .about-content {
+        animation: fadeInUp 1s ease;
+        }
+
+        div#abouttext{
+            color: white;
+            font-size: 13pt;
+        }
+
+        h2#abouttitulo{
+            color: white;
+            font-size: 30pt;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        
+        }
+
+        .about-text {
+            flex: 1;
+     
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /*  RODAPÉ    */
+        footer {
+        background-color: var(--dark);
+        color: #fefae0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+        padding: 3rem 0 1.5rem;
+                }
+
+        footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        }
+
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none; 
+            text-decoration: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a {
+            color: #fefae0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #fefae0;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #fefae0;
+        }
+
+        a.card-link{
+            text-decoration: none;
+            color: #212121;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            display: block;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+/*  FIM DO FOOTER*/
+    
+        input::-webkit-calendar-picker-indicator {
+        display: none !important;
+        opacity: 0 !important;
+        }
+
+        /* remove setas de inputs do tipo search */
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+        }
+
+        datalist option{
+         background-color: #52796f;   
+      }
+
+
+   
+    
+/*RESPONSIVIDADE*/
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .plants-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
