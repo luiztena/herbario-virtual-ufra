@@ -669,7 +669,7 @@ html {
 
   /* ===== HERO ===== */
   .hero {
-    margin-top: 420px; /* ajuste fino por causa do header fixo */
+    margin-top: 250px; /* ajuste fino por causa do header fixo */
     padding: 3rem 1rem;
   }
 
