@@ -147,9 +147,11 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 150px;
+            margin-top: 220px;
         }
-
+        .hero p {
+            font-weight: 500;
+        }
         .hero h2 {
             font-size: 3.0rem;
             margin-bottom: 1rem;
@@ -228,11 +230,9 @@ html {
         position: absolute;
         top: 100%;          
         width: 100%;
-
         list-style: none;
         padding: 0;
         margin: 0;
-
         background-color: #fff;
 
         border-radius: 4px;
@@ -243,8 +243,12 @@ html {
         z-index: 1000;
         }
 
+        #did-you-mean:empty {
+            display: none;
+        }
+        
         .autocomplete-list li {
-            border-radius: 30px 0 0 30px;
+        border-radius: 30px 0 0 30px;
         padding: 8px 10px;
         cursor: pointer;
         font-size: 18px;
@@ -262,41 +266,14 @@ html {
         }
 
 
-        /** você quis dizer **/
-        div#did-you-mean{
-            background-color: #f5f7f2;
-            color: #2b2b2b;
-            display: block;
-            text-align: center;
-            font-size: 18pt;
-            width: 40%;
-            margin-left: 22%;
-            width: 55%;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 600;
-            border-radius: 6px;
-        }
-        span#vqd{
-            color: darkgreen;
-            font-weight: bold;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        span#vqd:hover{
-            cursor: pointer;
-            color: green;
-        }  
-        
-        span#again{
-            color: red;
-            font-weight: bold;
-        }
         /**BOTÃO DE FILTROS**/
         .filter-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
             margin-bottom: 2rem;
+            position: relative;
+            z-index: 10;
         }
         .filter-btn {
             background-color: #fefae0;
@@ -315,6 +292,39 @@ html {
 
  
         }
+
+
+        /** você quis dizer **/
+        div#did-you-mean{
+            background-color: #f5f7f2;
+            color: #2b2b2b;
+            display: block;
+            text-align: center;
+            font-size: 18pt;
+            width: 40%;
+            margin-left: 22%;
+            width: 55%;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            border-radius: 6px;
+            z-index: 3;
+        }
+        span#vqd{
+            color: darkgreen;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        span#vqd:hover{
+            cursor: pointer;
+            color: green;
+        }  
+        
+        span#again{
+            color: red;
+            font-weight: bold;
+        }
+
         /*  parte central */
             main#centro {
             background-color: #40573d;

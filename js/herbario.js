@@ -90,7 +90,10 @@ function fuzzySearch(query) {
 function searchPlant() {
   const input = document.getElementById("search-bar");
   const didYouMeanBox = document.getElementById("did-you-mean");
-
+  const autocompleteList = document.getElementById("autocomplete-list");
+    if (autocompleteList) {
+    autocompleteList.innerHTML = "";
+  }
   if (!input || !didYouMeanBox) return;
 
   const query = input.value
@@ -123,6 +126,10 @@ function searchPlant() {
 
     return;
   }
+
+  button.addEventListener("click", () => {
+  console.log("Filtro clicado:", button.dataset.filter);
+});
 
   // 3️⃣ ENTRADA INESPERADA (NOVO)
   didYouMeanBox.innerHTML = `
@@ -188,6 +195,34 @@ document.addEventListener("keydown", e => {
         autocompleteList.appendChild(li);
       });
   });
+
+// ===============================
+// FILTROS DO CATÁLOGO
+// ===============================
+document.querySelectorAll(".filter-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    // Ativa botão visualmente
+    document
+      .querySelectorAll(".filter-btn")
+      .forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    // Filtra os cards
+    document.querySelectorAll(".card-link").forEach(link => {
+      const card = link.querySelector(".plant-card");
+      if (!card) return;
+
+      if (filter === "all" || card.classList.contains(filter)) {
+        link.style.display = "block";
+      } else {
+        link.style.display = "none";
+      }
+    });
+  });
+});
+
 
   // Fecha autocomplete ao clicar fora
   document.addEventListener("click", e => {
