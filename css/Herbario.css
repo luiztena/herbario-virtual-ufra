@@ -625,6 +625,94 @@ html {
   to { opacity: 1; transform: translateY(0); }
 }
         @media (max-width: 768px) {
+
+  /* ===== LAYOUT GERAL ===== */
+  body {
+    overflow-x: hidden;
+  }
+
+  main#centro {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    padding: 0.5rem 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14pt;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    margin-top: 120px;
+    padding: 3rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  /* ===== SEARCH BAR ===== */
+  .search-bar {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #search-bar {
+    font-size: 1rem;
+  }
+
+  .autocomplete-list {
+    left: 0;
+    width: 100%;
+  }
+
+  #did-you-mean {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14pt;
+  }
+
+  /* ===== GRID DE PLANTAS ===== */
+  .plants-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .plant-card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== ABOUT ===== */
+  .about-content {
+    flex-direction: column;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 gap: 15px;
