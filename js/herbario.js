@@ -1,87 +1,79 @@
+let familias = {};
+
 // ===============================
-// PROTEÇÃO DO MAPEAMENTO
+// CARREGAR JSON
 // ===============================
-if (typeof plants !== "undefined") {
-  Object.freeze(plants);
-} else {
-  console.error("Objeto plants não encontrado. Verifique plants-data.js");
+async function carregarFamilias() {
+  try {
+    const resposta = await fetch("data/familias.json");
+    if (!resposta.ok) throw new Error("Erro ao carregar familias.json");
+
+    familias = await resposta.json();
+    Object.freeze(familias);
+
+    console.log("Famílias carregadas:", familias);
+  } catch (erro) {
+    console.error("Erro:", erro);
+  }
 }
 
 // ===============================
-// FUNÇÕES UTILITÁRIAS
+// UTILITÁRIOS
 // ===============================
 function normalize(text) {
   return text.toLowerCase().trim().replace(/\s+/g, "");
 }
 
 function scientificCapitalize(name) {
-  if (!name) return "";
   return name
     .toLowerCase()
     .split(" ")
-    .map((word, i) =>
-      i === 0
-        ? word.charAt(0).toUpperCase() + word.slice(1)
-        : word
-    )
+    .map((w, i) => (i === 0 ? w[0].toUpperCase() + w.slice(1) : w))
     .join(" ");
 }
 
-function highlightMatch(word, query) {
-  if (!word.startsWith(query)) {
-    return scientificCapitalize(word);
-  }
-
-  const start = word.slice(0, query.length);
-  const rest = word.slice(query.length);
-
-  return `<strong>${scientificCapitalize(start)}</strong>${rest.toLowerCase()}`;
-}
-
 // ===============================
-// DISTÂNCIA DE LEVENSHTEIN
+// LEVENSHTEIN
 // ===============================
 function levenshteinDistance(a, b) {
-  const matrix = Array.from({ length: a.length + 1 }, (_, i) =>
-    Array.from({ length: b.length + 1 }, (_, j) =>
-      i === 0 ? j : j === 0 ? i : 0
-    )
+  const m = Array.from({ length: a.length + 1 }, () =>
+    Array(b.length + 1).fill(0)
   );
+
+  for (let i = 0; i <= a.length; i++) m[i][0] = i;
+  for (let j = 0; j <= b.length; j++) m[0][j] = j;
 
   for (let i = 1; i <= a.length; i++) {
     for (let j = 1; j <= b.length; j++) {
-      matrix[i][j] =
+      m[i][j] =
         a[i - 1] === b[j - 1]
-          ? matrix[i - 1][j - 1]
+          ? m[i - 1][j - 1]
           : Math.min(
-              matrix[i - 1][j - 1] + 1,
-              matrix[i][j - 1] + 1,
-              matrix[i - 1][j] + 1
+              m[i - 1][j - 1] + 1,
+              m[i][j - 1] + 1,
+              m[i - 1][j] + 1
             );
     }
   }
-
-  return matrix[a.length][b.length];
+  return m[a.length][b.length];
 }
 
 // ===============================
 // BUSCA APROXIMADA
 // ===============================
 function fuzzySearch(query) {
-  if (typeof plants === "undefined") return null;
+  let best = null;
+  let score = Infinity;
 
-  let bestMatch = null;
-  let bestScore = Infinity;
-
-  for (const name of Object.keys(plants)) {
-    const score = levenshteinDistance(query, name);
-    if (score < bestScore) {
-      bestScore = score;
-      bestMatch = name;
+  for (const key in familias) {
+    const d = levenshteinDistance(query, key);
+    if (d < score) {
+      score = d;
+      best = key;
     }
   }
 
-  return bestScore <= 2 ? bestMatch : null;
+  return score <= 2 ? best : null;
 }
 
 // ===============================
@@ -89,148 +81,102 @@ function fuzzySearch(query) {
 // ===============================
 function searchPlant() {
   const input = document.getElementById("search-bar");
-  const didYouMeanBox = document.getElementById("did-you-mean");
-  const autocompleteList = document.getElementById("autocomplete-list");
-    if (autocompleteList) {
-    autocompleteList.innerHTML = "";
-  }
-  if (!input || !didYouMeanBox) return;
+  const didYouMean = document.getElementById("did-you-mean");
+  const autocomplete = document.getElementById("autocomplete-list");
 
-  const query = input.value
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "");
+  autocomplete.innerHTML = "";
+  didYouMean.innerHTML = "";
 
-  didYouMeanBox.innerHTML = "";
-
+  const query = normalize(input.value);
   if (!query) return;
 
-  // 1️⃣ Busca exata (família)
-  if (plants[query]) {
-    window.location.href = plants[query];
+  // Busca exata
+  if (familias[query]) {
+    window.location.href = familias[query].page;
     return;
   }
 
-  // 2️⃣ Busca aproximada
-  const suggestion = fuzzySearch(query);
-
-  if (suggestion) {
-    didYouMeanBox.innerHTML = `
-      Você quis dizer 
-      <span id="vqd">${scientificCapitalize(suggestion)}</span>?
+  // Busca aproximada
+  const sugestao = fuzzySearch(query);
+  if (sugestao) {
+    didYouMean.innerHTML = `
+      Você quis dizer
+      <span id="vqd">${familias[sugestao].name}</span>?
     `;
 
-    didYouMeanBox.querySelector("#vqd").addEventListener("click", () => {
-      window.location.href = plants[suggestion];
-    });
-
+    document.getElementById("vqd").onclick = () => {
+      window.location.href = familias[sugestao].page;
+    };
     return;
   }
 
-  button.addEventListener("click", () => {
-  console.log("Filtro clicado:", button.dataset.filter);
-});
-
-  // 3️⃣ ENTRADA INESPERADA (NOVO)
-  didYouMeanBox.innerHTML = `
-    Não foi possível encontrar o que você procura.  
-    <br>
-    <span id="again">Tente novamente<span>.
+  // Não encontrado
+  didYouMean.innerHTML = `
+    Não foi possível encontrar o que você procura.<br>
+    <span id="again">Tente novamente.</span>
   `;
 }
+
 // ===============================
 // EVENTOS
 // ===============================
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  await carregarFamilias();
+
   const searchInput = document.getElementById("search-bar");
   const searchBtn = document.getElementById("search-btn");
-  const autocompleteList = document.getElementById("autocomplete-list");
-  const didYouMeanBox = document.getElementById("did-you-mean");
+  const autocomplete = document.getElementById("autocomplete-list");
 
   searchBtn?.addEventListener("click", searchPlant);
 
   searchInput?.addEventListener("keydown", e => {
     if (e.key === "Enter") searchPlant();
+    if (e.key === "Escape") {
+      autocomplete.innerHTML = "";
+      document.getElementById("did-you-mean").innerHTML = "";
+      searchInput.blur();
+    }
   });
 
-
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") {
-    const searchInput = document.getElementById("search-bar");
-    const autocompleteList = document.getElementById("autocomplete-list");
-    const didYouMeanBox = document.getElementById("did-you-mean");
-
-    autocompleteList.innerHTML = "";
-    didYouMeanBox.innerHTML = "";
-    searchInput.blur(); // tira o foco da barra
-  }
-});
-
-
-  // ===============================
-  // AUTOCOMPLETE + HIGHLIGHT
-  // ===============================
+  // AUTOCOMPLETE
   searchInput?.addEventListener("input", () => {
-    if (typeof plants === "undefined") return;
-
     const value = normalize(searchInput.value);
-    autocompleteList.innerHTML = "";
-    didYouMeanBox.innerHTML = "";
-
+    autocomplete.innerHTML = "";
     if (!value) return;
 
-    Object.keys(plants)
-      .filter(name => name.startsWith(value))
+    Object.keys(familias)
+      .filter(k => k.startsWith(value))
       .slice(0, 8)
-      .forEach(match => {
+      .forEach(k => {
         const li = document.createElement("li");
-        li.innerHTML = highlightMatch(match, value);
-
-        li.addEventListener("click", () => {
-          searchInput.value = scientificCapitalize(match);
-          autocompleteList.innerHTML = "";
+        li.textContent = familias[k].name;
+        li.onclick = () => {
+          searchInput.value = familias[k].name;
           searchPlant();
-        });
-
-        autocompleteList.appendChild(li);
+        };
+        autocomplete.appendChild(li);
       });
   });
 
-// ===============================
-// FILTROS DO CATÁLOGO
-// ===============================
-document.querySelectorAll(".filter-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
+  // FILTROS
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.onclick = () => {
+      const filter = btn.dataset.filter;
 
-    // Ativa botão visualmente
-    document
-      .querySelectorAll(".filter-btn")
-      .forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
+      document
+        .querySelectorAll(".filter-btn")
+        .forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
 
-    // Filtra os cards
-    document.querySelectorAll(".card-link").forEach(link => {
-      const card = link.querySelector(".plant-card");
-      if (!card) return;
+      document.querySelectorAll(".card-link").forEach(link => {
+        const card = link.querySelector(".plant-card");
+        if (!card) return;
 
-      if (filter === "all" || card.classList.contains(filter)) {
-        link.style.display = "block";
-      } else {
-        link.style.display = "none";
-      }
-    });
-  });
-});
-
-
-  // Fecha autocomplete ao clicar fora
-  document.addEventListener("click", e => {
-    if (
-      !e.target.closest("#search-bar") &&
-      !e.target.closest("#autocomplete-list")
-    ) {
-      autocompleteList.innerHTML = "";
-    }
+        link.style.display =
+          filter === "all" || card.classList.contains(filter)
+            ? "block"
+            : "none";
+      });
+    };
   });
 });

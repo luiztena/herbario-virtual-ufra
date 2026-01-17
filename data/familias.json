@@ -1,0 +1,302 @@
+{
+  "acanthaceae": {
+    "id": "acanthaceae",
+    "nome_cientifico": "Acanthaceae",
+    "pagina": "acanthaceae.html"
+  },
+  "amaranthaceae": {
+    "id": "amaranthaceae",
+    "nome_cientifico": "Amaranthaceae",
+    "pagina": "amaranthaceae.html"
+  },
+  "anacardiaceae": {
+    "id": "anacardiaceae",
+    "nome_cientifico": "Anacardiaceae",
+    "pagina": "anacardiaceae.html"
+  },
+  "annonaceae": {
+    "id": "annonaceae",
+    "nome_cientifico": "Annonaceae",
+    "pagina": "annonaceae.html"
+  },
+  "apocynaceae": {
+    "id": "apocynaceae",
+    "nome_cientifico": "Apocynaceae",
+    "pagina": "apocynaceae.html"
+  },
+  "arecaceae": {
+    "id": "arecaceae",
+    "nome_cientifico": "Arecaceae",
+    "pagina": "arecaceae.html"
+  },
+  "asteraceae": {
+    "id": "asteraceae",
+    "nome_cientifico": "Asteraceae",
+    "pagina": "asteraceae.html"
+  },
+  "bignoniaceae": {
+    "id": "bignoniaceae",
+    "nome_cientifico": "Bignoniaceae",
+    "pagina": "bignoniaceae.html"
+  },
+  "bixaceae": {
+    "id": "bixaceae",
+    "nome_cientifico": "Bixaceae",
+    "pagina": "bixaceae.html"
+  },
+  "boraginaceae": {
+    "id": "boraginaceae",
+    "nome_cientifico": "Boraginaceae",
+    "pagina": "boraginaceae.html"
+  },
+  "cactaceae": {
+    "id": "cactaceae",
+    "nome_cientifico": "Cactaceae",
+    "pagina": "cactaceae.html"
+  },
+  "chrysobalanaceae": {
+    "id": "chrysobalanaceae",
+    "nome_cientifico": "Chrysobalanaceae",
+    "pagina": "chrysobalanaceae.html"
+  },
+  "cleomaceae": {
+    "id": "cleomaceae",
+    "nome_cientifico": "Cleomaceae",
+    "pagina": "cleomaceae.html"
+  },
+  "combretaceae": {
+    "id": "combretaceae",
+    "nome_cientifico": "Combretaceae",
+    "pagina": "combretaceae.html"
+  },
+  "convolvulaceae": {
+    "id": "convolvulaceae",
+    "nome_cientifico": "Convolvulaceae",
+    "pagina": "convolvulaceae.html"
+  },
+  "costaceae": {
+    "id": "costaceae",
+    "nome_cientifico": "Costaceae",
+    "pagina": "costaceae.html"
+  },
+  "cucurbitaceae": {
+    "id": "cucurbitaceae",
+    "nome_cientifico": "Cucurbitaceae",
+    "pagina": "cucurbitaceae.html"
+  },
+  "cyperaceae": {
+    "id": "cyperaceae",
+    "nome_cientifico": "Cyperaceae",
+    "pagina": "cyperaceae.html"
+  },
+  "dilleniaceae": {
+    "id": "dilleniaceae",
+    "nome_cientifico": "Dilleniaceae",
+    "pagina": "dilleniaceae.html"
+  },
+  "erythroxylaceae": {
+    "id": "erythroxylaceae",
+    "nome_cientifico": "Erythroxylaceae",
+    "pagina": "erythroxylaceae.html"
+  },
+  "euphorbiaceae": {
+    "id": "euphorbiaceae",
+    "nome_cientifico": "Euphorbiaceae",
+    "pagina": "euphorbiaceae.html"
+  },
+  "fabaceae": {
+    "id": "fabaceae",
+    "nome_cientifico": "Fabaceae",
+    "pagina": "fabaceae.html"
+  },
+  "heliconiaceae": {
+    "id": "heliconiaceae",
+    "nome_cientifico": "Heliconiaceae",
+    "pagina": "heliconiaceae.html"
+  },
+  "hypericaceae": {
+    "id": "hypericaceae",
+    "nome_cientifico": "Hypericaceae",
+    "pagina": "hypericaceae.html"
+  },
+  "lacistemataceae": {
+    "id": "lacistemataceae",
+    "nome_cientifico": "Lacistemataceae",
+    "pagina": "lacistemataceae.html"
+  },
+  "lamiaceae": {
+    "id": "lamiaceae",
+    "nome_cientifico": "Lamiaceae",
+    "pagina": "lamiaceae.html"
+  },
+  "lauraceae": {
+    "id": "lauraceae",
+    "nome_cientifico": "Lauraceae",
+    "pagina": "lauraceae.html"
+  },
+  "linderniaceae": {
+    "id": "linderniaceae",
+    "nome_cientifico": "Linderniaceae",
+    "pagina": "linderniaceae.html"
+  },
+  "lythraceae": {
+    "id": "lythraceae",
+    "nome_cientifico": "Lythraceae",
+    "pagina": "lythraceae.html"
+  },
+  "malpighiaceae": {
+    "id": "malpighiaceae",
+    "nome_cientifico": "Malpighiaceae",
+    "pagina": "malpighiaceae.html"
+  },
+  "malvaceae": {
+    "id": "malvaceae",
+    "nome_cientifico": "Malvaceae",
+    "pagina": "malvaceae.html"
+  },
+  "melastomataceae": {
+    "id": "melastomataceae",
+    "nome_cientifico": "Melastomataceae",
+    "pagina": "melastomataceae.html"
+  },
+  "meliaceae": {
+    "id": "meliaceae",
+    "nome_cientifico": "Meliaceae",
+    "pagina": "meliaceae.html"
+  },
+  "moraceae": {
+    "id": "moraceae",
+    "nome_cientifico": "Moraceae",
+    "pagina": "moraceae.html"
+  },
+  "myristicaceae": {
+    "id": "myristicaceae",
+    "nome_cientifico": "Myristicaceae",
+    "pagina": "myristicaceae.html"
+  },
+  "myrtaceae": {
+    "id": "myrtaceae",
+    "nome_cientifico": "Myrtaceae",
+    "pagina": "myrtaceae.html"
+  },
+  "nyctaginaceae": {
+    "id": "nyctaginaceae",
+    "nome_cientifico": "Nyctaginaceae",
+    "pagina": "nyctaginaceae.html"
+  },
+  "oleaceae": {
+    "id": "oleaceae",
+    "nome_cientifico": "Oleaceae",
+    "pagina": "oleaceae.html"
+  },
+  "orchidaceae": {
+    "id": "orchidaceae",
+    "nome_cientifico": "Orchidaceae",
+    "pagina": "orchidaceae.html"
+  },
+  "oxalidaceae": {
+    "id": "oxalidaceae",
+    "nome_cientifico": "Oxalidaceae",
+    "pagina": "oxalidaceae.html"
+  },
+  "passifloraceae": {
+    "id": "passifloraceae",
+    "nome_cientifico": "Passifloraceae",
+    "pagina": "passifloraceae.html"
+  },
+  "pedaliaceae": {
+    "id": "pedaliaceae",
+    "nome_cientifico": "Pedaliaceae",
+    "pagina": "pedaliaceae.html"
+  },
+  "phytolaccaceae": {
+    "id": "phytolaccaceae",
+    "nome_cientifico": "Phytolaccaceae",
+    "pagina": "phytolaccaceae.html"
+  },
+  "piperaceae": {
+    "id": "piperaceae",
+    "nome_cientifico": "Piperaceae",
+    "pagina": "piperaceae.html"
+  },
+  "plantaginaceae": {
+    "id": "plantaginaceae",
+    "nome_cientifico": "Plantaginaceae",
+    "pagina": "plantaginaceae.html"
+  },
+  "poaceae": {
+    "id": "poaceae",
+    "nome_cientifico": "Poaceae",
+    "pagina": "poaceae.html"
+  },
+  "polygonaceae": {
+    "id": "polygonaceae",
+    "nome_cientifico": "Polygonaceae",
+    "pagina": "polygonaceae.html"
+  },
+  "portulacaceae": {
+    "id": "portulacaceae",
+    "nome_cientifico": "Portulacaceae",
+    "pagina": "portulacaceae.html"
+  },
+  "rosaceae": {
+    "id": "rosaceae",
+    "nome_cientifico": "Rosaceae",
+    "pagina": "rosaceae.html"
+  },
+  "rubiaceae": {
+    "id": "rubiaceae",
+    "nome_cientifico": "Rubiaceae",
+    "pagina": "rubiaceae.html"
+  },
+  "rutaceae": {
+    "id": "rutaceae",
+    "nome_cientifico": "Rutaceae",
+    "pagina": "rutaceae.html"
+  },
+  "salicaceae": {
+    "id": "salicaceae",
+    "nome_cientifico": "Salicaceae",
+    "pagina": "salicaceae.html"
+  },
+  "sapindaceae": {
+    "id": "sapindaceae",
+    "nome_cientifico": "Sapindaceae",
+    "pagina": "sapindaceae.html"
+  },
+  "sapotaceae": {
+    "id": "sapotaceae",
+    "nome_cientifico": "Sapotaceae",
+    "pagina": "sapotaceae.html"
+  },
+  "solanaceae": {
+    "id": "solanaceae",
+    "nome_cientifico": "Solanaceae",
+    "pagina": "solanaceae.html"
+  },
+  "turneraceae": {
+    "id": "turneraceae",
+    "nome_cientifico": "Turneraceae",
+    "pagina": "turneraceae.html"
+  },
+  "urticaceae": {
+    "id": "urticaceae",
+    "nome_cientifico": "Urticaceae",
+    "pagina": "urticaceae.html"
+  },
+  "verbenaceae": {
+    "id": "verbenaceae",
+    "nome_cientifico": "Verbenaceae",
+    "pagina": "verbenaceae.html"
+  },
+  "xanthorrhoeaceae": {
+    "id": "xanthorrhoeaceae",
+    "nome_cientifico": "Xanthorrhoeaceae",
+    "pagina": "xanthorrhoeaceae.html"
+  },
+  "zingiberaceae": {
+    "id": "zingiberaceae",
+    "nome_cientifico": "Zingiberaceae",
+    "pagina": "zingiberaceae.html"
+  }
+}
