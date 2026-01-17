@@ -1,3 +1,14 @@
+🚀 **Versão 1.0.0 – Primeira versão oficial**
+
+Este repositório contém a primeira versão funcional do Herbário Virtual,
+com catálogo de famílias botânicas, sistema de busca inteligente e filtros
+interativos.
+
+Este projeto encontra-se em fase de MVP (Produto Mínimo Viável) e será
+expandido futuramente para incluir gêneros, espécies e colaboração de
+outros pesquisadores.
+
+
 # herbario-virtual-ufra
 Herbário Virtual – sistema de catalogação botânica (famílias, gêneros e espécies)
 
