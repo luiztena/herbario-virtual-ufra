@@ -1,0 +1,32 @@
+{
+    "allamanda-blanchetii":{
+    "id": "allamanda-blanchetii",
+    "name": "allamanda-blanchetii",
+    "common_name": ["Sete-patacas-roxa","Alamanda-rosa","Alamanda-roxa","Viúva-alegre"],
+    "family":"apocynaceae",
+    "image":"../imagens/genero/apocynaceae/allamanda-blanchetii.jpg",
+    "page":"../html/genero/apocynaceae/allamanda-blanchetii.html"
+},
+    "allamanda-cathartica":{
+    "id": "allamanda-cathartica",
+    "name": "allamanda-cathartica",
+    "common_name": ["alamanda-amarela","dedal-de-dama"],
+    "family":"apocynaceae",
+    "image":"../imagens/genero/apocynaceae/allamanda-cathartica.jpg",
+    "page":"../html/genero/apocynaceae/allamanda-cathartica.html"
+},
+    "allamanda-polyantha":{
+    "id": "allamanda-polyantha",
+    "name": "allamanda-polyantha",
+    "family":"apocynaceae",
+    "image":"../imagens/genero/apocynaceae/allamanda-polyantha.jpg",
+    "page":"../html/genero/apocynaceae/allamanda-polyantha.html"
+},
+    "tabernaemontana-divaricata":{
+    "id": "tabernaemontana-divaricata",
+    "name": "tabernaemontana-divaricata",
+    "family":"apocynaceae",
+    "image":"../imagens/genero/apocynaceae/tabernaemontana-divaricata.jpg",
+    "page":"../html/genero/apocynaceae/tabernaemontana-divaricata.html"
+}
+}
