@@ -2,31 +2,73 @@
     "allamanda-blanchetii":{
     "id": "allamanda-blanchetii",
     "name": "allamanda-blanchetii",
-    "common_name": ["Sete-patacas-roxa","Alamanda-rosa","Alamanda-roxa","Viúva-alegre"],
     "family":"apocynaceae",
     "image":"../imagens/genero/apocynaceae/allamanda-blanchetii.jpg",
     "page":"../html/genero/apocynaceae/allamanda-blanchetii.html"
 },
-    "allamanda-cathartica":{
-    "id": "allamanda-cathartica",
-    "name": "allamanda-cathartica",
-    "common_name": ["alamanda-amarela","dedal-de-dama"],
-    "family":"apocynaceae",
-    "image":"../imagens/genero/apocynaceae/allamanda-cathartica.jpg",
-    "page":"../html/genero/apocynaceae/allamanda-cathartica.html"
-},
-    "allamanda-polyantha":{
-    "id": "allamanda-polyantha",
-    "name": "allamanda-polyantha",
-    "family":"apocynaceae",
-    "image":"../imagens/genero/apocynaceae/allamanda-polyantha.jpg",
-    "page":"../html/genero/apocynaceae/allamanda-polyantha.html"
-},
-    "tabernaemontana-divaricata":{
+
+    "tabernaemontana":{
     "id": "tabernaemontana-divaricata",
     "name": "tabernaemontana-divaricata",
     "family":"apocynaceae",
     "image":"../imagens/genero/apocynaceae/tabernaemontana-divaricata.jpg",
     "page":"../html/genero/apocynaceae/tabernaemontana-divaricata.html"
+},
+    "alternanthera":{
+    "id": "alternanthera",
+    "name": "alternanthera",
+    "family":"amaranthaceae",
+    "image":"../imagens/genero/amaranthaceae/alternanthera.jpg",
+    "page":"../html/genero/amaranthaceae/alternanthera.html"
+},
+
+   "hebanthe":{
+    "id": "hebanthe",
+    "name": "hebanthe",
+    "family":"amaranthaceae",
+    "image":"../imagens/genero/amaranthaceae/hebanthe.jpg",
+    "page":"../html/genero/amaranthaceae/hebanthe.html"
+},
+   "anacardium":{
+    "id": "anacardium",
+    "name": "anacardium",
+    "family":"anacardiceae",
+    "image":"../imagens/genero/anacardiceae/anacardiceae.jpg",
+    "page":"../html/genero/anacardiceae/anacardiceae.html"
+},
+   "mangifera":{
+    "id": "mangifera",
+    "name": "mangifera",
+    "family":"mangifera",
+    "image":"../imagens/genero/anacardiceae/mangifera.jpg",
+    "page":"../html/genero/anacardiceae/mangifera.html"
+},
+   "justicia":{
+    "id": "justicia",
+    "name": "justicia",
+    "family":"justicia",
+    "image":"../imagens/genero/anacardiceae/justicia.jpg",
+    "page":"../html/genero/anacardiceae/justicia.html"
+},
+   "tapirira":{
+    "id": "tapirira",
+    "name": "tapirira",
+    "family":"tapirira",
+    "image":"../imagens/genero/anacardiceae/tapirira.jpg",
+    "page":"../html/genero/anacardiceae/tapirira.html"
+},
+   "saritaea":{
+    "id": "saritaea",
+    "name": "saritaea",
+    "family":"saritaea",
+    "image":"../imagens/genero/bignoniaceae/saritaea.jpg",
+    "page":"../html/genero/bignoniaceae/saritaea.html"
+},
+   "bixa":{
+    "id": "bixa",
+    "name": "bixa",
+    "family":"bixa",
+    "image":"../imagens/genero/bixaceae/bixa.jpg",
+    "page":"../html/genero/bixaceae/bixa.html"
 }
 }
