@@ -1,0 +1,291 @@
+/* ===============================
+   RESET BÁSICO
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+================================ */
+body {
+  font-family: "Julius Sans One", sans-serif;
+  background-color: rgba(2, 203, 39, 0.571);
+  padding-top: 120px; /* espaço para header fixo */
+}
+
+/* ===============================
+   HEADER
+================================ */
+.site-header {
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.ufra {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* ===============================
+   NAV
+================================ */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   ERRO 404
+================================ */
+.error-404 {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.error-404 h1 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 4rem;
+}
+
+.error-404 h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.error-404 img {
+  width: 220px;
+  margin: 2rem 0;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* ===============================
+   BOTÕES
+================================ */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-right: 3rem;
+}
+
+.actions a:hover {
+    color: cornsilk;
+}
+
+
+/* ===============================
+   HEADER DO ERRO (TEXTO + IMAGEM)
+================================ */
+.error-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* importante para mobile */
+  margin-bottom: 2rem;
+}
+
+.error-text {
+    margin-top: 3rem;
+}
+.error-text h1 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 4rem;
+}
+
+.error-text h2 {
+  font-size: 2.2rem;
+}
+
+.error-image {
+  width: 220px;
+    }
+
+/* ===============================
+   RESPONSIVO
+================================ */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .error-404 h1 {
+    font-size: 3rem;
+  }
+
+  .error-404 h2 {
+    font-size: 1.8rem;
+  }
+  .message{
+    font-size: 1rem;
+  }
+}
+
+h1{
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+h2{
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+}
+
+ footer {
+        background-color: #212121;
+        color: #fefae0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding: 3rem 0 1.5rem;
+                }
+
+        footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        }
+
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none; 
+            text-decoration: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a {
+            color: #fefae0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #fefae0;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: green;
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #fefae0;
+        }
+
+        a.card-link{
+            text-decoration: none;
+            color: #212121;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            display: block;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
