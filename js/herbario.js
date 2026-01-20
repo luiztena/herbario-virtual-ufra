@@ -1,4 +1,4 @@
-let familias = {};
+let familias = null;
 
 // ===============================
 // CARREGAR JSON
@@ -15,6 +15,13 @@ async function carregarFamilias() {
   } catch (erro) {
     console.error("Erro:", erro);
   }
+}
+
+await carregarFamilias();
+
+if (Object.keys(familias).length === 0) {
+  console.error("familias.json carregou vazio");
+  return;
 }
 
 // ===============================
@@ -83,19 +90,19 @@ function searchPlant() {
   const input = document.getElementById("search-bar");
   const didYouMean = document.getElementById("did-you-mean");
   const autocomplete = document.getElementById("autocomplete-list");
-
   autocomplete.innerHTML = "";
   didYouMean.innerHTML = "";
-
   const query = normalize(input.value);
   if (!query) return;
-
   // Busca exata
-  if (familias[query]) {
-    window.location.href = familias[query].page;
-    return;
-  }
-
+ if (familias[query] && familias[query].page) {
+  window.location.href = familias[query].page;
+  return;
+}
+if (!familias) {
+  console.warn("Famílias ainda não carregadas");
+  return;
+}
   // Busca aproximada
   const sugestao = fuzzySearch(query);
   if (sugestao) {
@@ -148,12 +155,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       .filter(k => k.startsWith(value))
       .slice(0, 8)
       .forEach(k => {
-        const li = document.createElement("li");
-        li.textContent = familias[k].name;
-        li.onclick = () => {
-          searchInput.value = familias[k].name;
-          searchPlant();
-        };
+      const li = document.createElement("li");
+      li.textContent = familias[k].name;
+      li.onclick = () => {
+        searchInput.value = k; // usa a chave real
+        searchPlant();
+      };
         autocomplete.appendChild(li);
       });
   });
