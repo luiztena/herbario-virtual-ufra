@@ -1,74 +1,81 @@
 {
-    "allamanda-blanchetii":{
-    "id": "allamanda-blanchetii",
-    "name": "allamanda-blanchetii",
-    "family":"apocynaceae",
-    "image":"../imagens/genero/apocynaceae/allamanda-blanchetii.jpg",
-    "page":"../html/genero/apocynaceae/allamanda-blanchetii.html"
-},
-
-    "tabernaemontana":{
-    "id": "tabernaemontana-divaricata",
-    "name": "tabernaemontana-divaricata",
-    "family":"apocynaceae",
-    "image":"../imagens/genero/apocynaceae/tabernaemontana-divaricata.jpg",
-    "page":"../html/genero/apocynaceae/tabernaemontana-divaricata.html"
-},
-    "alternanthera":{
+  "alternanthera": {
     "id": "alternanthera",
-    "name": "alternanthera",
-    "family":"amaranthaceae",
-    "image":"../imagens/genero/amaranthaceae/alternanthera.jpg",
-    "page":"../html/genero/amaranthaceae/alternanthera.html"
-},
+    "name": "Alternanthera",
+    "family": "amaranthaceae",
+    "image": "imagens/genero/amaranthaceae/alternanthera.jpg",
+    "page": "genero/amaranthaceae/alternanthera.html"
+  },
 
-   "hebanthe":{
+  "hebanthe": {
     "id": "hebanthe",
-    "name": "hebanthe",
-    "family":"amaranthaceae",
-    "image":"../imagens/genero/amaranthaceae/hebanthe.jpg",
-    "page":"../html/genero/amaranthaceae/hebanthe.html"
-},
-   "anacardium":{
+    "name": "Hebanthe",
+    "family": "amaranthaceae",
+    "image": "imagens/genero/amaranthaceae/hebanthe.jpg",
+    "page": "genero/amaranthaceae/hebanthe.html"
+  },
+
+  "anacardium": {
     "id": "anacardium",
-    "name": "anacardium",
-    "family":"anacardiceae",
-    "image":"../imagens/genero/anacardiceae/anacardiceae.jpg",
-    "page":"../html/genero/anacardiceae/anacardiceae.html"
-},
-   "mangifera":{
-    "id": "mangifera",
-    "name": "mangifera",
-    "family":"mangifera",
-    "image":"../imagens/genero/anacardiceae/mangifera.jpg",
-    "page":"../html/genero/anacardiceae/mangifera.html"
-},
-   "justicia":{
-    "id": "justicia",
-    "name": "justicia",
-    "family":"justicia",
-    "image":"../imagens/genero/anacardiceae/justicia.jpg",
-    "page":"../html/genero/anacardiceae/justicia.html"
-},
-   "tapirira":{
+    "name": "Anacardium",
+    "family": "anacardiaceae",
+    "image": "imagens/genero/anacardiaceae/anacardium.jpg",
+    "page": "genero/anacardiaceae/anacardium.html"
+  },
+
+  "tapirira": {
     "id": "tapirira",
-    "name": "tapirira",
-    "family":"tapirira",
-    "image":"../imagens/genero/anacardiceae/tapirira.jpg",
-    "page":"../html/genero/anacardiceae/tapirira.html"
-},
-   "saritaea":{
+    "name": "Tapirira",
+    "family": "anacardiaceae",
+    "image": "imagens/genero/anacardiaceae/tapirira.jpg",
+    "page": "genero/anacardiaceae/tapirira.html"
+  },
+
+  "justicia": {
+    "id": "justicia",
+    "name": "Justicia",
+    "family": "acanthaceae",
+    "image": "imagens/genero/acanthaceae/justicia.jpg",
+    "page": "genero/acanthaceae/justicia.html"
+  },
+
+  "allamanda": {
+    "id": "allamanda",
+    "name": "Allamanda",
+    "family": "apocynaceae",
+    "image": "imagens/genero/apocynaceae/allamanda.jpg",
+    "page": "genero/apocynaceae/allamanda.html"
+  },
+
+  "tabernaemontana": {
+    "id": "tabernaemontana",
+    "name": "Tabernaemontana",
+    "family": "apocynaceae",
+    "image": "imagens/genero/apocynaceae/tabernaemontana.jpg",
+    "page": "genero/apocynaceae/tabernaemontana.html"
+  },
+
+  "euterpe": {
+    "id": "euterpe",
+    "name": "Euterpe",
+    "family": "arecaceae",
+    "image": "imagens/genero/arecaceae/euterpe.jpg",
+    "page": "genero/arecaceae/euterpe.html"
+  },
+
+  "bignonia": {
     "id": "saritaea",
     "name": "saritaea",
-    "family":"saritaea",
-    "image":"../imagens/genero/bignoniaceae/saritaea.jpg",
-    "page":"../html/genero/bignoniaceae/saritaea.html"
-},
-   "bixa":{
+    "family": "bignoniaceae",
+    "image": "imagens/genero/bignoniaceae/saritaea.jpg",
+    "page": "genero/bignoniaceae/saritaea.html"
+  },
+
+  "bixa": {
     "id": "bixa",
-    "name": "bixa",
-    "family":"bixa",
-    "image":"../imagens/genero/bixaceae/bixa.jpg",
-    "page":"../html/genero/bixaceae/bixa.html"
-}
+    "name": "Bixa",
+    "family": "bixaceae",
+    "image": "imagens/genero/bixaceae/bixa.jpg",
+    "page": "genero/bixaceae/bixa.html"
+  }
 }
