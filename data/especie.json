@@ -1,0 +1,188 @@
+{
+    "alternanthera-brasiliana": {
+    "id": "alternanthera-brasiliana",
+    "name": "Alternanthera brasiliana",
+    "genero": "alternanthera",
+    "familia": "amaranthaceae",
+    "page": "../html/especie.html?id=alternanthera-brasiliana",
+    "imagem": "../img/especies/alternanthera-brasiliana.jpg",
+    "descricao": "Espécie herbácea amplamente utilizada como ornamental.",
+    "ficha": {}
+  },
+
+  "alternanthera-flavecens": {
+    "id": "alternanthera-flavecens",
+    "name": "Alternanthera flavecens",
+    "genero": "alternanthera",
+    "familia": "amaranthaceae",
+    "page": "../html/especie.html?id=alternanthera-flavecens",
+    "imagem": "../img/especies/alternanthera-flavecens.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "alternanthera-sessilis": {
+    "id": "alternanthera-sessilis",
+    "name": "Alternanthera sessilis",
+    "genero": "alternanthera",
+    "familia": "amaranthaceae",
+    "page": "../html/especie.html?id=alternanthera-sessilis",
+    "imagem": "../img/especies/alternanthera-sessilis.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "alternanthera-tenella": {
+    "id": "alternanthera-tenella",
+    "name": "Alternanthera tenella",
+    "genero": "alternanthera",
+    "familia": "amaranthaceae",
+    "page": "../html/especie.html?id=alternanthera-tenella",
+    "imagem": "../img/especies/alternanthera-tenella.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "hebanthe-eriantha": {
+    "id": "hebanthe-eriantha",
+    "name": "Hebanthe eriantha",
+    "genero": "hebanthe",
+    "familia": "amaranthaceae",
+    "page": "../html/especie.html?id=hebanthe-eriantha",
+    "imagem": "../img/especies/hebanthe-eriantha.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "anacardium-occidentale": {
+    "id": "anacardium-occidentale",
+    "name": "Anacardium occidentale",
+    "genero": "anacardium",
+    "familia": "anacardiaceae",
+    "page": "../html/especie.html?id=anacardium-occidentale",
+    "imagem": "../img/especies/anacardium-occidentale.jpg",
+    "descricao": "Espécie conhecida como cajueiro.",
+    "ficha": {}
+  },
+
+  "justicia-secunda": {
+    "id": "justicia-secunda",
+    "name": "Justicia secunda",
+    "genero": "justicia",
+    "familia": "acanthaceae",
+    "page": "../html/especie.html?id=justicia-secunda",
+    "imagem": "../img/especies/justicia-secunda.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "mangifera-indica": {
+    "id": "mangifera-indica",
+    "name": "Mangifera indica",
+    "genero": "mangifera",
+    "familia": "anacardiaceae",
+    "page": "../html/especie.html?id=mangifera-indica",
+    "imagem": "../img/especies/mangifera-indica.jpg",
+    "descricao": "Mangueira, espécie frutífera amplamente cultivada.",
+    "ficha": {}
+  },
+
+  "tapirira-guianensis": {
+    "id": "tapirira-guianensis",
+    "name": "Tapirira guianensis",
+    "genero": "tapirira",
+    "familia": "anacardiaceae",
+    "page": "../html/especie.html?id=tapirira-guianensis",
+    "imagem": "../img/especies/tapirira-guianensis.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "allamanda-blanchetii": {
+    "id": "allamanda-blanchetii",
+    "name": "Allamanda blanchetii",
+    "genero": "allamanda",
+    "familia": "apocynaceae",
+    "page": "../html/especie.html?id=allamanda-blanchetii",
+    "imagem": "../img/especies/allamanda-blanchetii.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "allamanda-cathartica": {
+    "id": "allamanda-cathartica",
+    "name": "Allamanda cathartica",
+    "genero": "allamanda",
+    "familia": "apocynaceae",
+    "page": "../html/especie.html?id=allamanda-cathartica",
+    "imagem": "../img/especies/allamanda-cathartica.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "allamanda-polyantha": {
+    "id": "allamanda-polyantha",
+    "name": "Allamanda polyantha",
+    "genero": "allamanda",
+    "familia": "apocynaceae",
+    "page": "../html/especie.html?id=allamanda-polyantha",
+    "imagem": "../img/especies/allamanda-polyantha.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "tabernaemontana-divaricata": {
+    "id": "tabernaemontana-divaricata",
+    "name": "Tabernaemontana divaricata",
+    "genero": "tabernaemontana",
+    "familia": "apocynaceae",
+    "page": "../html/especie.html?id=tabernaemontana-divaricata",
+    "imagem": "../img/especies/tabernaemontana-divaricata.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "euterpe-oleacea": {
+    "id": "euterpe-oleacea",
+    "name": "Euterpe oleracea",
+    "genero": "euterpe",
+    "familia": "arecaceae",
+    "page": "../html/especie.html?id=euterpe-oleacea",
+    "imagem": "../img/especies/euterpe-oleacea.jpg",
+    "descricao": "Espécie produtora do açaí.",
+    "ficha": {}
+  },
+
+  "saritaea-magnifica": {
+    "id": "saritaea-magnifica",
+    "name": "Saritaea magnifica",
+    "genero": "saritaea",
+    "familia": "bignoniaceae",
+    "page": "../html/especie.html?id=saritaea-magnifica",
+    "imagem": "../img/especies/saritaea-magnifica.jpg",
+    "descricao": "",
+    "ficha": {}
+  },
+
+  "bixa-orellana": {
+    "id": "bixa-orellana",
+    "name": "Bixa orellana",
+    "genero": "bixa",
+    "familia": "bixaceae",
+    "page": "../html/especie.html?id=bixa-orellana",
+    "imagem": "../img/especies/bixa-orellana.jpg",
+    "descricao": "Conhecida como urucum.",
+    "ficha": {}
+  },
+
+  "bixa-arborea": {
+    "id": "bixa-arborea",
+    "name": "Bixa arborea",
+    "genero": "bixa",
+    "familia": "bixaceae",
+    "page": "../html/especie.html?id=bixa-arborea",
+    "imagem": "../img/especies/bixa-arborea.jpg",
+    "descricao": "",
+    "ficha": {}
+  }
+}
