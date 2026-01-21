@@ -4,30 +4,64 @@
     "name": "Acanthaceae",
     "page": "acanthaceae.html"
   },
-  "amaranthaceae": {
-    "id": "amaranthaceae",
-    "name": "Amaranthaceae",
-    "page": "amaranthaceae.html"
-  },
+
+"amaranthaceae": {
+  "id": "amaranthaceae",
+  "name": "Amaranthaceae",
+  "page": "amaranthaceae.html",
+  "ficha": {
+    "Nome científico": "Amaranthaceae",
+    "Tipo de folha": "Simples e bipenadas",
+    "Nervação": "Peninérvia",
+    "Posição do ovário": "Súpero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"
+  }
+},
+
   "anacardiaceae": {
     "id": "anacardiaceae",
     "name": "Anacardiaceae",
-    "page": "anacardiaceae.html"
+    "page": "anacardiaceae.html",
+    "ficha": {
+    "Nome científico": "Anacardiaceae",
+    "Tipo de folha": "Simples e alternada ou bipenada",
+    "Nervação": "Peninérvia",
+    "Posição do ovário": "Súpero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"}
   },
   "annonaceae": {
     "id": "annonaceae",
     "name": "Annonaceae",
     "page": "annonaceae.html"
   },
+  
   "apocynaceae": {
     "id": "apocynaceae",
     "name": "Apocynaceae",
-    "page": "apocynaceae.html"
-  },
+    "page": "apocynaceae.html",
+    "ficha": {
+    "Nome científico": "Apocynaceae",
+    "Tipo de folha": "Simples, penada",
+    "Nervação": "Peninérvia",
+    "Posição do ovário": "Súpero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"
+  }
+},
   "arecaceae": {
     "id": "arecaceae",
     "name": "Arecaceae",
-    "page": "arecaceae.html"
+    "page": "arecaceae.html",
+    "ficha": {
+    "Nome científico": "Arecaceae",
+    "Tipo de folha": "Simples, bipenada",
+    "Nervação": "pararelinervia",
+    "Posição do ovário": "infero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"
+  }
   },
   "asteraceae": {
     "id": "asteraceae",
@@ -37,12 +71,28 @@
   "bignoniaceae": {
     "id": "bignoniaceae",
     "name": "Bignoniaceae",
-    "page": "bignoniaceae.html"
+    "page": "bignoniaceae.html",
+    "ficha": {
+    "Nome científico": "Bignoniaceae",
+    "Tipo de folha": "Simples, bipenada",
+    "Nervação": "pararelinervia",
+    "Posição do ovário": "infero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"
+  }
   },
   "bixaceae": {
     "id": "bixaceae",
     "name": "Bixaceae",
-    "page": "bixaceae.html"
+    "page": "bixaceae.html",
+    "ficha": {
+    "Nome científico": "Bixaceae",
+    "Tipo de folha": "Simples, bipenada",
+    "Nervação": "Peninérvia",
+    "Posição do ovário": "infero",
+    "Estames": "Isoestames",
+    "Chave": "A definir"
+  }
   },
   "boraginaceae": {
     "id": "boraginaceae",

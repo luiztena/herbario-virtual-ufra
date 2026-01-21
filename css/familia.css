@@ -33,44 +33,64 @@ article {
     font-size: 35pt;
 }
 
-.ficha-botanica {
-  background-color: #fafff2;
-  border-left: 4px solid #3a5a40;
+aside {
+  background: #f4f6f2;
   padding: 1.5rem;
-  font-family: "Merriweather", serif;
+  border-left: 4px solid #52796f;
 }
 
-.ficha-botanica h2 {
-  font-size: 1.2rem;
+aside h3 {
   margin-bottom: 1rem;
-  margin-top: -1.7rem;
-  color: #344e41;
+  margin-left: 1rem;
+  font-size: 1.4rem;
 }
 
-.ficha-botanica dl {
+aside ul {
+  margin-left: 1rem;
+}
+
+#ficha-botanica {
+  list-style: none;
+  padding: 0;
+}
+
+#ficha-botanica li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.ficha-botanica {
+  font-family: "Merriweather", serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.ficha-descricao p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.ficha-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: 1rem;
 }
 
-.ficha-botanica div {
-  display: flex;
-  flex-direction: column;
+.ficha-item strong {
+  font-weight: 700;
 }
 
-.ficha-botanica dt {
-  font-weight: 600;
-  font-size: 0.8rem;
-  color: #3a5a40;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.ficha-item span {
+  text-align: right;
+  max-width: 55%;
 }
 
-.ficha-botanica dd {
-  margin-left: 0;
-  font-size: 0.90rem;
-  color: #1f1f1f;
-  font-weight: 500;
+.ficha-botanica hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #aaa;
 }
 
 .catalogo-generos {
