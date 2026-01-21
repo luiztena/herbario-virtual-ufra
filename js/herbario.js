@@ -17,12 +17,6 @@ async function carregarFamilias() {
   }
 }
 
-await carregarFamilias();
-
-if (Object.keys(familias).length === 0) {
-  console.error("familias.json carregou vazio");
-  return;
-}
 
 // ===============================
 // UTILITÁRIOS
