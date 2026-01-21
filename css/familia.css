@@ -1,0 +1,148 @@
+.mainfamily {
+  margin: 10rem auto 20rem auto; /* centraliza corretamente */
+  background-color: #fafff2;
+
+  max-width: 1000px; /* melhor que width fixa */
+  width: 100%;
+
+  padding: 50px 70px;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+
+  align-items: start; /* 👈 alinhamento correto */
+}
+
+/* Garantia extra */
+.mainfamily article,
+.mainfamily aside {
+  align-self: start;
+}
+
+article {
+  text-align: justify;
+  
+  text-indent: 3em;
+}
+
+
+
+
+.cabe, h1{
+    font-size: 35pt;
+}
+
+.ficha-botanica {
+  background-color: #fafff2;
+  border-left: 4px solid #3a5a40;
+  padding: 1.5rem;
+  font-family: "Merriweather", serif;
+}
+
+.ficha-botanica h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: -1.7rem;
+  color: #344e41;
+}
+
+.ficha-botanica dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.ficha-botanica div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ficha-botanica dt {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #3a5a40;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ficha-botanica dd {
+  margin-left: 0;
+  font-size: 0.90rem;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.catalogo-generos {
+  margin-top: 3rem;
+}
+
+.catalogo-generos h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #344e41;
+}
+
+.titulo-secao {
+  position: relative;
+  font-size: 1.6rem;
+  color: #344e41;
+  margin-bottom: 2rem;
+  padding-top: 12px;
+}
+
+/* linha decorativa */
+.titulo-secao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 5px;
+  background-color: var(--primary); /* ou #52796f */
+  margin-top: -1rem;
+}
+
+
+.genero-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.genero-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.genero-card img {
+  width: 120px;
+  height: 90px;
+  object-fit: fill;
+  border-radius: 6px;
+}
+
+.genero-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #3a5a40;
+}
+
+.genero-info p {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .mainfamily {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+}
