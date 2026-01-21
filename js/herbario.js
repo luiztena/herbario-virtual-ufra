@@ -16,7 +16,23 @@ async function carregarFamilias() {
     console.error("Erro:", erro);
   }
 }
+async function carregarCards() {
+  try {
+    const res = await fetch("data/cards.html");
+    if (!res.ok) throw new Error("Erro ao carregar cards");
 
+    const html = await res.text();
+    document.getElementById("cards-container").innerHTML = html;
+  } catch (e) {
+    console.error("Erro ao carregar cards:", e);
+  }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  carregarCards();
+});
 
 // ===============================
 // UTILITÁRIOS
@@ -83,6 +99,7 @@ function fuzzySearch(query) {
 function searchPlant() {
   const input = document.getElementById("search-bar");
   const didYouMean = document.getElementById("did-you-mean");
+  didYouMean.innerHTML = "";
   const autocomplete = document.getElementById("autocomplete-list");
   autocomplete.innerHTML = "";
   didYouMean.innerHTML = "";
@@ -138,7 +155,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       searchInput.blur();
     }
   });
+document.addEventListener("click", (event) => {
+  const searchInput = document.getElementById("search-bar");
+  const autocomplete = document.getElementById("autocomplete-list");
 
+  if (!searchInput || !autocomplete) return;
+
+  // Se clicou fora do input E fora da lista
+  if (
+    !searchInput.contains(event.target) &&
+    !autocomplete.contains(event.target)
+  ) {
+    autocomplete.innerHTML = "";
+  }
+});
   // AUTOCOMPLETE
   searchInput?.addEventListener("input", () => {
     const value = normalize(searchInput.value);
