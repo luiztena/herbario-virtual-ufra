@@ -2,351 +2,1140 @@
   "acanthaceae": {
     "id": "acanthaceae",
     "name": "Acanthaceae",
-    "page": "acanthaceae.html"
+    "page": "../html/familia.html?id=acanthaceae",
+      "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+      "ficha": {
+      "Nome científico": "Amaranthaceae",
+      "Tipo de folha": "Simples e bipenadas",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Súpero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
 
-"amaranthaceae": {
-  "id": "amaranthaceae",
-  "name": "Amaranthaceae",
-  "page": "amaranthaceae.html",
-  "ficha": {
-    "Nome científico": "Amaranthaceae",
-    "Tipo de folha": "Simples e bipenadas",
-    "Nervação": "Peninérvia",
-    "Posição do ovário": "Súpero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"
-  }
-},
+  "amaranthaceae": {
+    "id": "amaranthaceae",
+    "name": "Amaranthaceae",
+    "page": "../html/familia.html?id=amaranthaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Amaranthaceae",
+      "Tipo de folha": "Simples e bipenadas",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Súpero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
+  },
 
   "anacardiaceae": {
     "id": "anacardiaceae",
     "name": "Anacardiaceae",
-    "page": "anacardiaceae.html",
+    "page": "../html/familia.html?id=anacardiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
     "ficha": {
-    "Nome científico": "Anacardiaceae",
-    "Tipo de folha": "Simples e alternada ou bipenada",
-    "Nervação": "Peninérvia",
-    "Posição do ovário": "Súpero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"}
+      "Nome científico": "Anacardiaceae",
+      "Tipo de folha": "Simples e alternada ou bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Súpero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "annonaceae": {
     "id": "annonaceae",
     "name": "Annonaceae",
-    "page": "annonaceae.html"
+    "page": "../html/familia.html?id=annonaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Anacardiaceae",
+      "Tipo de folha": "Simples e alternada ou bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Súpero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
-  
+
   "apocynaceae": {
     "id": "apocynaceae",
     "name": "Apocynaceae",
-    "page": "apocynaceae.html",
-    "ficha": {
-    "Nome científico": "Apocynaceae",
-    "Tipo de folha": "Simples, penada",
-    "Nervação": "Peninérvia",
-    "Posição do ovário": "Súpero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"
-  }
-},
+    "page": "../html/familia.html?id=apocynaceae",
+            "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+      "ficha": {  
+      "Nome científico": "Apocynaceae",
+      "Tipo de folha": "Simples, penada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Súpero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
+  },
+
   "arecaceae": {
     "id": "arecaceae",
     "name": "Arecaceae",
-    "page": "arecaceae.html",
+    "page": "../html/familia.html?id=arecaceae",
+            "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
     "ficha": {
-    "Nome científico": "Arecaceae",
-    "Tipo de folha": "Simples, bipenada",
-    "Nervação": "pararelinervia",
-    "Posição do ovário": "infero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"
-  }
+      "Nome científico": "Arecaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Paralelinérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "asteraceae": {
     "id": "asteraceae",
     "name": "Asteraceae",
-    "page": "asteraceae.html"
+    "page": "../html/familia.html?id=asteraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+      "ficha": {
+      "Nome científico": "Arecaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Paralelinérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "bignoniaceae": {
     "id": "bignoniaceae",
     "name": "Bignoniaceae",
-    "page": "bignoniaceae.html",
+    "page": "../html/familia.html?id=bignoniaceae",
+     "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
     "ficha": {
-    "Nome científico": "Bignoniaceae",
-    "Tipo de folha": "Simples, bipenada",
-    "Nervação": "pararelinervia",
-    "Posição do ovário": "infero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"
-  }
+      "Nome científico": "Bignoniaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Paralelinérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "bixaceae": {
     "id": "bixaceae",
     "name": "Bixaceae",
-    "page": "bixaceae.html",
+    "page": "../html/familia.html?id=bixaceae",
+     "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
     "ficha": {
-    "Nome científico": "Bixaceae",
-    "Tipo de folha": "Simples, bipenada",
-    "Nervação": "Peninérvia",
-    "Posição do ovário": "infero",
-    "Estames": "Isoestames",
-    "Chave": "A definir"
-  }
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "boraginaceae": {
     "id": "boraginaceae",
     "name": "Boraginaceae",
-    "page": "boraginaceae.html"
+    "page": "../html/familia.html?id=boraginaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "cactaceae": {
     "id": "cactaceae",
     "name": "Cactaceae",
-    "page": "cactaceae.html"
+    "page": "../html/familia.html?id=cactaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "chrysobalanaceae": {
     "id": "chrysobalanaceae",
     "name": "Chrysobalanaceae",
-    "page": "chrysobalanaceae.html"
+    "page": "../html/familia.html?id=chrysobalanaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "cleomaceae": {
     "id": "cleomaceae",
     "name": "Cleomaceae",
-    "page": "cleomaceae.html"
+    "page": "../html/familia.html?id=cleomaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "combretaceae": {
     "id": "combretaceae",
     "name": "Combretaceae",
-    "page": "combretaceae.html"
+    "page": "../html/familia.html?id=combretaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "convolvulaceae": {
     "id": "convolvulaceae",
     "name": "Convolvulaceae",
-    "page": "convolvulaceae.html"
+    "page": "../html/familia.html?id=convolvulaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "costaceae": {
     "id": "costaceae",
     "name": "Costaceae",
-    "page": "costaceae.html"
+    "page": "../html/familia.html?id=costaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "cucurbitaceae": {
     "id": "cucurbitaceae",
     "name": "Cucurbitaceae",
-    "page": "cucurbitaceae.html"
+    "page": "../html/familia.html?id=cucurbitaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "cyperaceae": {
     "id": "cyperaceae",
     "name": "Cyperaceae",
-    "page": "cyperaceae.html"
+    "page": "../html/familia.html?id=cyperaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "dilleniaceae": {
     "id": "dilleniaceae",
     "name": "Dilleniaceae",
-    "page": "dilleniaceae.html"
+    "page": "../html/familia.html?id=dilleniaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "erythroxylaceae": {
     "id": "erythroxylaceae",
     "name": "Erythroxylaceae",
-    "page": "erythroxylaceae.html"
+    "page": "../html/familia.html?id=erythroxylaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "euphorbiaceae": {
     "id": "euphorbiaceae",
     "name": "Euphorbiaceae",
-    "page": "euphorbiaceae.html"
+    "page": "../html/familia.html?id=euphorbiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "fabaceae": {
     "id": "fabaceae",
     "name": "Fabaceae",
-    "page": "fabaceae.html"
+    "page": "../html/familia.html?id=fabaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "heliconiaceae": {
     "id": "heliconiaceae",
     "name": "Heliconiaceae",
-    "page": "heliconiaceae.html"
+    "page": "../html/familia.html?id=heliconiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "hypericaceae": {
     "id": "hypericaceae",
     "name": "Hypericaceae",
-    "page": "hypericaceae.html"
+    "page": "../html/familia.html?id=hypericaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "lacistemataceae": {
     "id": "lacistemataceae",
     "name": "Lacistemataceae",
-    "page": "lacistemataceae.html"
+    "page": "../html/familia.html?id=lacistemataceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "lamiaceae": {
     "id": "lamiaceae",
     "name": "Lamiaceae",
-    "page": "lamiaceae.html"
+    "page": "../html/familia.html?id=lamiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "lauraceae": {
     "id": "lauraceae",
     "name": "Lauraceae",
-    "page": "lauraceae.html"
+    "page": "../html/familia.html?id=lauraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "linderniaceae": {
     "id": "linderniaceae",
     "name": "Linderniaceae",
-    "page": "linderniaceae.html"
+    "page": "../html/familia.html?id=linderniaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "lythraceae": {
     "id": "lythraceae",
     "name": "Lythraceae",
-    "page": "lythraceae.html"
+    "page": "../html/familia.html?id=lythraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "malpighiaceae": {
     "id": "malpighiaceae",
     "name": "Malpighiaceae",
-    "page": "malpighiaceae.html"
+    "page": "../html/familia.html?id=malpighiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "malvaceae": {
     "id": "malvaceae",
     "name": "Malvaceae",
-    "page": "malvaceae.html"
+    "page": "../html/familia.html?id=malvaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "melastomataceae": {
     "id": "melastomataceae",
     "name": "Melastomataceae",
-    "page": "melastomataceae.html"
+    "page": "../html/familia.html?id=melastomataceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "meliaceae": {
     "id": "meliaceae",
     "name": "Meliaceae",
-    "page": "meliaceae.html"
+    "page": "../html/familia.html?id=meliaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "moraceae": {
     "id": "moraceae",
     "name": "Moraceae",
-    "page": "moraceae.html"
+    "page": "../html/familia.html?id=moraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "myristicaceae": {
     "id": "myristicaceae",
     "name": "Myristicaceae",
-    "page": "myristicaceae.html"
+    "page": "../html/familia.html?id=myristicaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "myrtaceae": {
     "id": "myrtaceae",
     "name": "Myrtaceae",
-    "page": "myrtaceae.html"
+    "page": "../html/familia.html?id=myrtaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "nyctaginaceae": {
     "id": "nyctaginaceae",
     "name": "Nyctaginaceae",
-    "page": "nyctaginaceae.html"
+    "page": "../html/familia.html?id=nyctaginaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "oleaceae": {
     "id": "oleaceae",
     "name": "Oleaceae",
-    "page": "oleaceae.html"
+    "page": "../html/familia.html?id=oleaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "orchidaceae": {
     "id": "orchidaceae",
     "name": "Orchidaceae",
-    "page": "orchidaceae.html"
+    "page": "../html/familia.html?id=orchidaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "oxalidaceae": {
     "id": "oxalidaceae",
     "name": "Oxalidaceae",
-    "page": "oxalidaceae.html"
+    "page": "../html/familia.html?id=oxalidaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "passifloraceae": {
     "id": "passifloraceae",
     "name": "Passifloraceae",
-    "page": "passifloraceae.html"
+    "page": "../html/familia.html?id=passifloraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "pedaliaceae": {
     "id": "pedaliaceae",
     "name": "Pedaliaceae",
-    "page": "pedaliaceae.html"
+    "page": "../html/familia.html?id=pedaliaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "phytolaccaceae": {
     "id": "phytolaccaceae",
     "name": "Phytolaccaceae",
-    "page": "phytolaccaceae.html"
+    "page": "../html/familia.html?id=phytolaccaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "piperaceae": {
     "id": "piperaceae",
     "name": "Piperaceae",
-    "page": "piperaceae.html"
+    "page": "../html/familia.html?id=piperaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "plantaginaceae": {
     "id": "plantaginaceae",
     "name": "Plantaginaceae",
-    "page": "plantaginaceae.html"
+    "page": "../html/familia.html?id=plantaginaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "poaceae": {
     "id": "poaceae",
     "name": "Poaceae",
-    "page": "poaceae.html"
+    "page": "../html/familia.html?id=poaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "polygonaceae": {
     "id": "polygonaceae",
     "name": "Polygonaceae",
-    "page": "polygonaceae.html"
+    "page": "../html/familia.html?id=polygonaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "portulacaceae": {
     "id": "portulacaceae",
     "name": "Portulacaceae",
-    "page": "portulacaceae.html"
+    "page": "../html/familia.html?id=portulacaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "rosaceae": {
     "id": "rosaceae",
     "name": "Rosaceae",
-    "page": "rosaceae.html"
+    "page": "../html/familia.html?id=rosaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "rubiaceae": {
     "id": "rubiaceae",
     "name": "Rubiaceae",
-    "page": "rubiaceae.html"
+    "page": "../html/familia.html?id=rubiaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "rutaceae": {
     "id": "rutaceae",
     "name": "Rutaceae",
-    "page": "rutaceae.html"
+    "page": "../html/familia.html?id=rutaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "salicaceae": {
     "id": "salicaceae",
     "name": "Salicaceae",
-    "page": "salicaceae.html"
+    "page": "../html/familia.html?id=salicaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "sapindaceae": {
     "id": "sapindaceae",
     "name": "Sapindaceae",
-    "page": "sapindaceae.html"
+    "page": "../html/familia.html?id=sapindaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "sapotaceae": {
     "id": "sapotaceae",
     "name": "Sapotaceae",
-    "page": "sapotaceae.html"
+    "page": "../html/familia.html?id=sapotaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "solanaceae": {
     "id": "solanaceae",
     "name": "Solanaceae",
-    "page": "solanaceae.html"
+    "page": "../html/familia.html?id=solanaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "turneraceae": {
     "id": "turneraceae",
     "name": "Turneraceae",
-    "page": "turneraceae.html"
+    "page": "../html/familia.html?id=turneraceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "urticaceae": {
     "id": "urticaceae",
     "name": "Urticaceae",
-    "page": "urticaceae.html"
+    "page": "../html/familia.html?id=urticaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "verbenaceae": {
     "id": "verbenaceae",
     "name": "Verbenaceae",
-    "page": "verbenaceae.html"
+    "page": "../html/familia.html?id=verbenaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "xanthorrhoeaceae": {
     "id": "xanthorrhoeaceae",
     "name": "Xanthorrhoeaceae",
-    "page": "xanthorrhoeaceae.html"
+    "page": "../html/familia.html?id=xanthorrhoeaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   },
+
   "zingiberaceae": {
     "id": "zingiberaceae",
     "name": "Zingiberaceae",
-    "page": "zingiberaceae.html"
+    "page": "../html/familia.html?id=zingiberaceae",
+    "descricaoLonga": [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+  ],
+    "ficha": {
+      "Nome científico": "Bixaceae",
+      "Tipo de folha": "Simples, bipenada",
+      "Nervação": "Peninérvia",
+      "Posição do ovário": "Ínfero",
+      "Estames": "Isoestames",
+      "Chave": "A definir"
+    }
   }
 }

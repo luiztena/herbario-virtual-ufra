@@ -25,7 +25,17 @@ async function carregarFamilia() {
       window.location.href = "../404.html";
       return;
     }
+// ===== ARTIGO (DESCRIÇÃO LONGA) =====
+const article = document.getElementById("familia-artigo");
+article.innerHTML = "";
 
+if (familia.descricaoLonga && Array.isArray(familia.descricaoLonga)) {
+  familia.descricaoLonga.forEach(texto => {
+    const p = document.createElement("p");
+    p.textContent = texto;
+    article.appendChild(p);
+  });
+}
     // ===============================
     // HEADER DA FAMÍLIA
     // ===============================
