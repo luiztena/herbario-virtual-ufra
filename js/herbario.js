@@ -154,9 +154,40 @@ async function carregarCards() {
     html = html.replace(/src="\s*imagens\//g, `src="${basePath}imagens/`);
     html = html.replace(/src="\s*\.\.\/imagens\//g, `src="${basePath}imagens/`);
     
+    console.log('HTML processado, basePath:', basePath);
+    
     const container = document.getElementById("cards-container");
     if (container) {
       container.innerHTML = html;
+      
+      // Processa todos os links após inserir no DOM para garantir que estão corretos
+      const links = container.querySelectorAll('a.card-link[href*="familia.html"], a.card-link[href*="genero.html"]');
+      console.log(`Encontrados ${links.length} links para processar`);
+      
+      links.forEach(link => {
+        const originalHref = link.getAttribute('href');
+        console.log('Link original:', originalHref);
+        
+        // Se começa com ../html/, substitui
+        if (originalHref.startsWith('../html/')) {
+          const newHref = `${basePath}html/${originalHref.substring(8)}`; // Remove '../html/'
+          link.setAttribute('href', newHref);
+          console.log('Link corrigido para:', newHref);
+        }
+        // Se começa com /html/ (sem o nome do repositório), adiciona o basePath
+        else if (originalHref.startsWith('/html/') && !originalHref.startsWith(basePath)) {
+          const newHref = `${basePath}html/${originalHref.substring(6)}`; // Remove '/html/'
+          link.setAttribute('href', newHref);
+          console.log('Link corrigido para:', newHref);
+        }
+        // Se começa com html/ (relativo), adiciona o basePath
+        else if (originalHref.startsWith('html/') && !originalHref.startsWith(basePath)) {
+          const newHref = `${basePath}${originalHref}`;
+          link.setAttribute('href', newHref);
+          console.log('Link corrigido para:', newHref);
+        }
+      });
+      
       // Aplicar filtros após carregar os cards
       aplicarFiltros();
     }
