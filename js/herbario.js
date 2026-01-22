@@ -1,3 +1,39 @@
+// COLOCAR NO INÍCIO DO ARQUIVO
+(function() {
+  // Sobrescrever addEventListener temporariamente para debug
+  const originalAddEventListener = EventTarget.prototype.addEventListener;
+  
+  EventTarget.prototype.addEventListener = function(type, listener, options) {
+    // Verificar se é um listener que pode causar problemas
+    if (type === 'keydown' || type === 'click' || type === 'input') {
+      const wrappedListener = function(event) {
+        try {
+          // Se o listener retornar uma Promise, tratar corretamente
+          const result = listener.call(this, event);
+          
+          // Se for uma Promise, garantir que não cause erro
+          if (result && typeof result.then === 'function') {
+            result.catch(error => {
+              console.warn(`Promise rejeitada em listener ${type}:`, error);
+            });
+            return false; // Não retornar a Promise diretamente
+          }
+          
+          return result;
+        } catch (error) {
+          console.error(`Erro em listener ${type}:`, error);
+          return true; // Prevenir propagação do erro
+        }
+      };
+      
+      return originalAddEventListener.call(this, type, wrappedListener, options);
+    }
+    
+    return originalAddEventListener.call(this, type, listener, options);
+  };
+})();
+
+
 let familias = null;
 let generos = null;
 let bancoBusca = [];
