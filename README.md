@@ -74,6 +74,6 @@ Git & GitHub — Versionamento e releases
 
 <h2>🏫 Instituição </h2>
 Projeto desenvolvido no contexto acadêmico da
-<b>Universidade Federal Rural da Amazônia (UFRA)</b>
+<b>Universidade Federal Rural da Amazônia (UFRA)</b>.
 Este projeto é de caráter educacional e científico.
 Uso livre para fins acadêmicos, com os devidos créditos.
