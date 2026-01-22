@@ -61,6 +61,8 @@ function getBasePath() {
   // Para repositórios com nome (ex: /herbario-virtual-ufra/), detecta o nome
   const parts = cleanPath.split('/').filter(p => p && !p.endsWith('.html'));
   
+  console.log('Parts após split:', parts);
+  
   // Se não há partes ou só tem arquivos HTML, está na raiz do domínio
   if (parts.length === 0) {
     console.log('Nenhuma parte detectada, usando raiz: /');
@@ -70,6 +72,8 @@ function getBasePath() {
   // Se a primeira parte não é uma pasta conhecida do projeto, assume que é o nome do repositório
   const knownFolders = ['html', 'js', 'css', 'data', 'imagens', 'images'];
   const firstPart = parts[0].toLowerCase();
+  
+  console.log('Primeira parte:', firstPart, 'Está em knownFolders?', knownFolders.includes(firstPart));
   
   if (!knownFolders.includes(firstPart)) {
     const repoBase = `/${parts[0]}/`;
@@ -112,10 +116,44 @@ async function carregarGeneros() {
 
 async function carregarCards() {
   try {
-    const res = await fetch("data/cards.html");
-    if (!res.ok) throw new Error("Erro ao carregar cards");
+    const basePath = getBasePath();
+    console.log('Carregando cards com basePath:', basePath);
     
-    const html = await res.text();
+    // Tenta diferentes caminhos possíveis para cards.html
+    const possiblePaths = [
+      `${basePath}data/cards.html`,
+      `data/cards.html`,
+      `/data/cards.html`,
+      `../data/cards.html`
+    ];
+    
+    let html = null;
+    for (const url of possiblePaths) {
+      try {
+        console.log('Tentando carregar cards de:', url);
+        const res = await fetch(url);
+        if (res.ok) {
+          html = await res.text();
+          console.log('Sucesso ao carregar cards de:', url);
+          break;
+        }
+      } catch (e) {
+        console.log('Falha ao carregar cards de:', url, e);
+        continue;
+      }
+    }
+    
+    if (!html) {
+      throw new Error("Erro ao carregar cards");
+    }
+    
+    // Substitui todos os caminhos relativos pelos caminhos corretos
+    // Substitui ../html/ pelo basePath + html/
+    html = html.replace(/href="\.\.\/html\//g, `href="${basePath}html/`);
+    // Também corrige caminhos de imagens se necessário
+    html = html.replace(/src="\s*imagens\//g, `src="${basePath}imagens/`);
+    html = html.replace(/src="\s*\.\.\/imagens\//g, `src="${basePath}imagens/`);
+    
     const container = document.getElementById("cards-container");
     if (container) {
       container.innerHTML = html;
