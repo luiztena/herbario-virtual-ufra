@@ -625,7 +625,18 @@ html {
          background-color: #52796f;   
       }
 
-
+/* =============================
+   ESTILOS PARA AUTOCOMPLETE
+   ============================= */
+.autocomplete-list {
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
    
     
 /*RESPONSIVIDADE*/
@@ -733,6 +744,29 @@ html {
     height: auto;
   }
 
+
+
+/* =============================
+   RESPONSIVIDADE PARA AUTOCOMPLETE
+   ============================= */
+@media (max-width: 768px) {
+  #did-you-mean {
+    padding: 10px;
+  }
+  
+  #did-you-mean > div:first-child {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #did-you-mean > div:first-child > div {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+}
+
+  
   /* ===== ABOUT ===== */
   .about-content {
     flex-direction: column;

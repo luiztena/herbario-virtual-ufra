@@ -1,38 +1,87 @@
 let familias = null;
+let generos = null;
+let bancoBusca = [];
 
 // ===============================
-// CARREGAR JSON
+// CARREGAR DADOS
 // ===============================
 async function carregarFamilias() {
   try {
     const resposta = await fetch("data/familias.json");
     if (!resposta.ok) throw new Error("Erro ao carregar familias.json");
-
+    
     familias = await resposta.json();
     Object.freeze(familias);
-
     console.log("Famílias carregadas:", familias);
   } catch (erro) {
     console.error("Erro:", erro);
   }
 }
+
+async function carregarGeneros() {
+  try {
+    const resposta = await fetch("data/generos.json");
+    if (!resposta.ok) throw new Error("Erro ao carregar generos.json");
+    
+    generos = await resposta.json();
+    Object.freeze(generos);
+    console.log("Gêneros carregados:", generos);
+  } catch (erro) {
+    console.error("Erro:", erro);
+  }
+}
+
 async function carregarCards() {
   try {
     const res = await fetch("data/cards.html");
     if (!res.ok) throw new Error("Erro ao carregar cards");
-
+    
     const html = await res.text();
-    document.getElementById("cards-container").innerHTML = html;
+    const container = document.getElementById("cards-container");
+    if (container) {
+      container.innerHTML = html;
+      // Aplicar filtros após carregar os cards
+      aplicarFiltros();
+    }
   } catch (e) {
     console.error("Erro ao carregar cards:", e);
   }
 }
 
+// ===============================
+// MONTAR BANCO DE BUSCA
+// ===============================
+function montarBancoBusca() {
+  bancoBusca = [];
 
+  // Famílias
+  if (familias) {
+    Object.values(familias).forEach(f => {
+      bancoBusca.push({
+        id: f.id,
+        name: f.name,
+        key: normalize(f.id),
+        tipo: "Família",
+        page: f.page
+      });
+    });
+  }
 
-document.addEventListener("DOMContentLoaded", () => {
-  carregarCards();
-});
+  // Gêneros
+  if (generos) {
+    Object.values(generos).forEach(g => {
+      bancoBusca.push({
+        id: g.id,
+        name: g.name,
+        key: normalize(g.id),
+        tipo: "Gênero",
+        page: `../html/genero.html?id=${g.id}`
+      });
+    });
+  }
+
+  console.log("Banco de busca pronto com", bancoBusca.length, "itens");
+}
 
 // ===============================
 // UTILITÁRIOS
@@ -82,13 +131,13 @@ function fuzzySearch(query) {
   let best = null;
   let score = Infinity;
 
-  for (const key in familias) {
-    const d = levenshteinDistance(query, key);
+  bancoBusca.forEach(item => {
+    const d = levenshteinDistance(query, item.key);
     if (d < score) {
       score = d;
-      best = key;
+      best = item;
     }
-  }
+  });
 
   return score <= 2 ? best : null;
 }
@@ -99,115 +148,284 @@ function fuzzySearch(query) {
 function searchPlant() {
   const input = document.getElementById("search-bar");
   const didYouMean = document.getElementById("did-you-mean");
-  didYouMean.innerHTML = "";
   const autocomplete = document.getElementById("autocomplete-list");
-  autocomplete.innerHTML = "";
+
+  if (!input || !didYouMean || !autocomplete) return;
+
   didYouMean.innerHTML = "";
+  autocomplete.innerHTML = "";
+
   const query = normalize(input.value);
   if (!query) return;
-  // Busca exata
- if (familias[query] && familias[query].page) {
-  window.location.href = familias[query].page;
-  return;
-}
-if (!familias) {
-  console.warn("Famílias ainda não carregadas");
-  return;
-}
-  // Busca aproximada
-  const sugestao = fuzzySearch(query);
-  if (sugestao) {
-    didYouMean.innerHTML = `
-      Você quis dizer
-      <span id="vqd">${familias[sugestao].name}</span>?
-    `;
 
-    document.getElementById("vqd").onclick = () => {
-      window.location.href = familias[sugestao].page;
-    };
+  // 🔹 Busca exata (família ou gênero)
+  const exato = bancoBusca.find(item => item.key === query);
+
+  if (exato) {
+    window.location.href = exato.page;
     return;
   }
 
-  // Não encontrado
+  // 🔹 Busca aproximada (Levenshtein)
+  const melhor = fuzzySearch(query);
+
+  if (melhor) {
+    // Determinar cor da badge
+    const badgeColor = melhor.tipo === 'Família' ? '#416939' : '#52796f';
+    const badgeStyle = `
+      background-color: ${badgeColor};
+      color: white;
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 10px;
+    `;
+    
+    didYouMean.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+        <span>Você quis dizer</span>
+        <div style="display: flex; align-items: center; gap: 6px; background: #f5f7f2; padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd;">
+          <span id="vqd" class="suggestion-text">
+            ${melhor.name}
+          </span>
+          <span style="${badgeStyle}">${melhor.tipo}</span>
+        </div>
+        <span>?</span>
+      </div>
+      <div style="text-align: center; margin-top: 10px; font-size: 0.9rem; color: #666;">
+        Clique no nome para acessar
+      </div>
+    `;
+
+    document.getElementById("vqd").onclick = () => {
+      window.location.href = melhor.page;
+    };
+    
+    // Adicionar efeito hover
+    const vqdElement = document.getElementById("vqd");
+    vqdElement.style.cursor = "pointer";
+    vqdElement.style.color = "#416939";
+    vqdElement.style.fontWeight = "600";
+    vqdElement.style.transition = "color 0.2s ease";
+    
+    vqdElement.addEventListener("mouseover", () => {
+      vqdElement.style.color = "#283618";
+      vqdElement.style.textDecoration = "underline";
+    });
+    
+    vqdElement.addEventListener("mouseout", () => {
+      vqdElement.style.color = "#416939";
+      vqdElement.style.textDecoration = "none";
+    });
+    
+    return;
+  }
+
+  // 🔹 Não encontrado
   didYouMean.innerHTML = `
-    Não foi possível encontrar o que você procura.<br>
-    <span id="again">Tente novamente.</span>
+    <div style="text-align: center; padding: 15px;">
+      <div style="color: #666; margin-bottom: 10px;">
+        Não foi possível encontrar o que você procura.
+      </div>
+      <span id="again" style="
+        cursor: pointer;
+        color: #416939;
+        font-weight: 600;
+        text-decoration: underline;
+        padding: 8px 16px;
+        border: 1px solid #416939;
+        border-radius: 20px;
+        display: inline-block;
+        transition: all 0.3s ease;
+      ">
+        Tentar novamente
+      </span>
+    </div>
   `;
+
+  document.getElementById("again").onclick = () => {
+    input.value = "";
+    input.focus();
+    didYouMean.innerHTML = "";
+  };
+  
+  // Efeito hover no botão "Tentar novamente"
+  const againElement = document.getElementById("again");
+  againElement.addEventListener("mouseover", () => {
+    againElement.style.backgroundColor = "#416939";
+    againElement.style.color = "white";
+  });
+  
+  againElement.addEventListener("mouseout", () => {
+    againElement.style.backgroundColor = "transparent";
+    againElement.style.color = "#416939";
+  });
+}
+
+// ===============================
+// AUTCOMPLETE
+// ===============================
+function atualizarAutocomplete() {
+  const searchInput = document.getElementById("search-bar");
+  const autocomplete = document.getElementById("autocomplete-list");
+  
+  if (!searchInput || !autocomplete) return;
+  
+  const value = normalize(searchInput.value);
+  autocomplete.innerHTML = "";
+  
+  if (!value) return;
+
+  const resultados = bancoBusca
+    .filter(item => item.key.includes(value))
+    .slice(0, 8);
+
+  if (resultados.length === 0) return;
+
+  resultados.forEach(item => {
+    const li = document.createElement("li");
+    
+    // Determinar cor da badge baseada no tipo
+    const badgeColor = item.tipo === 'Família' ? '#416939' : '#52796f';
+    
+    li.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <span style="font-weight: 500; color: #333;">${item.name}</span>
+        <span style="
+          background-color: ${badgeColor};
+          color: white;
+          padding: 3px 10px;
+          border-radius: 12px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          min-width: 70px;
+          text-align: center;
+        ">${item.tipo}</span>
+      </div>
+    `;
+    
+    li.style.cursor = "pointer";
+    li.style.padding = "10px 12px";
+    li.style.borderBottom = "1px solid #e0e0e0";
+    li.style.transition = "all 0.2s ease";
+    
+    li.addEventListener("mouseover", () => {
+      li.style.backgroundColor = "#f5f7f2";
+      li.style.transform = "translateX(5px)";
+    });
+    
+    li.addEventListener("mouseout", () => {
+      li.style.backgroundColor = "";
+      li.style.transform = "";
+    });
+    
+    li.onclick = () => {
+      window.location.href = item.page;
+    };
+    
+    autocomplete.appendChild(li);
+  });
+}
+
+// ===============================
+// FILTROS
+// ===============================
+function aplicarFiltros() {
+  const botoesFiltro = document.querySelectorAll(".filter-btn");
+  
+  botoesFiltro.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+      
+      // Ativar botão clicado
+      botoesFiltro.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      
+      // Aplicar filtro aos cards
+      const cards = document.querySelectorAll(".card-link");
+      cards.forEach(link => {
+        const card = link.querySelector(".plant-card");
+        if (!card) return;
+        
+        if (filter === "all") {
+          link.style.display = "block";
+        } else {
+          link.style.display = card.classList.contains(filter) ? "block" : "none";
+        }
+      });
+    });
+  });
 }
 
 // ===============================
 // EVENTOS
 // ===============================
 document.addEventListener("DOMContentLoaded", async () => {
+  console.log("DOM carregado, inicializando...");
+  
+  // Carregar dados
   await carregarFamilias();
-
+  await carregarGeneros();
+  montarBancoBusca();
+  
+  // Carregar cards
+  await carregarCards();
+  
+  // Elementos
   const searchInput = document.getElementById("search-bar");
   const searchBtn = document.getElementById("search-btn");
   const autocomplete = document.getElementById("autocomplete-list");
-
-  searchBtn?.addEventListener("click", searchPlant);
-
-  searchInput?.addEventListener("keydown", e => {
-    if (e.key === "Enter") searchPlant();
-    if (e.key === "Escape") {
+  
+  // Botão de busca
+  if (searchBtn) {
+    searchBtn.addEventListener("click", searchPlant);
+  }
+  
+  // Eventos do input de busca
+  if (searchInput) {
+    // Enter para buscar
+    searchInput.addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        searchPlant();
+      }
+      if (e.key === "Escape") {
+        if (autocomplete) autocomplete.innerHTML = "";
+        const didYouMean = document.getElementById("did-you-mean");
+        if (didYouMean) didYouMean.innerHTML = "";
+        searchInput.blur();
+      }
+    });
+    
+    // Input para autocomplete
+    searchInput.addEventListener("input", atualizarAutocomplete);
+    
+    // Foco para mostrar sugestões
+    searchInput.addEventListener("focus", () => {
+      if (searchInput.value.trim()) {
+        atualizarAutocomplete();
+      }
+    });
+  }
+  
+  // Fechar autocomplete ao clicar fora
+  document.addEventListener("click", (event) => {
+    if (!searchInput || !autocomplete) return;
+    
+    if (
+      !searchInput.contains(event.target) &&
+      !autocomplete.contains(event.target)
+    ) {
       autocomplete.innerHTML = "";
-      document.getElementById("did-you-mean").innerHTML = "";
-      searchInput.blur();
     }
   });
-document.addEventListener("click", (event) => {
-  const searchInput = document.getElementById("search-bar");
-  const autocomplete = document.getElementById("autocomplete-list");
-
-  if (!searchInput || !autocomplete) return;
-
-  // Se clicou fora do input E fora da lista
-  if (
-    !searchInput.contains(event.target) &&
-    !autocomplete.contains(event.target)
-  ) {
-    autocomplete.innerHTML = "";
-  }
 });
-  // AUTOCOMPLETE
-  searchInput?.addEventListener("input", () => {
-    const value = normalize(searchInput.value);
-    autocomplete.innerHTML = "";
-    if (!value) return;
 
-    Object.keys(familias)
-      .filter(k => k.startsWith(value))
-      .slice(0, 8)
-      .forEach(k => {
-      const li = document.createElement("li");
-      li.textContent = familias[k].name;
-      li.onclick = () => {
-        searchInput.value = k; // usa a chave real
-        searchPlant();
-      };
-        autocomplete.appendChild(li);
-      });
-  });
-
-  // FILTROS
-  document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.onclick = () => {
-      const filter = btn.dataset.filter;
-
-      document
-        .querySelectorAll(".filter-btn")
-        .forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      document.querySelectorAll(".card-link").forEach(link => {
-        const card = link.querySelector(".plant-card");
-        if (!card) return;
-
-        link.style.display =
-          filter === "all" || card.classList.contains(filter)
-            ? "block"
-            : "none";
-      });
-    };
-  });
-});
+// Inicializar quando a página carregar
+window.addEventListener("load", () => {
+  console.log("Página carregada");
+}); 
