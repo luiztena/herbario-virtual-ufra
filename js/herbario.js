@@ -38,6 +38,21 @@ let familias = null;
 let generos = null;
 let bancoBusca = [];
 
+// Função para obter o caminho base do repositório (funciona no GitHub Pages)
+function getBasePath() {
+  const path = window.location.pathname;
+  
+  // Se estiver na raiz (index.html), detecta o nome do repositório
+  // Ex: /Herbario/ -> /Herbario/
+  // Ex: / -> /
+  const parts = path.split('/').filter(p => p);
+  if (parts.length > 0 && parts[0] !== 'html' && parts[0] !== 'js' && parts[0] !== 'css' && parts[0] !== 'data') {
+    return `/${parts[0]}/`;
+  }
+  
+  return '/';
+}
+
 // ===============================
 // CARREGAR DADOS
 // ===============================
@@ -92,26 +107,36 @@ function montarBancoBusca() {
 
   // Famílias
   if (familias) {
+    const basePath = getBasePath();
     Object.values(familias).forEach(f => {
+      // Corrige caminhos relativos nas páginas das famílias
+      let familiaPage = f.page || `${basePath}html/familia.html?id=${f.id}`;
+      if (familiaPage.startsWith('../')) {
+        familiaPage = familiaPage.replace('../', basePath);
+      } else if (!familiaPage.startsWith('/') && !familiaPage.startsWith('http')) {
+        familiaPage = `${basePath}${familiaPage}`;
+      }
+      
       bancoBusca.push({
         id: f.id,
         name: f.name,
         key: normalize(f.id),
         tipo: "Família",
-        page: f.page
+        page: familiaPage
       });
     });
   }
 
   // Gêneros
   if (generos) {
+    const basePath = getBasePath();
     Object.values(generos).forEach(g => {
       bancoBusca.push({
         id: g.id,
         name: g.name,
         key: normalize(g.id),
         tipo: "Gênero",
-        page: `../html/genero.html?id=${g.id}`
+        page: `${basePath}html/genero.html?id=${g.id}`
       });
     });
   }
