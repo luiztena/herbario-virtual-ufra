@@ -363,46 +363,84 @@ function aplicarFiltros() {
 }
 
 // ===============================
-// EVENTOS
+// CAPTURAR ERROS GLOBAIS
+// ===============================
+window.addEventListener('unhandledrejection', (event) => {
+  console.warn('Promise não tratada:', event.reason);
+  // Previne o erro de aparecer no console
+  event.preventDefault();
+});
+
+window.addEventListener('error', (event) => {
+  console.warn('Erro global:', event.error);
+  return true;
+});
+
+// ===============================
+// EVENTOS (VERSÃO CORRIGIDA)
 // ===============================
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM carregado, inicializando...");
   
-  // Carregar dados
-  await carregarFamilias();
-  await carregarGeneros();
-  montarBancoBusca();
-  
-  // Carregar cards
-  await carregarCards();
-  
-  // Elementos
+  try {
+    // Carregar dados
+    await Promise.all([
+      carregarFamilias(),
+      carregarGeneros()
+    ]);
+    
+    montarBancoBusca();
+    
+    // Carregar cards
+    await carregarCards();
+    
+    // Configurar eventos de forma segura
+    configurarEventos();
+    
+  } catch (erro) {
+    console.error("Erro na inicialização:", erro);
+  }
+});
+
+// Função separada para configurar eventos
+function configurarEventos() {
   const searchInput = document.getElementById("search-bar");
   const searchBtn = document.getElementById("search-btn");
-  const autocomplete = document.getElementById("autocomplete-list");
   
-  // Botão de busca
+  // Botão de busca - tratamento correto
   if (searchBtn) {
-    searchBtn.addEventListener("click", searchPlant);
+    searchBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      searchPlant();
+    });
   }
   
-  // Eventos do input de busca
+  // Eventos do input de busca - tratamento correto
   if (searchInput) {
     // Enter para buscar
-    searchInput.addEventListener("keydown", e => {
-      if (e.key === "Enter") {
+    searchInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
         searchPlant();
       }
-      if (e.key === "Escape") {
-        if (autocomplete) autocomplete.innerHTML = "";
+      
+      if (event.key === "Escape") {
+        const autocomplete = document.getElementById("autocomplete-list");
         const didYouMean = document.getElementById("did-you-mean");
+        if (autocomplete) autocomplete.innerHTML = "";
         if (didYouMean) didYouMean.innerHTML = "";
         searchInput.blur();
       }
     });
     
-    // Input para autocomplete
-    searchInput.addEventListener("input", atualizarAutocomplete);
+    // Input para autocomplete - com debounce
+    let timeoutId;
+    searchInput.addEventListener("input", () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        atualizarAutocomplete();
+      }, 150);
+    });
     
     // Foco para mostrar sugestões
     searchInput.addEventListener("focus", () => {
@@ -412,20 +450,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
   
-  // Fechar autocomplete ao clicar fora
+  // Fechar autocomplete ao clicar fora - versão segura
   document.addEventListener("click", (event) => {
+    const searchInput = document.getElementById("search-bar");
+    const autocomplete = document.getElementById("autocomplete-list");
+    
     if (!searchInput || !autocomplete) return;
     
-    if (
-      !searchInput.contains(event.target) &&
-      !autocomplete.contains(event.target)
-    ) {
+    if (!searchInput.contains(event.target) && !autocomplete.contains(event.target)) {
       autocomplete.innerHTML = "";
     }
-  });
-});
+  }, true); // Use capture phase para garantir execução
+}
 
-// Inicializar quando a página carregar
-window.addEventListener("load", () => {
-  console.log("Página carregada");
-}); 
+// Remova esta linha problemática:
+// window.addEventListener("load", () => {
+//   console.log("Página carregada");
+// });
