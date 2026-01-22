@@ -1,23 +1,41 @@
 // Função para obter o caminho base do repositório (funciona no GitHub Pages)
 function getBasePath() {
   const path = window.location.pathname;
+  const hostname = window.location.hostname;
   
-  // Se estiver em html/genero.html, remove html/genero.html para obter o base
-  // Ex: /Herbario/html/genero.html -> /Herbario/
-  // Ex: /html/genero.html -> /
-  if (path.includes('/html/')) {
-    const base = path.substring(0, path.indexOf('/html/') + 1);
+  // Remove query string e hash se existirem
+  let cleanPath = path.split('?')[0].split('#')[0];
+  
+  // Se estiver em html/familia.html ou html/genero.html
+  if (cleanPath.includes('/html/')) {
+    // Pega tudo antes de /html/
+    const base = cleanPath.substring(0, cleanPath.indexOf('/html/') + 1);
+    console.log('Detectado caminho com /html/, basePath:', base);
     return base;
   }
   
-  // Se estiver na raiz ou em outro lugar, tenta detectar o nome do repositório
-  // Ex: /Herbario/ -> /Herbario/
-  // Ex: / -> /
-  const parts = path.split('/').filter(p => p);
-  if (parts.length > 0 && parts[0] !== 'html') {
-    return `/${parts[0]}/`;
+  // Se estiver na raiz ou em outro arquivo
+  // Para repositórios username.github.io (sem subpasta), retorna '/'
+  // Para repositórios com nome (ex: /Herbario/), detecta o nome
+  const parts = cleanPath.split('/').filter(p => p && !p.endsWith('.html'));
+  
+  // Se não há partes ou só tem arquivos HTML, está na raiz do domínio
+  if (parts.length === 0) {
+    console.log('Nenhuma parte detectada, usando raiz: /');
+    return '/';
   }
   
+  // Se a primeira parte não é uma pasta conhecida do projeto, assume que é o nome do repositório
+  const knownFolders = ['html', 'js', 'css', 'data', 'imagens', 'images'];
+  const firstPart = parts[0].toLowerCase();
+  
+  if (!knownFolders.includes(firstPart)) {
+    const repoBase = `/${parts[0]}/`;
+    console.log('Repositório detectado:', repoBase);
+    return repoBase;
+  }
+  
+  console.log('Usando raiz padrão: /');
   return '/';
 }
 
@@ -38,7 +56,14 @@ async function carregarGenero() {
     // ===============================
     // CARREGA GÊNEROS
     // ===============================
-    const resGeneros = await fetch(`${basePath}data/generos.json`);
+    const generosUrl = `${basePath}data/generos.json`;
+    console.log('Tentando carregar:', generosUrl);
+    const resGeneros = await fetch(generosUrl);
+    
+    if (!resGeneros.ok) {
+      throw new Error(`Erro ao carregar generos.json: ${resGeneros.status} ${resGeneros.statusText}. URL tentada: ${generosUrl}`);
+    }
+    
     const generos = await resGeneros.json();
 
     const genero = generos[id];
@@ -90,7 +115,14 @@ async function carregarGenero() {
     const sectionEspecies = document.getElementById("especies-section");
     const cardsContainer = sectionEspecies.querySelector(".cards-container");
 
-    const resEspecies = await fetch(`${basePath}data/especies.json`);
+    const especiesUrl = `${basePath}data/especies.json`;
+    console.log('Tentando carregar:', especiesUrl);
+    const resEspecies = await fetch(especiesUrl);
+    
+    if (!resEspecies.ok) {
+      throw new Error(`Erro ao carregar especies.json: ${resEspecies.status} ${resEspecies.statusText}. URL tentada: ${especiesUrl}`);
+    }
+    
     const especies = await resEspecies.json();
 
     // filtra apenas espécies do gênero atual

@@ -42,14 +42,39 @@ let bancoBusca = [];
 function getBasePath() {
   const path = window.location.pathname;
   
-  // Se estiver na raiz (index.html), detecta o nome do repositório
-  // Ex: /Herbario/ -> /Herbario/
-  // Ex: / -> /
-  const parts = path.split('/').filter(p => p);
-  if (parts.length > 0 && parts[0] !== 'html' && parts[0] !== 'js' && parts[0] !== 'css' && parts[0] !== 'data') {
-    return `/${parts[0]}/`;
+  // Remove query string e hash se existirem
+  let cleanPath = path.split('?')[0].split('#')[0];
+  
+  // Se estiver em html/familia.html ou html/genero.html
+  if (cleanPath.includes('/html/')) {
+    // Pega tudo antes de /html/
+    const base = cleanPath.substring(0, cleanPath.indexOf('/html/') + 1);
+    console.log('Detectado caminho com /html/, basePath:', base);
+    return base;
   }
   
+  // Se estiver na raiz ou em outro arquivo
+  // Para repositórios username.github.io (sem subpasta), retorna '/'
+  // Para repositórios com nome (ex: /Herbario/), detecta o nome
+  const parts = cleanPath.split('/').filter(p => p && !p.endsWith('.html'));
+  
+  // Se não há partes ou só tem arquivos HTML, está na raiz do domínio
+  if (parts.length === 0) {
+    console.log('Nenhuma parte detectada, usando raiz: /');
+    return '/';
+  }
+  
+  // Se a primeira parte não é uma pasta conhecida do projeto, assume que é o nome do repositório
+  const knownFolders = ['html', 'js', 'css', 'data', 'imagens', 'images'];
+  const firstPart = parts[0].toLowerCase();
+  
+  if (!knownFolders.includes(firstPart)) {
+    const repoBase = `/${parts[0]}/`;
+    console.log('Repositório detectado:', repoBase);
+    return repoBase;
+  }
+  
+  console.log('Usando raiz padrão: /');
   return '/';
 }
 
