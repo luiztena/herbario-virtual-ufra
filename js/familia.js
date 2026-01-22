@@ -77,20 +77,20 @@ if (familia.descricaoLonga && Array.isArray(familia.descricaoLonga)) {
     }
 
     generosDaFamilia.forEach(genero => {
-      const card = document.createElement("a");
-      card.href = genero.page;
-      card.className = "card-link";
+  const card = document.createElement("a");
+  // Gera a URL automaticamente se não existir
+  card.href = genero.page || `../html/genero.html?id=${genero.id}`;
+  card.className = "card-link";
 
-      card.innerHTML = `
-        <div class="genero-card">
-          <img src="../${genero.image}" alt="${genero.name}">
-          <h3>${genero.name}</h3>
-        </div>
-      `;
+  card.innerHTML = `
+    <div class="genero-card">
+      <img src="../${genero.image}" alt="${genero.name}">
+      <h3>${genero.name}</h3>
+    </div>
+  `;
 
-      sectionGeneros.appendChild(card);
-    });
-
+  sectionGeneros.appendChild(card);
+});
   } catch (erro) {
     console.error("Erro ao carregar família:", erro);
     window.location.href = "../404.html";

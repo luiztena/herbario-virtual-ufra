@@ -3,1139 +3,1260 @@
     "id": "acanthaceae",
     "name": "Acanthaceae",
     "page": "../html/familia.html?id=acanthaceae",
-      "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
-      "ficha": {
-      "Nome científico": "Amaranthaceae",
-      "Tipo de folha": "Simples e bipenadas",
-      "Nervação": "Peninérvia",
+    "descricaoLonga": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
+    "ficha": {
+      "Nome científico": "Acanthaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta pinada",
+      "Número da chave": "19",
+      "Sequência numérica": "1-2-9-10-11-12"
     }
   },
-
   "amaranthaceae": {
     "id": "amaranthaceae",
     "name": "Amaranthaceae",
     "page": "../html/familia.html?id=amaranthaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
       "Nome científico": "Amaranthaceae",
-      "Tipo de folha": "Simples e bipenadas",
-      "Nervação": "Peninérvia",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "18",
+      "Sequência numérica": "1-2-9-10-11-12"
     }
   },
-
   "anacardiaceae": {
     "id": "anacardiaceae",
     "name": "Anacardiaceae",
     "page": "../html/familia.html?id=anacardiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
       "Nome científico": "Anacardiaceae",
-      "Tipo de folha": "Simples e alternada ou bipenada",
-      "Nervação": "Peninérvia",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta pinada ou simples",
+      "Número da chave": "20",
+      "Sequência numérica": "1-2-9-10-13-14"
     }
   },
-
   "annonaceae": {
     "id": "annonaceae",
     "name": "Annonaceae",
     "page": "../html/familia.html?id=annonaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Anacardiaceae",
-      "Tipo de folha": "Simples e alternada ou bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Annonaceae",
+      "Posição taxonômica APG IV": "Angiospermas basais",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "2",
+      "Sequência numérica": "1-2"
     }
   },
-
   "apocynaceae": {
     "id": "apocynaceae",
     "name": "Apocynaceae",
     "page": "../html/familia.html?id=apocynaceae",
-            "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
-      "ficha": {  
+    "descricaoLonga": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
+    "ficha": {
       "Nome científico": "Apocynaceae",
-      "Tipo de folha": "Simples, penada",
-      "Nervação": "Peninérvia",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "14",
+      "Sequência numérica": "1-2-3-4-5-6"
     }
   },
-
   "arecaceae": {
     "id": "arecaceae",
     "name": "Arecaceae",
     "page": "../html/familia.html?id=arecaceae",
-            "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+    "descricaoLonga": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
       "Nome científico": "Arecaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Paralelinérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta palmada ou pinada",
+      "Número da chave": "1",
+      "Sequência numérica": "1"
     }
   },
-
   "asteraceae": {
     "id": "asteraceae",
     "name": "Asteraceae",
     "page": "../html/familia.html?id=asteraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
-      "ficha": {
-      "Nome científico": "Arecaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Paralelinérvia",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
+    "ficha": {
+      "Nome científico": "Asteraceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples ou composta",
+      "Número da chave": "13",
+      "Sequência numérica": "1-2-3-4-7-8"
     }
   },
-
   "bignoniaceae": {
     "id": "bignoniaceae",
     "name": "Bignoniaceae",
     "page": "../html/familia.html?id=bignoniaceae",
-     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+    "descricaoLonga": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
       "Nome científico": "Bignoniaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Paralelinérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Composta pinada ou simples",
+      "Número da chave": "15",
+      "Sequência numérica": "1-2-3-4-5-6"
     }
   },
-
   "bixaceae": {
     "id": "bixaceae",
     "name": "Bixaceae",
     "page": "../html/familia.html?id=bixaceae",
-     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+    "descricaoLonga": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
       "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "21",
+      "Sequência numérica": "1-2-9-10-13-15"
     }
   },
-
   "boraginaceae": {
     "id": "boraginaceae",
     "name": "Boraginaceae",
     "page": "../html/familia.html?id=boraginaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Boraginaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "16",
+      "Sequência numérica": "1-2-3-4-5-7"
     }
   },
-
   "cactaceae": {
     "id": "cactaceae",
     "name": "Cactaceae",
     "page": "../html/familia.html?id=cactaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Cactaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Homoclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Reduzida ou ausente",
+      "Número da chave": "17",
+      "Sequência numérica": "1-2-9-17"
     }
   },
-
   "chrysobalanaceae": {
     "id": "chrysobalanaceae",
     "name": "Chrysobalanaceae",
     "page": "../html/familia.html?id=chrysobalanaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Chrysobalanaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "22",
+      "Sequência numérica": "1-2-9-10-13-16"
     }
   },
-
   "cleomaceae": {
     "id": "cleomaceae",
     "name": "Cleomaceae",
     "page": "../html/familia.html?id=cleomaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Cleomaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta palmada",
+      "Número da chave": "23",
+      "Sequência numérica": "1-2-9-10-13-17"
     }
   },
-
   "combretaceae": {
     "id": "combretaceae",
     "name": "Combretaceae",
     "page": "../html/familia.html?id=combretaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Combretaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "24",
+      "Sequência numérica": "1-2-9-18-19"
     }
   },
-
   "convolvulaceae": {
     "id": "convolvulaceae",
     "name": "Convolvulaceae",
     "page": "../html/familia.html?id=convolvulaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Convolvulaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "25",
+      "Sequência numérica": "1-2-3-4-5-8"
     }
   },
-
   "costaceae": {
     "id": "costaceae",
     "name": "Costaceae",
     "page": "../html/familia.html?id=costaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Costaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "3",
+      "Sequência numérica": "1-3"
     }
   },
-
   "cucurbitaceae": {
     "id": "cucurbitaceae",
     "name": "Cucurbitaceae",
     "page": "../html/familia.html?id=cucurbitaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Cucurbitaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Isoestêmone ou oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "26",
+      "Sequência numérica": "1-2-3-4-7-9"
     }
   },
-
   "cyperaceae": {
     "id": "cyperaceae",
     "name": "Cyperaceae",
     "page": "../html/familia.html?id=cyperaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Cyperaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples",
+      "Número da chave": "4",
+      "Sequência numérica": "1-4"
     }
   },
-
   "dilleniaceae": {
     "id": "dilleniaceae",
     "name": "Dilleniaceae",
     "page": "../html/familia.html?id=dilleniaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Dilleniaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "27",
+      "Sequência numérica": "1-2-9-10-13-18"
     }
   },
-
   "erythroxylaceae": {
     "id": "erythroxylaceae",
     "name": "Erythroxylaceae",
     "page": "../html/familia.html?id=erythroxylaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Erythroxylaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "28",
+      "Sequência numérica": "1-2-9-10-13-19"
     }
   },
-
   "euphorbiaceae": {
     "id": "euphorbiaceae",
     "name": "Euphorbiaceae",
     "page": "../html/familia.html?id=euphorbiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Euphorbiaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples ou composta",
+      "Número da chave": "29",
+      "Sequência numérica": "1-2-9-20"
     }
   },
-
   "fabaceae": {
     "id": "fabaceae",
     "name": "Fabaceae",
     "page": "../html/familia.html?id=fabaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Fabaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta pinada ou trifoliolada",
+      "Número da chave": "30",
+      "Sequência numérica": "1-2-9-10-14-20"
     }
   },
-
   "heliconiaceae": {
     "id": "heliconiaceae",
     "name": "Heliconiaceae",
     "page": "../html/familia.html?id=heliconiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Heliconiaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "5",
+      "Sequência numérica": "1-5"
     }
   },
-
   "hypericaceae": {
     "id": "hypericaceae",
     "name": "Hypericaceae",
     "page": "../html/familia.html?id=hypericaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Hypericaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "31",
+      "Sequência numérica": "1-2-9-10-13-21"
     }
   },
-
   "lacistemataceae": {
     "id": "lacistemataceae",
     "name": "Lacistemataceae",
     "page": "../html/familia.html?id=lacistemataceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Lacistemataceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples",
+      "Número da chave": "32",
+      "Sequência numérica": "1-2-9-21"
     }
   },
-
   "lamiaceae": {
     "id": "lamiaceae",
     "name": "Lamiaceae",
     "page": "../html/familia.html?id=lamiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Lamiaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone ou oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "33",
+      "Sequência numérica": "1-2-3-4-5-9"
     }
   },
-
   "lauraceae": {
     "id": "lauraceae",
     "name": "Lauraceae",
     "page": "../html/familia.html?id=lauraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Lauraceae",
+      "Posição taxonômica APG IV": "Angiospermas basais",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "6",
+      "Sequência numérica": "1-6"
     }
   },
-
   "linderniaceae": {
     "id": "linderniaceae",
     "name": "Linderniaceae",
     "page": "../html/familia.html?id=linderniaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Linderniaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "34",
+      "Sequência numérica": "1-2-3-4-5-10"
     }
   },
-
   "lythraceae": {
     "id": "lythraceae",
     "name": "Lythraceae",
     "page": "../html/familia.html?id=lythraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Lythraceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero ou ínfero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "35",
+      "Sequência numérica": "1-2-9-10-14-22"
     }
   },
-
   "malpighiaceae": {
     "id": "malpighiaceae",
     "name": "Malpighiaceae",
     "page": "../html/familia.html?id=malpighiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Malpighiaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "36",
+      "Sequência numérica": "1-2-9-10-13-23"
     }
   },
-
   "malvaceae": {
     "id": "malvaceae",
     "name": "Malvaceae",
     "page": "../html/familia.html?id=malvaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Malvaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples ou palmada",
+      "Número da chave": "37",
+      "Sequência numérica": "1-2-9-10-13-24"
     }
   },
-
   "melastomataceae": {
     "id": "melastomataceae",
     "name": "Melastomataceae",
     "page": "../html/familia.html?id=melastomataceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Melastomataceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "38",
+      "Sequência numérica": "1-2-9-18-22"
     }
   },
-
   "meliaceae": {
     "id": "meliaceae",
     "name": "Meliaceae",
     "page": "../html/familia.html?id=meliaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Meliaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta pinada",
+      "Número da chave": "39",
+      "Sequência numérica": "1-2-9-10-14-23"
     }
   },
-
   "moraceae": {
     "id": "moraceae",
     "name": "Moraceae",
     "page": "../html/familia.html?id=moraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Moraceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero ou ínfero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples",
+      "Número da chave": "40",
+      "Sequência numérica": "1-2-9-22"
     }
   },
-
   "myristicaceae": {
     "id": "myristicaceae",
     "name": "Myristicaceae",
     "page": "../html/familia.html?id=myristicaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Myristicaceae",
+      "Posição taxonômica APG IV": "Angiospermas basais",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "7",
+      "Sequência numérica": "1-7"
     }
   },
-
   "myrtaceae": {
     "id": "myrtaceae",
     "name": "Myrtaceae",
     "page": "../html/familia.html?id=myrtaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Myrtaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "41",
+      "Sequência numérica": "1-2-9-18-23"
     }
   },
-
   "nyctaginaceae": {
     "id": "nyctaginaceae",
     "name": "Nyctaginaceae",
     "page": "../html/familia.html?id=nyctaginaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Nyctaginaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "42",
+      "Sequência numérica": "1-2-9-23"
     }
   },
-
   "oleaceae": {
     "id": "oleaceae",
     "name": "Oleaceae",
     "page": "../html/familia.html?id=oleaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Oleaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples ou composta",
+      "Número da chave": "43",
+      "Sequência numérica": "1-2-3-4-5-11"
     }
   },
-
   "orchidaceae": {
     "id": "orchidaceae",
     "name": "Orchidaceae",
     "page": "../html/familia.html?id=orchidaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Orchidaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "8",
+      "Sequência numérica": "1-8"
     }
   },
-
   "oxalidaceae": {
     "id": "oxalidaceae",
     "name": "Oxalidaceae",
     "page": "../html/familia.html?id=oxalidaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Oxalidaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Composta pinada",
+      "Número da chave": "44",
+      "Sequência numérica": "1-2-9-10-11-24"
     }
   },
-
   "passifloraceae": {
     "id": "passifloraceae",
     "name": "Passifloraceae",
     "page": "../html/familia.html?id=passifloraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Passifloraceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples ou palmada",
+      "Número da chave": "45",
+      "Sequência numérica": "1-2-9-10-13-25"
     }
   },
-
   "pedaliaceae": {
     "id": "pedaliaceae",
     "name": "Pedaliaceae",
     "page": "../html/familia.html?id=pedaliaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Pedaliaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "46",
+      "Sequência numérica": "1-2-3-4-5-12"
     }
   },
-
   "phytolaccaceae": {
     "id": "phytolaccaceae",
     "name": "Phytolaccaceae",
     "page": "../html/familia.html?id=phytolaccaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Phytolaccaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "47",
+      "Sequência numérica": "1-2-9-24"
     }
   },
-
   "piperaceae": {
     "id": "piperaceae",
     "name": "Piperaceae",
     "page": "../html/familia.html?id=piperaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Piperaceae",
+      "Posição taxonômica APG IV": "Angiospermas basais",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "9",
+      "Sequência numérica": "1-9"
     }
   },
-
   "plantaginaceae": {
     "id": "plantaginaceae",
     "name": "Plantaginaceae",
     "page": "../html/familia.html?id=plantaginaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Plantaginaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "48",
+      "Sequência numérica": "1-2-3-4-5-13"
     }
   },
-
   "poaceae": {
     "id": "poaceae",
     "name": "Poaceae",
     "page": "../html/familia.html?id=poaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Poaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples",
+      "Número da chave": "10",
+      "Sequência numérica": "1-10"
     }
   },
-
   "polygonaceae": {
     "id": "polygonaceae",
     "name": "Polygonaceae",
     "page": "../html/familia.html?id=polygonaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Polygonaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "49",
+      "Sequência numérica": "1-2-9-25"
     }
   },
-
   "portulacaceae": {
     "id": "portulacaceae",
     "name": "Portulacaceae",
     "page": "../html/familia.html?id=portulacaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Portulacaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "50",
+      "Sequência numérica": "1-2-9-26"
     }
   },
-
   "rosaceae": {
     "id": "rosaceae",
     "name": "Rosaceae",
     "page": "../html/familia.html?id=rosaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Rosaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero ou ínfero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples ou composta",
+      "Número da chave": "51",
+      "Sequência numérica": "1-2-9-10-14-26"
     }
   },
-
   "rubiaceae": {
     "id": "rubiaceae",
     "name": "Rubiaceae",
     "page": "../html/familia.html?id=rubiaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Rubiaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "52",
+      "Sequência numérica": "1-2-3-4-7-10"
     }
   },
-
   "rutaceae": {
     "id": "rutaceae",
     "name": "Rutaceae",
     "page": "../html/familia.html?id=rutaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Rutaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta ou simples",
+      "Número da chave": "53",
+      "Sequência numérica": "1-2-9-10-14-27"
     }
   },
-
   "salicaceae": {
     "id": "salicaceae",
     "name": "Salicaceae",
     "page": "../html/familia.html?id=salicaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Salicaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "54",
+      "Sequência numérica": "1-2-9-27"
     }
   },
-
   "sapindaceae": {
     "id": "sapindaceae",
     "name": "Sapindaceae",
     "page": "../html/familia.html?id=sapindaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Sapindaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Composta pinada",
+      "Número da chave": "55",
+      "Sequência numérica": "1-2-9-10-14-28"
     }
   },
-
   "sapotaceae": {
     "id": "sapotaceae",
     "name": "Sapotaceae",
     "page": "../html/familia.html?id=sapotaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Sapotaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "56",
+      "Sequência numérica": "1-2-9-10-14-29"
     }
   },
-
   "solanaceae": {
     "id": "solanaceae",
     "name": "Solanaceae",
     "page": "../html/familia.html?id=solanaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Solanaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "57",
+      "Sequência numérica": "1-2-3-4-5-14"
     }
   },
-
   "turneraceae": {
     "id": "turneraceae",
     "name": "Turneraceae",
     "page": "../html/familia.html?id=turneraceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Turneraceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "58",
+      "Sequência numérica": "1-2-9-10-13-26"
     }
   },
-
   "urticaceae": {
     "id": "urticaceae",
     "name": "Urticaceae",
     "page": "../html/familia.html?id=urticaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Urticaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Aclamídea ou homoclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples",
+      "Número da chave": "59",
+      "Sequência numérica": "1-2-9-28"
     }
   },
-
   "verbenaceae": {
     "id": "verbenaceae",
     "name": "Verbenaceae",
     "page": "../html/familia.html?id=verbenaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Verbenaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isoestêmone",
+      "Tipo de folha": "Simples ou composta",
+      "Número da chave": "60",
+      "Sequência numérica": "1-2-3-4-5-15"
     }
   },
-
   "xanthorrhoeaceae": {
     "id": "xanthorrhoeaceae",
     "name": "Xanthorrhoeaceae",
     "page": "../html/familia.html?id=xanthorrhoeaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
-      "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Nome científico": "Xanthorrhoeaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "11",
+      "Sequência numérica": "1-11"
     }
   },
-
   "zingiberaceae": {
     "id": "zingiberaceae",
     "name": "Zingiberaceae",
     "page": "../html/familia.html?id=zingiberaceae",
     "descricaoLonga": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
-    "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
-  ],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque consequatur, explicabo quaerat adipisci ipsam veniam assumenda recusandae deleniti?",
+      "Reiciendis cum, harum cupiditate dolore quas temporibus officiis blanditiis! Nulla, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Non, cupiditate ea voluptatibus perspiciatis sapiente architecto doloribus harum tempora blanditiis culpa voluptatem consequuntur quaerat nulla."
+    ],
     "ficha": {
-      "Nome científico": "Bixaceae",
-      "Tipo de folha": "Simples, bipenada",
-      "Nervação": "Peninérvia",
+      "Nome científico": "Zingiberaceae",
+      "Posição taxonômica APG IV": "Monocotiledônea",
+      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Ínfero",
-      "Estames": "Isoestames",
-      "Chave": "A definir"
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "12",
+      "Sequência numérica": "1-12"
     }
   }
 }
