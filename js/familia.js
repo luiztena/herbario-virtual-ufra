@@ -1,106 +1,103 @@
-// Dados das famílias botânicas
-const familiasData = {
-    amaranthaceae: {
-        nome: "Amaranthaceae",
-        descricao: "A família Amaranthaceae é uma grande família de plantas com flores, com cerca de 165 gêneros e 2.040 espécies conhecidas.",
-        artigo: "As plantas desta família são encontradas em todo o mundo, desde regiões tropicais até temperadas. Muitas espécies são importantes como fontes de alimento, como o amaranto, ou como plantas ornamentais.",
-        ficha: [
-            "Ordem: Caryophyllales",
-            "Classe: Magnoliopsida",
-            "Divisão: Magnoliophyta",
-            "Hábito: Herbáceas, arbustivas ou raramente arbóreas",
-            "Folhas: Geralmente simples, alternas ou opostas",
-            "Flores: Pequenas, geralmente hermafroditas"
-        ],
-        generos: ["Amaranthus", "Celosia", "Gomphrena", "Alternanthera", "Chenopodium"]
-    },
-    apocynaceae: {
-        nome: "Apocynaceae",
-        descricao: "Família de plantas com flores que inclui muitas espécies ornamentais e medicinais.",
-        artigo: "A família Apocynaceae é conhecida por suas flores vistosas e látex leitoso. Inclui plantas importantes como a pervinca e muitas espécies ornamentais.",
-        ficha: [
-            "Ordem: Gentianales",
-            "Classe: Magnoliopsida",
-            "Divisão: Magnoliophyta",
-            "Hábito: Arbustos, árvores, trepadeiras ou ervas",
-            "Folhas: Simples, geralmente opostas",
-            "Flores: Vistosas, muitas vezes com cinco pétalas"
-        ],
-        generos: ["Plumeria", "Nerium", "Catharanthus", "Tabernaemontana", "Asclepias"]
-    }
-};
+async function carregarFamilia() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
-// Função para carregar os dados da família
-function carregarFamilia() {
-    console.log("Carregando dados da família...");
-    
-    // Obter o ID da família da URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const familiaId = urlParams.get('id') || 'apocynaceae';
-    
-    console.log("Família ID:", familiaId);
-    
-    // Obter os dados da família
-    const familia = familiasData[familiaId.toLowerCase()] || familiasData.apocynaceae;
-    
-    console.log("Dados da família:", familia);
-    
-    // Atualizar o título da página
-    document.title = `Família ${familia.nome} - Herbário Virtual UFRA`;
-    
-    // Preencher os elementos HTML
-    document.getElementById('familia-nome').textContent = `Família ${familia.nome}`;
-    document.getElementById('familia-descricao').textContent = familia.descricao;
-    document.getElementById('familia-artigo').innerHTML = `<p>${familia.artigo}</p>`;
-    
-    // Preencher a ficha botânica
-    const fichaLista = document.getElementById('ficha-botanica-lista');
-    if (fichaLista) {
-        fichaLista.innerHTML = '';
-        familia.ficha.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            fichaLista.appendChild(li);
-        });
+  console.log("ID DA URL:", id);
+
+  if (!id) {
+    window.location.href = "../404.html";
+    return;
+  }
+
+  try {
+    // ===============================
+    // CARREGA FAMÍLIAS
+    // ===============================
+    const resFamilias = await fetch("../data/familias.json");
+    const familias = await resFamilias.json();
+
+    const familia = familias[id];
+
+    console.log("FAMILIAS JSON:", familias);
+    console.log("FAMILIA SELECIONADA:", familia);
+
+    if (!familia) {
+      window.location.href = "../404.html";
+      return;
     }
+
+
     
-    // Preencher os gêneros
-    const generosSection = document.getElementById('generos-section');
-    if (generosSection) {
-        generosSection.innerHTML = `
-            <h2>Gêneros da Família ${familia.nome}</h2>
-            <div class="generos-container">
-                ${familia.generos.map(genero => `
-                    <div class="genero-card">
-                        <h3>${genero}</h3>
-                        <p>Clique para ver as espécies deste gênero</p>
-                        <button class="btn-ver-especies" data-genero="${genero.toLowerCase()}">
-                            Ver Espécies
-                        </button>
-                    </div>
-                `).join('')}
-            </div>
-        `;
-        
-        // Adicionar event listeners aos botões
-        document.querySelectorAll('.btn-ver-especies').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const genero = this.getAttribute('data-genero');
-                alert(`Você clicou no gênero ${genero}. Esta funcionalidade pode ser implementada para carregar espécies.`);
-            });
-        });
+// ===== ARTIGO (DESCRIÇÃO LONGA) =====
+const article = document.getElementById("familia-artigo");
+article.innerHTML = "";
+
+if (familia.descricaoLonga && Array.isArray(familia.descricaoLonga)) {
+  familia.descricaoLonga.forEach(texto => {
+    const p = document.createElement("p");
+    p.textContent = texto;
+    article.appendChild(p);
+  });
+}
+    // ===============================
+    // HEADER DA FAMÍLIA
+    // ===============================
+    document.getElementById("familia-nome").textContent = familia.name;
+    document.getElementById("familia-descricao").textContent =
+      familia.descricao || "";
+
+    // ===============================
+    // FICHA BOTÂNICA (AUTOMÁTICA)
+    // ===============================
+    const ulFicha = document.querySelector("#ficha-botanica ul");
+    ulFicha.innerHTML = "";
+
+    for (const [label, value] of Object.entries(familia.ficha || {})) {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${label}:</strong> ${value}`;
+      ulFicha.appendChild(li);
     }
-    
-    // Atualizar o atributo data-family no body
-    document.body.setAttribute('data-family', familiaId.toLowerCase());
+
+    // ===============================
+    // CARREGA GÊNEROS E GERA OS CARDS
+    // ===============================
+    const sectionGeneros = document.getElementById("generos-section");
+
+    const resGeneros = await fetch("../data/generos.json");
+    const generos = await resGeneros.json();
+
+    // filtra apenas gêneros da família atual
+    const generosDaFamilia = Object.values(generos).filter(
+      genero => genero.family === id
+    );
+
+    sectionGeneros.innerHTML = "";
+
+    if (generosDaFamilia.length === 0) {
+      sectionGeneros.innerHTML =
+        "<p>Nenhum gênero cadastrado para esta família.</p>";
+      return;
+    }
+
+    generosDaFamilia.forEach(genero => {
+  const card = document.createElement("a");
+  // Gera a URL automaticamente se não existir
+  card.href = genero.page || `../html/genero.html?id=${genero.id}`;
+  card.className = "card-link";
+
+  card.innerHTML = `
+    <div class="genero-card">
+      <img src="../${genero.image}" alt="${genero.name}">
+      <h3>${genero.name}</h3>
+    </div>
+  `;
+
+  sectionGeneros.appendChild(card);
+});
+  } catch (erro) {
+    console.error("Erro ao carregar família:", erro);
+    window.location.href = "../404.html";
+  }
 }
 
-// Carregar os dados quando a página carregar
-document.addEventListener('DOMContentLoaded', carregarFamilia);
-
-// Também carregar quando a página já estiver carregada
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', carregarFamilia);
-} else {
-    carregarFamilia();
-}
+document.addEventListener("DOMContentLoaded", carregarFamilia);
