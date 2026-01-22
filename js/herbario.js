@@ -45,6 +45,9 @@ function getBasePath() {
   // Remove query string e hash se existirem
   let cleanPath = path.split('?')[0].split('#')[0];
   
+  console.log('Path completo:', path);
+  console.log('Path limpo:', cleanPath);
+  
   // Se estiver em html/familia.html ou html/genero.html
   if (cleanPath.includes('/html/')) {
     // Pega tudo antes de /html/
@@ -55,7 +58,7 @@ function getBasePath() {
   
   // Se estiver na raiz ou em outro arquivo
   // Para repositórios username.github.io (sem subpasta), retorna '/'
-  // Para repositórios com nome (ex: /Herbario/), detecta o nome
+  // Para repositórios com nome (ex: /herbario-virtual-ufra/), detecta o nome
   const parts = cleanPath.split('/').filter(p => p && !p.endsWith('.html'));
   
   // Se não há partes ou só tem arquivos HTML, está na raiz do domínio
@@ -133,11 +136,13 @@ function montarBancoBusca() {
   // Famílias
   if (familias) {
     const basePath = getBasePath();
+    console.log('BasePath detectado para montar banco de busca:', basePath);
     Object.values(familias).forEach(f => {
       // Corrige caminhos relativos nas páginas das famílias
       let familiaPage = f.page || `${basePath}html/familia.html?id=${f.id}`;
       if (familiaPage.startsWith('../')) {
         familiaPage = familiaPage.replace('../', basePath);
+        console.log(`Corrigido caminho de "${f.page}" para "${familiaPage}"`);
       } else if (!familiaPage.startsWith('/') && !familiaPage.startsWith('http')) {
         familiaPage = `${basePath}${familiaPage}`;
       }

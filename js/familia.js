@@ -6,6 +6,9 @@ function getBasePath() {
   // Remove query string e hash se existirem
   let cleanPath = path.split('?')[0].split('#')[0];
   
+  console.log('Path completo:', path);
+  console.log('Path limpo:', cleanPath);
+  
   // Se estiver em html/familia.html ou html/genero.html
   if (cleanPath.includes('/html/')) {
     // Pega tudo antes de /html/
@@ -16,7 +19,7 @@ function getBasePath() {
   
   // Se estiver na raiz ou em outro arquivo
   // Para repositórios username.github.io (sem subpasta), retorna '/'
-  // Para repositórios com nome (ex: /Herbario/), detecta o nome
+  // Para repositórios com nome (ex: /herbario-virtual-ufra/), detecta o nome
   const parts = cleanPath.split('/').filter(p => p && !p.endsWith('.html'));
   
   // Se não há partes ou só tem arquivos HTML, está na raiz do domínio
@@ -56,15 +59,36 @@ async function carregarFamilia() {
     // ===============================
     // CARREGA FAMÍLIAS
     // ===============================
-    const familiasUrl = `${basePath}data/familias.json`;
-    console.log('Tentando carregar:', familiasUrl);
-    const resFamilias = await fetch(familiasUrl);
+    // Tenta diferentes caminhos possíveis
+    const possiblePaths = [
+      `${basePath}data/familias.json`,
+      `/data/familias.json`,
+      `data/familias.json`,
+      `../data/familias.json`
+    ];
     
-    if (!resFamilias.ok) {
-      throw new Error(`Erro ao carregar familias.json: ${resFamilias.status} ${resFamilias.statusText}. URL tentada: ${familiasUrl}`);
+    let familias = null;
+    let familiasUrl = null;
+    
+    for (const url of possiblePaths) {
+      try {
+        console.log('Tentando carregar:', url);
+        const res = await fetch(url);
+        if (res.ok) {
+          familias = await res.json();
+          familiasUrl = url;
+          console.log('Sucesso ao carregar de:', url);
+          break;
+        }
+      } catch (e) {
+        console.log('Falha ao carregar de:', url, e);
+        continue;
+      }
     }
     
-    const familias = await resFamilias.json();
+    if (!familias) {
+      throw new Error(`Não foi possível carregar familias.json. Tentou: ${possiblePaths.join(', ')}`);
+    }
 
     const familia = familias[id];
 
@@ -113,15 +137,34 @@ if (familia.descricaoLonga && Array.isArray(familia.descricaoLonga)) {
     // ===============================
     const sectionGeneros = document.getElementById("generos-section");
 
-    const generosUrl = `${basePath}data/generos.json`;
-    console.log('Tentando carregar:', generosUrl);
-    const resGeneros = await fetch(generosUrl);
+    // Tenta diferentes caminhos possíveis para generos.json
+    const generosPossiblePaths = [
+      `${basePath}data/generos.json`,
+      `/data/generos.json`,
+      `data/generos.json`,
+      `../data/generos.json`
+    ];
     
-    if (!resGeneros.ok) {
-      throw new Error(`Erro ao carregar generos.json: ${resGeneros.status} ${resGeneros.statusText}. URL tentada: ${generosUrl}`);
+    let generos = null;
+    
+    for (const url of generosPossiblePaths) {
+      try {
+        console.log('Tentando carregar:', url);
+        const res = await fetch(url);
+        if (res.ok) {
+          generos = await res.json();
+          console.log('Sucesso ao carregar de:', url);
+          break;
+        }
+      } catch (e) {
+        console.log('Falha ao carregar de:', url, e);
+        continue;
+      }
     }
     
-    const generos = await resGeneros.json();
+    if (!generos) {
+      throw new Error(`Não foi possível carregar generos.json. Tentou: ${generosPossiblePaths.join(', ')}`);
+    }
 
     // filtra apenas gêneros da família atual
     const generosDaFamilia = Object.values(generos).filter(
