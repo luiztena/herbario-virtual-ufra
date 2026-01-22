@@ -1,97 +1,79 @@
-🚀 **Versão 1.0.0 – Primeira versão oficial**
-
-Este repositório contém a primeira versão funcional do Herbário Virtual,
-com catálogo de famílias botânicas, sistema de busca inteligente e filtros
-interativos.
-
-Este projeto encontra-se em fase de MVP (Produto Mínimo Viável) e será
-expandido futuramente para incluir gêneros, espécies e colaboração de
-outros pesquisadores.
+<h1>🌿 Herbário Virtual — UFRA (v1.2.0)</h1>
 
 
-# herbario-virtual-ufra
-Herbário Virtual – sistema de catalogação botânica (famílias, gêneros e espécies)
 
-# 🌿 Herbário Virtual – UFRA
+O Herbário Virtual é uma plataforma web que integra botânica, taxonomia vegetal e tecnologia, com o objetivo de organizar, consultar e explorar informações sobre famílias, gêneros e espécies botânicas de forma estruturada, acessível e escalável.
 
-O **Herbário Virtual – UFRA** é uma plataforma educacional e científica voltada para o estudo, organização e divulgação da diversidade vegetal.  
-O projeto tem como objetivo funcionar como um **sistema de busca botânica**, permitindo pesquisar **famílias, gêneros e espécies** de forma intuitiva, precisa e escalável.
+O projeto foi desenvolvido com foco em:
+<ul>
+<li>Clareza científica</li>
+<li>Organização de dados taxonômicos</li>
+<li>Código limpo, modular e de fácil manutenção</li>
+</ul>
+<h2>🎯 Objetivos do Projeto</h2><br>
+Criar um acervo botânico digital baseado em dados estruturados (JSON)
+Automatizar a geração de páginas de famílias, gêneros e espécies
+Facilitar a busca e navegação taxonômica
+Unir conhecimento científico com engenharia de software.<br><br>
 
----
+<h2>🧬 Estrutura Taxonômica</h2>
 
-## 🎯 Objetivos do Projeto
+O sistema segue a hierarquia botânica clássica:
 
-- Democratizar o acesso ao conhecimento botânico
-- Facilitar pesquisas acadêmicas e educacionais
-- Organizar dados taxonômicos de forma estruturada
-- Criar uma base escalável para futuras parcerias científicas
-- Simular um “**Google botânico**” com foco em taxonomia vegetal
+Família<br>
+----└── Gênero<br>
+----------└── Espécie
 
----
 
-## 🧠 Estrutura Conceitual
+<h3>Cada nível possui:</h3>
+<ul>
+<li>Página automática</li>
+<li>Dados carregados via JSON</li>
+<li>Estrutura preparada para expansão científica</li>
+</ul>
+<h2>🔍 Funcionalidades</h2><br>
+✔️ Barra de Pesquisa Inteligente
+<br><br>
+✔️Busca por famílias e gêneros
+<br><br>
+✔️Autocomplete dinâmico
+<br><br>
+✔️Busca aproximada (Levenshtein)
+<br><br>
+✔️Sugestões de correção (“Você quis dizer…”)
+<br><br>
+✔️ Páginas Automatizadas
+<br><br>
+✔️ Navegação via parâmetros de URL
+<br><br>
+✔️ Ficha Botânica Dinâmica
+<br><br>
+✔️ Dados taxonômicos carregados automaticamente
+<br><br>
+✔️ Estrutura flexível para novas características
+<br><br>
+✔️ Ideal para chaves de identificação
+<br><br>
+✔️ Catálogo Visual
+<br><br>
+✔️ Cards automáticos para gêneros e espécies
+<br><br>
+✔️ Estrutura pronta para imagens científicas
+<br><br>
+<h2>🧠 Tecnologias Utilizadas</h2>
 
-O projeto foi pensado como um **sistema**, não apenas um site estático.
+HTML5 — Estrutura semântica
 
-### Separação clara de responsabilidades:
+CSS3 — Layout responsivo e organização visual
 
-### 📂 Parte de Dados
-- Arquivos **JSON**
-- Podem ser atualizados sem alterar a lógica do sistema
-- Estrutura hierárquica:
-  - Famílias
-  - Gêneros (relacionados às famílias)
-  - Espécies (relacionadas aos gêneros)
+JavaScript (Vanilla) — Lógica, automação e busca
 
-### ⚙️ Parte Lógica
-- JavaScript puro (Vanilla JS)
-- Controle de busca, autocomplete, sugestões e navegação
-- Filtros contextuais (ex: buscar apenas gêneros de uma família específica)
+JSON — Dados taxonômico
 
-### 🧱 Parte Estrutural
-- HTML semântico
-- CSS responsivo
-- Layouts reutilizáveis e padronizados
+Git & GitHub — Versionamento e releases
 
----
-
-## 🔍 Funcionalidades Atuais
-
-- Barra de pesquisa inteligente
-- Autocomplete com destaque (highlight)
-- Busca aproximada (Levenshtein – “Você quis dizer…?”)
-- Mensagens para entradas inesperadas
-- Filtro por grupos botânicos
-- Navegação por cards
-- Layout responsivo
-- Footer institucional
-- Estrutura preparada para crescimento
-
----
-
-## 🧬 Funcionalidades Planejadas
-
-- Busca unificada por famílias, gêneros e espécies
-- Filtro automático por contexto da página
-- Geração dinâmica de páginas a partir de JSON
-- Catálogos dinâmicos de gêneros e espécies
-- Padronização total de layouts
-- Melhorias em acessibilidade (WCAG)
-- Otimização de performance para grandes volumes de dados
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-- **JSON**
-- **Git & GitHub**
-
-> O projeto foi desenvolvido **sem frameworks**, priorizando controle total, performance e aprendizado profundo das tecnologias base da web.
-
----
-
-## 📁 Estrutura do Projeto (simplificada)
-
+<h2>🏫 Instituição </h2>
+Projeto desenvolvido no contexto acadêmico da
+<b>Universidade Federal Rural da Amazônia (UFRA)</b>
+Este projeto é de caráter educacional e científico.
+Uso livre para fins acadêmicos, com os devidos créditos.
