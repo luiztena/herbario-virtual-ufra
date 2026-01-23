@@ -743,44 +743,5 @@ html {
     width: 100%;
     height: auto;
   }
-
-
-
-/* =============================
-   RESPONSIVIDADE PARA AUTOCOMPLETE
-   ============================= */
-@media (max-width: 768px) {
-  #did-you-mean {
-    padding: 10px;
-  }
-  
-  #did-you-mean > div:first-child {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  #did-you-mean > div:first-child > div {
-    flex-direction: column;
-    gap: 8px;
-    padding: 12px;
-  }
 }
-
-  
-  /* ===== ABOUT ===== */
-  .about-content {
-    flex-direction: column;
-  }
-
-  h2#abouttitulo {
-    font-size: 22px;
-    font-weight: bold;
-    font-family: Arial;
-    text-transform: uppercase;
-}
-    .section-title::after {
-    width: 100%;
-    max-width: 350px;
-    }
- 
-}}
+        }

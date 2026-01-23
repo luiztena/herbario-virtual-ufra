@@ -46,15 +46,20 @@
             <a href="#plants" class="btn">Explorar Plantas</a>
         </div>
     </section>
-
-    <div class="container">
-        <div class="search-bar">
+<div class="search-container">
+    <!-- Barra de pesquisa -->
+    <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Buscar família ou gênero..."
+        aria-label="Buscar plantas"
+    >
     
-            <input type="text" id="search-bar" placeholder="Buscar por nome, espécie ou família..." autocomplete="off">
-            <button id="search-btn">BUSCAR</button>
-            <ul id="autocomplete-list" class="autocomplete-list"></ul>
-
-        </div>
+    <!-- Lista de sugestões - ESTRUTURA CORRETA -->
+    <div id="suggestions-list" class="suggestions-list" role="listbox" aria-label="Sugestões de busca">
+        <!-- Itens serão adicionados via JavaScript -->
+    </div>
+</div>
             <div id="did-you-mean" class="did-you-mean"></div>
 
         <!--filtros-->
