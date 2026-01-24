@@ -176,4 +176,73 @@ async function carregarGenero() {
   }
 }
 
+// ... código anterior permanece igual ...
+
+async function carregarGenero() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const basePath = getBasePath();
+
+  console.log("ID DA URL:", id);
+  console.log("BASE PATH:", basePath);
+
+  if (!id) {
+    window.location.href = `${basePath}404.html`;
+    return;
+  }
+
+  try {
+    // ===============================
+    // CARREGA GÊNEROS
+    // ===============================
+    const generosUrl = `${basePath}data/generos.json`;
+    console.log('Tentando carregar:', generosUrl);
+    const resGeneros = await fetch(generosUrl);
+    
+    if (!resGeneros.ok) {
+      throw new Error(`Erro ao carregar generos.json: ${resGeneros.status} ${resGeneros.statusText}. URL tentada: ${generosUrl}`);
+    }
+    
+    const generos = await resGeneros.json();
+
+    const genero = generos[id];
+
+    console.log("GENEROS JSON:", generos);
+    console.log("GENERO SELECIONADO:", genero);
+
+    if (!genero) {
+      window.location.href = `${basePath}404.html`;
+      return;
+    }
+
+    // ===============================
+    // ATUALIZAR BOTÃO "VOLTAR À FAMÍLIA"
+    // ===============================
+    const backButton = document.getElementById("back-to-family-btn");
+    if (backButton && genero.family) {
+      // Construir URL para a página da família
+      const familyUrl = `${basePath}html/familia.html?id=${genero.family}`;
+      backButton.href = familyUrl;
+      console.log('Botão de voltar configurado para:', familyUrl);
+    }
+
+    // ===============================
+    // HEADER DO GÊNERO
+    // ===============================
+    document.getElementById("genero-nome").textContent = genero.name;
+    document.getElementById("genero-descricao").textContent =
+      genero.descricao || "";
+
+    // ... resto do código permanece igual ...
+
+  } catch (erro) {
+    console.error("Erro ao carregar gênero:", erro);
+    const basePath = getBasePath();
+    window.location.href = `${basePath}404.html`;
+  }
+}
+
+// ... resto do código permanece igual ...
+
+
 document.addEventListener("DOMContentLoaded", carregarGenero);

@@ -166,3 +166,334 @@ aside ul {
     padding: 30px 20px;
   }
 }
+/* =============================
+   RESPONSIVIDADE - PÁGINA FAMÍLIAS (familia.html)
+   ============================= */
+
+@media (max-width: 768px) {
+    
+    /* ===== ESTRUTURA PRINCIPAL ===== */
+    .mainfamily {
+        margin-top: 140px !important;
+        padding: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 15px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    /* ===== TÍTULO DA FAMÍLIA ===== */
+    #familia-nome {
+        font-size: 1.8rem !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+        color: #fefae0 !important;
+        padding: 10px !important;
+        background: rgba(64, 87, 61, 0.8) !important;
+        border-radius: 10px !important;
+        letter-spacing: 1px !important;
+    }
+    
+    /* ===== DESCRIÇÃO DA FAMÍLIA ===== */
+    #familia-descricao {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 20px !important;
+        color: #f5f7f2 !important;
+        padding: 15px !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+        text-align: justify !important;
+    }
+    
+    /* ===== ARTIGO (DESCRIÇÃO LONGA) ===== */
+    #familia-artigo {
+        margin-bottom: 25px !important;
+        padding: 15px !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        border-radius: 10px !important;
+    }
+    
+    #familia-artigo p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+        margin-bottom: 15px !important;
+        color: #f0f0f0 !important;
+        text-align: justify !important;
+    }
+    
+    /* ===== FICHA BOTÂNICA ===== */
+    .ficha-botanica {
+        margin: 25px 0 !important;
+        padding: 20px !important;
+        background: rgba(82, 121, 111, 0.9) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+        width: 100% !important;
+        float: none !important;
+    }
+    
+    .ficha-botanica h3 {
+        font-size: 1.3rem !important;
+        color: #fefae0 !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        border-bottom: 2px solid #fefae0 !important;
+        padding-bottom: 10px !important;
+    }
+    
+    #ficha-botanica {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    #ficha-botanica li {
+        margin-bottom: 12px !important;
+        padding: 10px !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+        border-radius: 8px !important;
+        transition: background 0.3s !important;
+    }
+    
+    #ficha-botanica li:hover {
+        background: rgba(255, 255, 255, 0.25) !important;
+    }
+    
+    #ficha-botanica li strong {
+        font-size: 0.95rem !important;
+        color: #fefae0 !important;
+        display: block !important;
+        margin-bottom: 5px !important;
+        font-weight: 600 !important;
+    }
+    
+    #ficha-botanica li {
+        font-size: 0.9rem !important;
+        color: #e0e0e0 !important;
+    }
+    
+    /* ===== CATÁLOGO DE GÊNEROS ===== */
+    .catalogo-generos {
+        margin-top: 30px !important;
+        padding: 20px !important;
+        background: rgba(64, 87, 61, 0.7) !important;
+        border-radius: 15px !important;
+    }
+    
+    .catalogo-generos h3 {
+        font-size: 1.5rem !important;
+        color: #fefae0 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 2px solid #52796f !important;
+    }
+    
+    /* ===== CARDS DE GÊNEROS ===== */
+    .generos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .genero-card {
+        background: #fefae0 !important;
+        border-radius: 10px !important;
+        overflow: hidden !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+        transition: all 0.3s ease !important;
+        height: 180px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .genero-card:hover {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+    }
+    
+    .genero-card img {
+        width: 100% !important;
+        height: 100px !important;
+        object-fit: cover !important;
+        border-bottom: 2px solid #52796f !important;
+    }
+    
+    .genero-card h3 {
+        padding: 12px 10px !important;
+        margin: 0 !important;
+        font-size: 0.95rem !important;
+        color: #344e41 !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        flex-grow: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* ===== BOTÃO VOLTAR ===== */
+    .back-to-catalog-container {
+        margin: 30px auto !important;
+        padding: 0 15px !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    
+    .back-to-catalog-btn {
+        width: 100% !important;
+        max-width: 300px !important;
+        padding: 14px 24px !important;
+        font-size: 1rem !important;
+        background: linear-gradient(135deg, #3a7a32, #2d5a27) !important;
+        border: none !important;
+        border-radius: 50px !important;
+        color: white !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 12px rgba(45, 90, 39, 0.4) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .back-to-catalog-btn:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 6px 16px rgba(45, 90, 39, 0.6) !important;
+        background: linear-gradient(135deg, #2d5a27, #3a7a32) !important;
+    }
+    
+    .back-to-catalog-btn i {
+        font-size: 1.1rem !important;
+        transition: transform 0.3s ease !important;
+    }
+    
+    .back-to-catalog-btn:hover i {
+        transform: translateX(-5px) !important;
+    }
+    
+    /* ===== MELHORIAS ESPECÍFICAS PARA TELAS PEQUENAS ===== */
+    @media (max-width: 480px) {
+        .mainfamily {
+            margin-top: 130px !important;
+            padding: 12px !important;
+        }
+        
+        #familia-nome {
+            font-size: 1.6rem !important;
+            padding: 12px 8px !important;
+        }
+        
+        .generos-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 12px !important;
+        }
+        
+        .genero-card {
+            height: 160px !important;
+        }
+        
+        .genero-card img {
+            height: 90px !important;
+        }
+        
+        .genero-card h3 {
+            font-size: 0.9rem !important;
+            padding: 10px 8px !important;
+        }
+        
+        .ficha-botanica {
+            padding: 15px !important;
+        }
+        
+        #ficha-botanica li {
+            padding: 8px !important;
+            font-size: 0.85rem !important;
+        }
+        
+        #ficha-botanica li strong {
+            font-size: 0.9rem !important;
+        }
+        
+        .back-to-catalog-btn {
+            padding: 12px 20px !important;
+            font-size: 0.95rem !important;
+            max-width: 280px !important;
+        }
+    }
+    
+    /* ===== MELHORIAS PARA TABLETS ===== */
+    @media (min-width: 481px) and (max-width: 768px) {
+        .generos-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 18px !important;
+        }
+        
+        .genero-card {
+            height: 190px !important;
+        }
+        
+        .genero-card img {
+            height: 110px !important;
+        }
+        
+        .genero-card h3 {
+            font-size: 1rem !important;
+        }
+        
+        .back-to-catalog-btn {
+            max-width: 350px !important;
+            padding: 16px 28px !important;
+        }
+    }
+    
+    /* ===== MELHORIAS DE ESPAÇAMENTO E HIERARQUIA ===== */
+    .mainfamily > * {
+        margin-bottom: 25px !important;
+    }
+    
+    .mainfamily > *:last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    /* ===== ANIMAÇÕES SUAVES ===== */
+    #familia-artigo p,
+    #ficha-botanica li,
+    .genero-card {
+        animation: fadeInUp 0.5s ease forwards !important;
+        opacity: 0 !important;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0 !important;
+            transform: translateY(15px) !important;
+        }
+        to {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    }
+    
+    /* ===== MELHORIAS DE ACESSIBILIDADE ===== */
+    .genero-card:focus {
+        outline: 3px solid #52796f !important;
+        outline-offset: 2px !important;
+    }
+    
+    #ficha-botanica li:focus-within {
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+    
+    /* ===== SCROLL SUAVE ===== */
+    html {
+        scroll-behavior: smooth !important;
+    }
+}
