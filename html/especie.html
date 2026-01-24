@@ -4,25 +4,19 @@
 <head>
     <link rel="icon" type="image/png" href="../imagens/site-imagem/folha.png">
     <meta charset="UTF-8">
-    <title>Família Botânica</title>
+    <title>Espécie Botânica</title>
     <link rel="stylesheet" href="../css/Herbario.css">
     <link rel="stylesheet" href="../css/familia.css">
-        <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
-<body data-family="apocynaceae">
+<body>
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="../index.html"><img src="../imagens/site-imagem/Brasão_ufra.png" class="logo" alt="Brasão UFRA"></a>
-                    <div class="logo-text">
-                        <h1>Universidade Federal Rural da Amazônia - UFRA </h1>
+          <a href="../index.html"><img src="../imagens/site-imagem/Brasão_ufra.png" class="logo" alt="Brasão UFRA"></a>                    <div class="logo-text">
+                        <h1>Universidade Federal Rural da Amazônia - UFRA</h1>
                     </div>
                 </div>
                 <nav>
@@ -31,33 +25,49 @@
                         <li><a href="../index.html" style="color: aliceblue;">Plantas</a></li>
                         <li><a href="#about" style="color: aliceblue;">Sobre</a></li>
                         <li><a href="#contact" style="color: aliceblue;">Contatos</a></li>
-
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-                 
-                 
 
- <main class="mainfamily"> <h1 id="familia-nome"></h1><p id="familia-descricao"></p>
- <article id="familia-artigo"></article>
- <aside class="ficha-botanica" id="ficha-botanica"> <h3>Ficha Botânica</h3><ul id="ficha-botanica"></ul></aside>
- <section class="catalogo-generos"  id="generos-section" class="generos-section"></section>
-     <div class="back-to-catalog-container">
-        <a href="../index.html" class="back-to-catalog-btn">
-            <i class="fas fa-arrow-left"></i>
-            Voltar ao Catálogo de Famílias
-        </a>
-    </div>
- </main>
+    <main class="mainfamily">
+        <!-- CABEÇALHO DA ESPÉCIE -->
+        <div class="cabe">
+            <h1 id="especie-nome"></h1>
+            <p style="visibility: hidden;" id="especie-descricao"></p>
+        </div>
+
+        <!-- DESCRIÇÃO LONGA -->
+        <article id="especie-artigo"></article>
+
+        <!-- FICHA BOTÂNICA -->
+        <aside class="ficha-botanica">
+            <h3>Ficha Botânica</h3>
+            <ul id="ficha-lista"></ul>
+        </aside>
+
+        <!-- GALERIA DE IMAGENS (opcional) -->
+        <section class="catalogo-generos" id="galeria-section">
+            <h3>Galeria de Imagens</h3>
+            <div class="cards-container" id="galeria-container"></div>
+        </section>
+
+        <!-- BOTÃO VOLTAR -->
+        <div class="back-to-catalog-container">
+            <a id="back-to-genero-btn" href="#" class="back-to-catalog-btn">
+                <i class="fas fa-arrow-left"></i>
+                Voltar ao Gênero
+            </a>
+        </div>
+    </main>
+
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Herbário Virtual</h3>
-                    <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao
-                        alcance de todos.</p>
+                    <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao alcance de todos.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -70,6 +80,7 @@
                     <ul class="footer-links">
                         <li><a href="#home">Início</a></li>
                         <li><a href="../index.html">Catálogo de Plantas</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
                         <li><a href="#">Contribua</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
@@ -90,7 +101,8 @@
             </div>
         </div>
     </footer>
-    <script src="../js/familia.js"></script>
+    
+    <script src="../js/especie.js"></script>
 </body>
 
 </html>

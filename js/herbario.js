@@ -36,6 +36,7 @@
 
 let familias = null;
 let generos = null;
+let especies = null;  // ADICIONADO: Variável para espécies
 let bancoBusca = [];
 
 // Função para obter o caminho base do repositório (funciona no GitHub Pages)
@@ -111,6 +112,48 @@ async function carregarGeneros() {
     console.log("Gêneros carregados:", generos);
   } catch (erro) {
     console.error("Erro:", erro);
+  }
+}
+
+// ADICIONADO: Função para carregar espécies
+async function carregarEspecies() {
+  try {
+    const basePath = getBasePath();
+    const possiblePaths = [
+      `${basePath}data/especies.json`,
+      `data/especies.json`,
+      `/data/especies.json`,
+      `../data/especies.json`
+    ];
+    
+    let especiesData = null;
+    for (const url of possiblePaths) {
+      try {
+        console.log('Tentando carregar espécies de:', url);
+        const res = await fetch(url);
+        if (res.ok) {
+          especiesData = await res.json();
+          console.log('Espécies carregadas de:', url);
+          break;
+        }
+      } catch (e) {
+        console.log('Falha ao carregar espécies de:', url, e);
+        continue;
+      }
+    }
+    
+    if (!especiesData) {
+      console.warn("Não foi possível carregar especies.json");
+      especies = {};
+      return;
+    }
+    
+    especies = especiesData;
+    Object.freeze(especies);
+    console.log("Espécies carregadas:", Object.keys(especies).length);
+  } catch (erro) {
+    console.error("Erro ao carregar espécies:", erro);
+    especies = {};
   }
 }
 
@@ -240,7 +283,31 @@ function montarBancoBusca() {
     });
   }
 
-  console.log("Banco de busca pronto com", bancoBusca.length, "itens");
+  // ADICIONADO: Espécies
+  if (especies) {
+    const basePath = getBasePath();
+    Object.values(especies).forEach(e => {
+      // Corrige caminhos relativos
+      let especiePage = e.page || `${basePath}html/especie.html?id=${e.id}`;
+      if (especiePage.startsWith('../')) {
+        especiePage = especiePage.replace('../', basePath);
+      } else if (!especiePage.startsWith('/') && !especiePage.startsWith('http')) {
+        especiePage = `${basePath}${especiePage}`;
+      }
+      
+      bancoBusca.push({
+        id: e.id,
+        name: e.name,
+        key: normalize(e.id),
+        tipo: "Espécie",
+        page: especiePage
+      });
+    });
+  }
+
+  console.log("Banco de busca pronto com", bancoBusca.length, "itens (Famílias:", familias ? Object.keys(familias).length : 0, 
+              "Gêneros:", generos ? Object.keys(generos).length : 0, 
+              "Espécies:", especies ? Object.keys(especies).length : 0, ")");
 }
 
 // ===============================
@@ -256,6 +323,22 @@ function scientificCapitalize(name) {
     .split(" ")
     .map((w, i) => (i === 0 ? w[0].toUpperCase() + w.slice(1) : w))
     .join(" ");
+}
+
+// Função auxiliar para escurecer cores
+function darkenColor(color, percent) {
+  const num = parseInt(color.replace("#", ""), 16);
+  const amt = Math.round(2.55 * percent);
+  const R = (num >> 16) - amt;
+  const G = (num >> 8 & 0x00FF) - amt;
+  const B = (num & 0x0000FF) - amt;
+  
+  return "#" + (
+    0x1000000 +
+    (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+    (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+    (B < 255 ? B < 1 ? 0 : B : 255)
+  ).toString(16).slice(1);
 }
 
 // ===============================
@@ -318,7 +401,7 @@ function searchPlant() {
   const query = normalize(input.value);
   if (!query) return;
 
-  // 🔹 Busca exata (família ou gênero)
+  // 🔹 Busca exata (família, gênero ou espécie)
   const exato = bancoBusca.find(item => item.key === query);
 
   if (exato) {
@@ -330,8 +413,22 @@ function searchPlant() {
   const melhor = fuzzySearch(query);
 
   if (melhor) {
-    // Determinar cor da badge
-    const badgeColor = melhor.tipo === 'Família' ? '#416939' : '#52796f';
+    // Determinar cor da badge baseada no tipo
+    let badgeColor;
+    switch(melhor.tipo) {
+      case 'Família':
+        badgeColor = '#416939'; // Verde escuro
+        break;
+      case 'Gênero':
+        badgeColor = '#52796f'; // Verde azulado
+        break;
+      case 'Espécie':
+        badgeColor = '#8a5a44'; // Marrom
+        break;
+      default:
+        badgeColor = '#666';
+    }
+    
     const badgeStyle = `
       background-color: ${badgeColor};
       color: white;
@@ -367,17 +464,17 @@ function searchPlant() {
     // Adicionar efeito hover
     const vqdElement = document.getElementById("vqd");
     vqdElement.style.cursor = "pointer";
-    vqdElement.style.color = "#416939";
+    vqdElement.style.color = badgeColor;
     vqdElement.style.fontWeight = "600";
     vqdElement.style.transition = "color 0.2s ease";
     
     vqdElement.addEventListener("mouseover", () => {
-      vqdElement.style.color = "#283618";
+      vqdElement.style.color = darkenColor(badgeColor, 20);
       vqdElement.style.textDecoration = "underline";
     });
     
     vqdElement.addEventListener("mouseout", () => {
-      vqdElement.style.color = "#416939";
+      vqdElement.style.color = badgeColor;
       vqdElement.style.textDecoration = "none";
     });
     
@@ -449,7 +546,20 @@ function atualizarAutocomplete() {
     const li = document.createElement("li");
     
     // Determinar cor da badge baseada no tipo
-    const badgeColor = item.tipo === 'Família' ? '#416939' : '#52796f';
+    let badgeColor;
+    switch(item.tipo) {
+      case 'Família':
+        badgeColor = '#416939';
+        break;
+      case 'Gênero':
+        badgeColor = '#52796f';
+        break;
+      case 'Espécie':
+        badgeColor = '#8a5a44';
+        break;
+      default:
+        badgeColor = '#666';
+    }
     
     li.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -543,10 +653,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM carregado, inicializando...");
   
   try {
-    // Carregar dados
+    // Carregar dados (incluindo espécies)
     await Promise.all([
       carregarFamilias(),
-      carregarGeneros()
+      carregarGeneros(),
+      carregarEspecies()  // ADICIONADO: Carrega as espécies
     ]);
     
     montarBancoBusca();
@@ -622,8 +733,3 @@ function configurarEventos() {
     }
   }, true); // Use capture phase para garantir execução
 }
-
-// Remova esta linha problemática:
-// window.addEventListener("load", () => {
-//   console.log("Página carregada");
-// });

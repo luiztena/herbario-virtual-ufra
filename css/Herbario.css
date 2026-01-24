@@ -648,7 +648,7 @@ html {
     background: linear-gradient(135deg, #2d5a27, #3a7a32);
     color: white;
     padding: 14px 28px;
-    border-radius: 50px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -658,8 +658,11 @@ html {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    margin-top:118%;
-    margin-right: -50px;
+    margin-top: 30px; /* ou 40px, ajuste conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* para centralizar com margin auto */
+    width: fit-content; /* ajusta largura ao conteúdo */
 }
 
 .back-to-catalog-btn::before {

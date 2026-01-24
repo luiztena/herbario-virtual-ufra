@@ -12,14 +12,12 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
-      "Número de verticilos protetores": "Diclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Isoestêmone",
-      "Tipo de folha": "Simples",
-      "Número da chave": "18",
-      "Sequência numérica": "1-2-9-10-11-12"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples, oposta"
     }
   },
   "hebanthe": {
@@ -35,14 +33,12 @@
     ],
     "ficha": {
       "Nome científico": "Hebanthe",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
-      "Número de verticilos protetores": "Diclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Isoestêmone",
-      "Tipo de folha": "Simples",
-      "Número da chave": "18",
-      "Sequência numérica": "1-2-9-10-11-12"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples"
     }
   },
   "anacardium": {
@@ -58,14 +54,12 @@
     ],
     "ficha": {
       "Nome científico": "Anacardium",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Composta pinada ou simples",
-      "Número da chave": "20",
-      "Sequência numérica": "1-2-9-10-13-14"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples, alterna"
     }
   },
   "mangifera": {
@@ -81,14 +75,12 @@
     ],
     "ficha": {
       "Nome científico": "Mangifera",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Composta pinada ou simples",
-      "Número da chave": "20",
-      "Sequência numérica": "1-2-9-10-13-14"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Simples, alterna"
     }
   },
   "tapirira": {
@@ -104,14 +96,12 @@
     ],
     "ficha": {
       "Nome científico": "Tapirira",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Composta pinada ou simples",
-      "Número da chave": "20",
-      "Sequência numérica": "1-2-9-10-13-14"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Composta pinada, alterna"
     }
   },
   "justicia": {
@@ -127,14 +117,12 @@
     ],
     "ficha": {
       "Nome científico": "Justicia",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
+      "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Composta pinada",
-      "Número da chave": "19",
-      "Sequência numérica": "1-2-9-10-11-12"
+      "Número de estames comparado ao número de pétalas": "Oligostêmone (2 ou 4)",
+      "Tipo de folha": "Simples, oposta"
     }
   },
   "allamanda": {
@@ -150,14 +138,12 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Isoestêmone",
-      "Tipo de folha": "Simples",
-      "Número da chave": "14",
-      "Sequência numérica": "1-2-3-4-5-6"
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta ou verticilada"
     }
   },
   "tabernaemontana": {
@@ -173,14 +159,12 @@
     ],
     "ficha": {
       "Nome científico": "Tabernaemontana",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Isoestêmone",
-      "Tipo de folha": "Simples",
-      "Número da chave": "14",
-      "Sequência numérica": "1-2-3-4-5-6"
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta"
     }
   },
   "euterpe": {
@@ -196,14 +180,12 @@
     ],
     "ficha": {
       "Nome científico": "Euterpe",
-      "Posição taxonômica APG IV": "Monocotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Monocotiledônea - Arecales",
+      "Soldura lateral das pétalas": "Dialitépala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Composta palmada ou pinada",
-      "Número da chave": "1",
-      "Sequência numérica": "1"
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Composta pinada (palmeira)"
     }
   },
   "saritaea": {
@@ -219,14 +201,12 @@
     ],
     "ficha": {
       "Nome científico": "Saritaea",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
       "Número de estames comparado ao número de pétalas": "Oligostêmone",
-      "Tipo de folha": "Composta pinada ou simples",
-      "Número da chave": "15",
-      "Sequência numérica": "1-2-3-4-5-6"
+      "Tipo de folha": "Simples ou composta"
     }
   },
   "bixa": {
@@ -242,14 +222,12 @@
     ],
     "ficha": {
       "Nome científico": "Bixa",
-      "Posição taxonômica APG IV": "Eudicotiledônea",
-      "Soldura lateral das pétalas": "Arquiclamídea",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
+      "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
       "Número de estames comparado ao número de pétalas": "Polistêmone",
-      "Tipo de folha": "Simples",
-      "Número da chave": "21",
-      "Sequência numérica": "1-2-9-10-13-15"
+      "Tipo de folha": "Simples, alterna"
     }
   }
 }

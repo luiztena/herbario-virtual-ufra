@@ -1,171 +1,416 @@
 {
-    "alternanthera-brasiliana": {
+  "alternanthera-brasiliana": {
     "id": "alternanthera-brasiliana",
     "name": "Alternanthera brasiliana",
     "genero": "alternanthera",
     "family": "amaranthaceae",
-    "image": "../img/especies/alternanthera-brasiliana.jpg",
-    "descricao": "Espécie herbácea amplamente utilizada como ornamental.",
-    "ficha": {}
+    "image": "../imagens/especies/amaranthaceae/alternanthera/alternanthera-brasiliana.jpg",
+    "page": "../html/especie.html?id=alternanthera-brasiliana",
+    "descricaoLonga": [
+      "Alternanthera brasiliana é uma espécie herbácea da família Amaranthaceae.",
+      "É amplamente utilizada como planta ornamental em jardins tropicais.",
+      "Apresenta folhagem colorida e adapta-se bem a diferentes condições de solo."
+    ],
+    "ficha": {
+      "Nome científico": "Alternanthera brasiliana",
+      "Tipo de planta": ["Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta",
+      "Número da chave": "Não aplicável (herbácea)",
+      "Sequência numérica": "Caryophyllales"
+    }
   },
-
   "alternanthera-flavecens": {
     "id": "alternanthera-flavecens",
     "name": "Alternanthera flavecens",
     "genero": "alternanthera",
     "family": "amaranthaceae",
-    "image": "../img/especies/alternanthera-flavecens.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/amaranthaceae/alternanthera/alternanthera-flavecens.jpg",
+    "page": "../html/especie.html?id=alternanthera-flavecens",
+    "descricaoLonga": [
+      "Alternanthera flavecens é uma espécie da família Amaranthaceae.",
+      "Caracteriza-se por suas folhas amareladas e hábito herbáceo."
+    ],
+    "ficha": {
+      "Nome científico": "Alternanthera flavecens",
+      "Tipo de planta": ["Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta",
+      "Número da chave": "Não aplicável (herbácea)",
+      "Sequência numérica": "Caryophyllales"
+    }
   },
-
   "alternanthera-sessilis": {
     "id": "alternanthera-sessilis",
     "name": "Alternanthera sessilis",
     "genero": "alternanthera",
     "family": "amaranthaceae",
-    "image": "../img/especies/alternanthera-sessilis.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/amaranthaceae/alternanthera/alternanthera-sessilis.jpg",
+    "page": "../html/especie.html?id=alternanthera-sessilis",
+    "descricaoLonga": [
+      "Alternanthera sessilis é uma espécie herbácea de Amaranthaceae.",
+      "Conhecida por suas folhas sésseis e crescimento prostrado."
+    ],
+    "ficha": {
+      "Nome científico": "Alternanthera sessilis",
+      "Tipo de planta": ["Medicinal", "Oportunista"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, séssil, oposta",
+      "Número da chave": "Não aplicável (herbácea)",
+      "Sequência numérica": "Caryophyllales"
+    }
   },
-
   "alternanthera-tenella": {
     "id": "alternanthera-tenella",
     "name": "Alternanthera tenella",
     "genero": "alternanthera",
     "family": "amaranthaceae",
-    "image": "../img/especies/alternanthera-tenella.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/amaranthaceae/alternanthera/alternanthera-tenella.jpg",
+    "page": "../html/especie.html?id=alternanthera-tenella",
+    "descricaoLonga": [
+      "Alternanthera tenella é uma espécie delicada da família Amaranthaceae.",
+      "Apresenta folhas pequenas e crescimento rasteiro."
+    ],
+    "ficha": {
+      "Nome científico": "Alternanthera tenella",
+      "Tipo de planta": ["Oportunista"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta",
+      "Número da chave": "Não aplicável (herbácea)",
+      "Sequência numérica": "Caryophyllales"
+    }
   },
-
   "hebanthe-eriantha": {
     "id": "hebanthe-eriantha",
     "name": "Hebanthe eriantha",
     "genero": "hebanthe",
     "family": "amaranthaceae",
-    "image": "../img/especies/hebanthe-eriantha.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/amaranthaceae/hebanthe/hebanthe-eriantha.jpg",
+    "page": "../html/especie.html?id=hebanthe-eriantha",
+    "descricaoLonga": [
+      "Hebanthe eriantha é uma espécie da família Amaranthaceae.",
+      "Conhecida por suas flores com indumento denso."
+    ],
+    "ficha": {
+      "Nome científico": "Hebanthe eriantha",
+      "Tipo de planta": ["Medicinal"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
+      "Soldura lateral das pétalas": "Dialipétala ou apétala",
+      "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples",
+      "Número da chave": "Caryophyllales",
+      "Sequência numérica": "Caryophyllales"
+    }
   },
-
   "anacardium-occidentale": {
     "id": "anacardium-occidentale",
     "name": "Anacardium occidentale",
     "genero": "anacardium",
     "family": "anacardiaceae",
-    "image": "../img/especies/anacardium-occidentale.jpg",
-    "descricao": "Espécie conhecida como cajueiro.",
-    "ficha": {}
+    "image": "../imagens/especies/anacardiaceae/anacardium/anacardium-occidentale.jpg",
+    "page": "../html/especie.html?id=anacardium-occidentale",
+    "descricaoLonga": [
+      "Anacardium occidentale, conhecido como cajueiro, é uma espécie frutífera da família Anacardiaceae.",
+      "Originário do Brasil, produz o caju e a castanha-do-caju.",
+      "É uma árvore perene que pode atingir até 10 metros de altura."
+    ],
+    "ficha": {
+      "Nome científico": "Anacardium occidentale",
+      "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone ou Polistêmone",
+      "Tipo de folha": "Simples, alterna, espiralada",
+      "Número da chave": "73 (Chave F)",
+      "Sequência numérica": "Sapindales"
+    }
   },
-
   "justicia-secunda": {
     "id": "justicia-secunda",
     "name": "Justicia secunda",
     "genero": "justicia",
     "family": "acanthaceae",
-    "image": "../img/especies/justicia-secunda.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/acanthaceae/justicia/justicia-secunda.jpg",
+    "page": "../html/especie.html?id=justicia-secunda",
+    "descricaoLonga": [
+      "Justicia secunda é uma espécie da família Acanthaceae.",
+      "Caracteriza-se por suas inflorescências secundas e flores vistosas."
+    ],
+    "ficha": {
+      "Nome científico": "Justicia secunda",
+      "Tipo de planta": ["Medicinal", "Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone (geralmente 2 ou 4)",
+      "Tipo de folha": "Simples, oposta",
+      "Número da chave": "Lamiales",
+      "Sequência numérica": "1-2-3-4 (Lamiales)"
+    }
   },
-
   "mangifera-indica": {
     "id": "mangifera-indica",
     "name": "Mangifera indica",
     "genero": "mangifera",
     "family": "anacardiaceae",
-    "image": "../img/especies/mangifera-indica.jpg",
-    "descricao": "Mangueira, espécie frutífera amplamente cultivada.",
-    "ficha": {}
+    "image": "../imagens/especies/anacardiaceae/mangifera/mangifera-indica.jpg",
+    "page": "../html/especie.html?id=mangifera-indica",
+    "descricaoLonga": [
+      "Mangifera indica, a mangueira, é uma espécie frutífera amplamente cultivada.",
+      "Originária do sul da Ásia, produz a manga, fruto popular em todo o mundo.",
+      "Árvore de grande porte, podendo atingir até 30 metros de altura."
+    ],
+    "ficha": {
+      "Nome científico": "Mangifera indica",
+      "Tipo de planta": ["Frutífera", "Madeireira", "Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone ou Polistêmone",
+      "Tipo de folha": "Simples, alterna, espiralada",
+      "Número da chave": "73 (Chave F)",
+      "Sequência numérica": "Sapindales"
+    }
   },
-
   "tapirira-guianensis": {
     "id": "tapirira-guianensis",
     "name": "Tapirira guianensis",
     "genero": "tapirira",
     "family": "anacardiaceae",
-    "image": "../img/especies/tapirira-guianensis.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/anacardiaceae/tapirira/tapirira-guianesis.jpg",
+    "page": "../html/especie.html?id=tapirira-guianensis",
+    "descricaoLonga": [
+      "Tapirira guianensis é uma espécie arbórea da família Anacardiaceae.",
+      "Conhecida como pau-pombo, ocorre em florestas tropicais da América do Sul."
+    ],
+    "ficha": {
+      "Nome científico": "Tapirira guianensis",
+      "Tipo de planta": ["Madeireira", "Frutífera"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
+      "Soldura lateral das pétalas": "Dialipétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Composta pinada, alterna",
+      "Número da chave": "51 (Chave C - Anacardiaceae)",
+      "Sequência numérica": "Sapindales"
+    }
   },
-
   "allamanda-blanchetii": {
     "id": "allamanda-blanchetii",
     "name": "Allamanda blanchetii",
     "genero": "allamanda",
     "family": "apocynaceae",
-    "image": "../img/especies/allamanda-blanchetii.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/apocynaceae/allamanda/allamanda-blanchetii.jpg",
+    "page": "../html/especie.html?id=allamanda-blanchetii",
+    "descricaoLonga": [
+      "Allamanda blanchetii é uma trepadeira ornamental da família Apocynaceae.",
+      "Conhecida por suas flores roxas intensas e folhagem verde-escura."
+    ],
+    "ficha": {
+      "Nome científico": "Allamanda blanchetii",
+      "Tipo de planta": ["Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta ou verticilada",
+      "Número da chave": "Gentianales",
+      "Sequência numérica": "Gentianales - Apocynaceae"
+    }
   },
-
   "allamanda-cathartica": {
     "id": "allamanda-cathartica",
     "name": "Allamanda cathartica",
     "genero": "allamanda",
     "family": "apocynaceae",
-    "image": "../img/especies/allamanda-cathartica.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/apocynaceae/allamanda/allamanda-cathartica.jpg",
+    "page": "../html/especie.html?id=allamanda-cathartica",
+    "descricaoLonga": [
+      "Allamanda cathartica, conhecida como alamanda-amarela, é uma trepadeira ornamental.",
+      "Popular em jardins tropicais por suas flores amarelas grandes e vistosas."
+    ],
+    "ficha": {
+      "Nome científico": "Allamanda cathartica",
+      "Tipo de planta": ["Ornamental", "Medicinal"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta ou verticilada",
+      "Número da chave": "Gentianales",
+      "Sequência numérica": "Gentianales - Apocynaceae"
+    }
   },
-
   "allamanda-polyantha": {
     "id": "allamanda-polyantha",
     "name": "Allamanda polyantha",
     "genero": "allamanda",
     "family": "apocynaceae",
-    "image": "../img/especies/allamanda-polyantha.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/apocynaceae/allamanda/allamanda-polyantha.jpg",
+    "page": "../html/especie.html?id=allamanda-polyantha",
+    "descricaoLonga": [
+      "Allamanda polyantha é uma espécie de Allamanda com múltiplas flores.",
+      "Caracteriza-se por suas inflorescências densas e coloração amarela."
+    ],
+    "ficha": {
+      "Nome científico": "Allamanda polyantha",
+      "Tipo de planta": ["Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta ou verticilada",
+      "Número da chave": "Gentianales",
+      "Sequência numérica": "Gentianales - Apocynaceae"
+    }
   },
-
   "tabernaemontana-divaricata": {
     "id": "tabernaemontana-divaricata",
     "name": "Tabernaemontana divaricata",
     "genero": "tabernaemontana",
     "family": "apocynaceae",
-    "image": "../img/especies/tabernaemontana-divaricata.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/apocynaceae/tabernaemontana/tabernaemontana-divaricata.jpg",
+    "page": "../html/especie.html?id=tabernaemontana-divaricata",
+    "descricaoLonga": [
+      "Tabernaemontana divaricata, conhecida como jasmim-estrela, é um arbusto ornamental.",
+      "Apreciada por suas flores brancas perfumadas e folhagem brilhante."
+    ],
+    "ficha": {
+      "Nome científico": "Tabernaemontana divaricata",
+      "Tipo de planta": ["Ornamental", "Medicinal"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Isostêmone",
+      "Tipo de folha": "Simples, oposta",
+      "Número da chave": "22 (Chave D - Apocynaceae)",
+      "Sequência numérica": "Gentianales - Apocynaceae"
+    }
   },
-
-  "euterpe-oleacea": {
-    "id": "euterpe-oleacea",
+  "euterpe-oleracea": {
+    "id": "euterpe-oleracea",
     "name": "Euterpe oleracea",
     "genero": "euterpe",
     "family": "arecaceae",
-    "image": "../img/especies/euterpe-oleacea.jpg",
-    "descricao": "Espécie produtora do açaí.",
-    "ficha": {}
+    "image": "../imagens/especies/arecaceae/euterpe/euterpe-oleracea.jpg",
+    "page": "../html/especie.html?id=euterpe-oleacea",
+    "descricaoLonga": [
+      "Euterpe oleracea, o açaizeiro, é uma palmeira nativa da Amazônia.",
+      "Produz o açaí, fruto rico em antioxidantes e muito consumido no Brasil.",
+      "Cresce em touceiras e pode atingir até 25 metros de altura."
+    ],
+    "ficha": {
+      "Nome científico": "Euterpe oleracea",
+      "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
+      "Posição taxonômica APG IV": "Monocotiledônea - Arecales",
+      "Soldura lateral das pétalas": "Dialitépala ou Gamotépala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Variável",
+      "Tipo de folha": "Composta pinada (palma)",
+      "Número da chave": "9 (Chave B - Arecaceae)",
+      "Sequência numérica": "Monocotiledônea - Arecales"
+    }
   },
-
   "saritaea-magnifica": {
     "id": "saritaea-magnifica",
     "name": "Saritaea magnifica",
     "genero": "saritaea",
     "family": "bignoniaceae",
-    "image": "../img/especies/saritaea-magnifica.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/bignoniaceae/saritaea/saritaea-magnifica.jpg",
+    "page": "../html/especie.html?id=saritaea-magnifica",
+    "descricaoLonga": [
+      "Saritaea magnifica é uma trepadeira ornamental da família Bignoniaceae.",
+      "Conhecida por suas magníficas flores roxas em forma de trombeta.",
+      "Muito utilizada em paisagismo para cobrir cercas e pérgolas."
+    ],
+    "ficha": {
+      "Nome científico": "Saritaea magnifica",
+      "Tipo de planta": ["Ornamental"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Composta pinada ou simples",
+      "Número da chave": "15",
+      "Sequência numérica": "1-2-3-4-5-6"
+    }
   },
-
   "bixa-orellana": {
     "id": "bixa-orellana",
     "name": "Bixa orellana",
     "genero": "bixa",
     "family": "bixaceae",
-    "image": "../img/especies/bixa-orellana.jpg",
-    "descricao": "Conhecida como urucum.",
-    "ficha": {}
+    "image": "../imagens/especies/bixaceae/bixa/bixa-orellana.jpg",
+    "page": "../html/especie.html?id=bixa-orellana",
+    "descricaoLonga": [
+      "Bixa orellana, conhecida como urucum, é um arbusto ou pequena árvore.",
+      "Produz sementes que fornecem o colorau, usado como corante alimentar.",
+      "Originária da América tropical, tem importância econômica e cultural."
+    ],
+    "ficha": {
+      "Nome científico": "Bixa orellana",
+      "Tipo de planta": ["Medicinal", "Industrial"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
+      "Soldura lateral das pétalas": "Dialipétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples, alterna, multilobada",
+      "Número da chave": "17 (Chave F - folhas multilobadas)",
+      "Sequência numérica": "Malvales - Bixaceae"
+    }
   },
-
   "bixa-arborea": {
     "id": "bixa-arborea",
     "name": "Bixa arborea",
     "genero": "bixa",
     "family": "bixaceae",
-    "image": "../img/especies/bixa-arborea.jpg",
-    "descricao": "",
-    "ficha": {}
+    "image": "../imagens/especies/bixaceae/bixa/bixa-arborea.jpg",
+    "page": "../html/especie.html?id=bixa-arborea",
+    "descricaoLonga": [
+      "Bixa arborea é uma espécie arbórea do gênero Bixa.",
+      "Menos conhecida que B. orellana, ocorre em formações florestais."
+    ],
+    "ficha": {
+      "Nome científico": "Bixa arborea",
+      "Tipo de planta": ["Madeireira"],
+      "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
+      "Soldura lateral das pétalas": "Dialipétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Polistêmone",
+      "Tipo de folha": "Simples, alterna",
+      "Número da chave": "Malvales",
+      "Sequência numérica": "Malvales - Bixaceae"
+    }
   }
 }
