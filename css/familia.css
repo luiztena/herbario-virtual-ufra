@@ -218,6 +218,78 @@ aside strong {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para os botões de voltar */
+.back-buttons-container {
+    margin: 3rem 0;
+    padding: 0 2rem;
+}
+
+.back-buttons-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-catalog-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #416939;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #416939;
+    min-width: 200px;
+    text-align: center;
+}
+
+.back-to-catalog-btn:hover {
+    background-color: #283618;
+    border-color: #283618;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-catalog-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-catalog-btn i {
+    font-size: 1rem;
+}
+
+/* Estilo específico para o botão do índice */
+.back-to-index-btn {
+    background-color: #52796f;
+    border-color: #52796f;
+}
+
+.back-to-index-btn:hover {
+    background-color: #3a5a48;
+    border-color: #3a5a48;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .back-buttons-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .back-to-catalog-btn {
+        width: 100%;
+    }
+}
+
+
+
 /* =============================
    GALERIA DE IMAGENS (PÁGINA DE ESPÉCIE)
    ============================= */

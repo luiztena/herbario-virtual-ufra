@@ -42,6 +42,34 @@ function getBasePath() {
   return '/';
 }
 
+// Função para configurar o botão "Voltar à página da família"
+function configurarBotaoFamilia(generoData) {
+  const backButton = document.getElementById("back-to-family-btn");
+  if (!backButton) return;
+  
+  const basePath = getBasePath();
+  
+  // Se o gênero tiver a família definida
+  if (generoData.family) {
+    // Cria a URL para a página da família
+    const familyPage = `${basePath}html/familia.html?id=${generoData.family}`;
+    
+    // Define o href do botão
+    backButton.href = familyPage;
+    
+    // Mantém o comportamento de link normal
+    backButton.onclick = null;
+    
+    console.log("Botão configurado para família:", generoData.family);
+  } else {
+    // Se não tiver família definida, volta para o índice
+    backButton.href = `${basePath}index.html`;
+    console.log("Botão configurado para índice (família não encontrada)");
+  }
+  
+  console.log("URL do botão:", backButton.href);
+}
+
 async function carregarGenero() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -316,13 +344,16 @@ async function carregarGenero() {
       });
     }
 
+    // ===============================
+    // CONFIGURA O BOTÃO "VOLTAR À PÁGINA DA FAMÍLIA"
+    // ===============================
+    configurarBotaoFamilia(genero);
+
   } catch (erro) {
     console.error("Erro ao carregar gênero:", erro);
     const basePath = getBasePath();
     window.location.href = `${basePath}404.html`;
   }
 }
-
-
 
 document.addEventListener("DOMContentLoaded", carregarGenero);
