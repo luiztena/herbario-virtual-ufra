@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+.bodyhome {
+    background: url(../imagens/site-imagem/background-texture.jpg) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.hero {
+   
+    color: white;
+    text-align: justify;
+    padding: 120px 0 100px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Turret Road", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.hero h2 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 350; /* Usando um peso mais forte para títulos */
+    font-style: normal;
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+    line-height: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    font-family: "Turret Road", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.55rem;
+    color: white;
+    max-width: 1350px;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.sectioncontainer{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.86);
+    margin-left: 10%;
+    width: 80%;
+    padding: 100px;
+}
+
+/* Container principal para parágrafo e imagem lado a lado */
+.paragrafo-container {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 40px; /* Espaço entre o texto e a imagem */
+    margin-bottom: 40px;
+}
+
+/* Estilo para o bloco de texto */
+.paragrafo {
+    flex: 1; /* O texto ocupa o espaço disponível */
+    text-align: justify;
+}
+
+/* Estilo para o contêiner da imagem */
+.imagem {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    width: 400px; /* Largura fixa para a imagem (ajuste conforme necessário) */
+}
+
+/* Estilo específico para a imagem #ufra */
+#ufra {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner .imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 40%; /* Bordas arredondadas suaves (ajustado) */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid rgba(141, 110, 99, 0.2); /* Borda sutil cor da paleta */
+}
+
+#herbario-virtual{
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner .imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 20%; /* Bordas arredondadas suaves (ajustado) */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid rgba(141, 110, 99, 0.2); /* Borda sutil cor da paleta */
+}
+
+#excicatas{
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner .imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 25%; /* Bordas arredondadas suaves (ajustado) */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid rgba(141, 110, 99, 0.2); /* Borda sutil cor da paleta */
+}
+
+.sectioncontainer h1{
+    margin-bottom: 50px;
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: 8px;
+    
+}
+
+.sectioncontainer h2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 25pt;
+    font-weight: 300;
+    letter-spacing: 4px;
+
+}
+
+.sectioncontainer p {
+    text-indent: 50px;
+}
+
+/* ===== MISSÃO/VISÃO/VALORES EM 3 COLUNAS ===== */
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* EFEITO DE OVERLAY NO FUNDO (ao redor dos cards) - COM FADE-OUT */
+.mvv-grid::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s ease, background-color 1.5s ease; /* Transição mais lenta para fade-out */
+}
+
+/* Quando um card é hover, ativa o overlay no fundo */
+.mvv-grid:hover::before {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+/* Estilo dos cards individuais - COM TRANSIÇÕES SUAVES */
+.mvv-card {
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top: 5px solid #2e7d32;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    background-color: white; /* Garante que o card tenha fundo sólido */
+    position: relative;
+    z-index: 1; /* Coloca os cards acima do overlay */
+}
+
+/* Quando o mouse está sobre o grid, mas NÃO sobre este card específico */
+.mvv-grid:hover .mvv-card:not(:hover) {
+    opacity: 0.5;
+    filter: blur(1px);
+    transform: scale(0.98);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card que está com hover (mantém normal) */
+.mvv-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top-color: #4caf50;
+    opacity: 1 !important;
+    filter: none !important;
+    transition: all 0.3s ease; /* Entrada mais rápida, saída mais lenta */
+}
+
+.mvv-card h3 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-family: "Arial";
+    font-weight: 400;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mvv-card p {
+    text-indent: 0;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 0;
+}
+
+.mvv-card ul {
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.mvv-card li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.mvv-card li:last-child {
+    border-bottom: none;
+}
+
+.mvv-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Responsividade para as colunas */
+@media (max-width: 1024px) {
+    .mvv-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mvv-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .mvv-card {
+        padding: 25px;
+    }
+    
+    .mvv-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* Em telas pequenas, reduz o efeito */
+    .mvv-grid:hover .mvv-card:not(:hover) {
+        opacity: 0.7;
+        filter: blur(0.5px);
+        transition: all 0.4s ease; /* Mais rápido em mobile para melhor performance */
+    }
+}
+
+/* Para alinhar melhor o título da seção - COM FADE-OUT SUAVE */
+.sectioncontainer h2:nth-last-of-type(1) {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2.2rem;
+    color: #1b5e20; /* Cor normal */
+    position: relative;
+    padding-bottom: 15px;
+    z-index: 2;
+    transition: color 1.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Quando o grid estiver com hover (fundo transparente), muda a cor do título */
+.mvv-grid:hover ~ .sectioncontainer h2:nth-last-of-type(1),
+.mvv-grid:hover + .sectioncontainer h2:nth-last-of-type(1),
+.sectioncontainer:hover h2:nth-last-of-type(1) {
+    color: lightgreen;
+    filter: brightness(1.3); /* Opcional: dá um brilho extra */
+}
+
+.sectioncontainer h2:nth-last-of-type(1)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+/* ================= ANIMAÇÕES ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= ANIMAÇÃO DE FADE-OUT PERSONALIZADA ================= */
+@keyframes gentleFadeOut {
+    0% {
+        opacity: 0.5;
+        filter: blur(1px);
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+/* Aplica a animação de fade-out quando sai do hover */
+.mvv-grid:not(:hover) .mvv-card {
+    animation: gentleFadeOut 0.7s ease-out;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+/* ================= VARIÁVEIS RESPONSIVAS ================= */
+:root {
+    --mobile-padding: 20px;
+    --tablet-padding: 40px;
+    --desktop-padding: 100px;
+    --mobile-font-title: 2rem;
+    --tablet-font-title: 2.5rem;
+    --desktop-font-title: 3.2rem;
+    --mobile-font-body: 1rem;
+    --tablet-font-body: 1.2rem;
+    --desktop-font-body: 1.55rem;
+}
+
+.bodyhome {
+    background: url(../imagens/site-imagem/background-texture.jpg) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* ================= HERO - RESPONSIVO ================= */
+.hero {
+    color: white;
+    text-align: justify;
+    padding: 80px var(--mobile-padding);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Turret Road", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero h2 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 350;
+    font-style: normal;
+    font-size: var(--mobile-font-title);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    animation: fadeInUp 1s ease-out;
+    text-align: center;
+}
+
+.hero p {
+    font-family: "Turret Road", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--mobile-font-body);
+    color: white;
+    max-width: 100%;
+    animation: fadeInUp 1s ease-out 0.3s both;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ================= SEÇÃO CONTAINER - RESPONSIVO ================= */
+.sectioncontainer {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.96);
+    margin: 0 auto 40px;
+    width: 95%;
+    padding: 40px var(--mobile-padding);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* ================= PARÁGRAFO + IMAGEM - RESPONSIVO ================= */
+.paragrafo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.paragrafo {
+    flex: 1;
+    text-align: justify;
+    width: 100%;
+}
+
+.imagem {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    order: -1; /* Imagem primeiro no mobile */
+}
+
+/* Estilo unificado para todas as imagens no mobile */
+#ufra, #herbario-virtual, #excicatas {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Padronizado para mobile */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(141, 110, 99, 0.2);
+    display: block;
+}
+
+/* ================= TIPOGRAFIA - RESPONSIVO ================= */
+.sectioncontainer h1 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.sectioncontainer h2 {
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.sectioncontainer p {
+    text-indent: 30px;
+    font-size: var(--mobile-font-body);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ================= CARDS MVV - RESPONSIVO ================= */
+.mvv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Overlay desativado no mobile para performance */
+.mvv-grid::before {
+    display: none;
+}
+
+.mvv-card {
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top: 5px solid #2e7d32;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* Efeitos hover simplificados no mobile */
+.mvv-card:hover, .mvv-card:active {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-top-color: #4caf50;
+}
+
+.mvv-card h3 {
+    color: #4caf50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.mvv-card p {
+    text-indent: 0;
+    flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.mvv-card ul {
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    margin: 15px 0 0 0;
+}
+
+.mvv-card li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.mvv-card li:last-child {
+    border-bottom: none;
+}
+
+.mvv-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ================= TÍTULO DA SEÇÃO - RESPONSIVO ================= */
+.sectioncontainer h2:nth-last-of-type(1) {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.8rem;
+    color: #1b5e20;
+    position: relative;
+    padding-bottom: 15px;
+    z-index: 2;
+    transition: color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sectioncontainer h2:nth-last-of-type(1)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #2e7d32, #4caf50);
+}
+
+/* ================= ANIMAÇÕES ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gentleFadeOut {
+    0% {
+        opacity: 0.5;
+        filter: blur(1px);
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* TABLET (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        padding: 100px var(--tablet-padding);
+        margin-bottom: 40px;
+    }
+    
+    .hero h2 {
+        font-size: var(--tablet-font-title);
+    }
+    
+    .hero p {
+        font-size: var(--tablet-font-body);
+        max-width: 90%;
+    }
+    
+    .sectioncontainer {
+        width: 90%;
+        padding: 60px var(--tablet-padding);
+    }
+    
+    .paragrafo-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 35px;
+    }
+    
+    .imagem {
+        width: 45%;
+        max-width: 350px;
+        order: 0;
+    }
+    
+    #ufra {
+        border-radius: 30%;
+    }
+    
+    #herbario-virtual {
+        border-radius: 15%;
+    }
+    
+    #excicatas {
+        border-radius: 20%;
+    }
+    
+    .sectioncontainer h1 {
+        font-size: 2.2rem;
+        letter-spacing: 5px;
+    }
+    
+    .sectioncontainer h2 {
+        font-size: 1.9rem;
+        letter-spacing: 3px;
+    }
+    
+    .sectioncontainer p {
+        font-size: var(--tablet-font-body);
+    }
+    
+    .mvv-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .mvv-card h3 {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    
+    .mvv-card p {
+        text-align: left;
+    }
+}
+
+/* DESKTOP (1024px+) */
+@media (min-width: 1024px) {
+    .hero {
+        padding: 120px var(--desktop-padding);
+        margin-bottom: 40px;
+    }
+    
+    .hero h2 {
+        font-size: var(--desktop-font-title);
+        text-align: justify;
+    }
+    
+    .hero p {
+        font-size: var(--desktop-font-body);
+        max-width: 1350px;
+        text-align: justify;
+    }
+    
+    .sectioncontainer {
+        width: 80%;
+        padding: var(--desktop-padding);
+        margin-left: 10%;
+    }
+    
+    .paragrafo-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .imagem {
+        width: 400px;
+        order: 0;
+    }
+    
+    #ufra {
+        border-radius: 40%;
+    }
+    
+    #herbario-virtual {
+        border-radius: 20%;
+    }
+    
+    #excicatas {
+        border-radius: 25%;
+    }
+    
+    .sectioncontainer h1 {
+        font-size: 30pt;
+        letter-spacing: 8px;
+    }
+    
+    .sectioncontainer h2 {
+        font-size: 25pt;
+        letter-spacing: 4px;
+        text-align: left;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    .sectioncontainer p {
+        text-indent: 50px;
+        font-size: 1.1rem;
+    }
+    
+    .mvv-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    /* Ativa efeitos desktop apenas em telas grandes */
+    .mvv-grid::before {
+        display: block;
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 1.2s ease, background-color 1.2s ease;
+    }
+    
+    .mvv-grid:hover::before {
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 1;
+    }
+    
+    .mvv-grid:hover .mvv-card:not(:hover) {
+        opacity: 0.5;
+        filter: blur(1px);
+        transform: scale(0.98);
+        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mvv-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        border-top-color: #4caf50;
+        opacity: 1 !important;
+        filter: none !important;
+        transition: all 0.6s ease;
+    }
+    
+    .mvv-grid:not(:hover) .mvv-card {
+        animation: gentleFadeOut 1.4s ease-out;
+    }
+    
+    .mvv-card h3 {
+        justify-content: flex-start;
+        text-align: left;
+        letter-spacing: 5px;
+    }
+    
+    .mvv-card p {
+        text-align: left;
+    }
+}
+
+/* MOBILE PEQUENO (até 480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .sectioncontainer {
+        width: 100%;
+        padding: 30px 15px;
+        margin: 0 0 30px 0;
+        border-radius: 0;
+    }
+    
+    .sectioncontainer h1 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+    
+    .sectioncontainer h2 {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+    
+    .sectioncontainer p {
+        text-indent: 20px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .mvv-card {
+        padding: 20px 15px;
+    }
+    
+    .mvv-card h3 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .mvv-card p, .mvv-card li {
+        font-size: 0.95rem;
+    }
+    
+    .sectioncontainer h2:nth-last-of-type(1) {
+        font-size: 1.5rem;
+    }
+}
+
+/* ORIENTAÇÃO LANDSCAPE EM MOBILE */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 60px var(--mobile-padding);
+    }
+    
+    .paragrafo-container {
+        flex-direction: row;
+        gap: 25px;
+    }
+    
+    .imagem {
+        width: 40%;
+        max-width: 250px;
+    }
+    
+    .mvv-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* EVITAR ZOOM EM INPUTS NO iOS */
+@media (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* ================= HERO - RESPONSIVO ================= */
+
+
+
+
+/* MOBILE PEQUENO (até 480px) - CORREÇÃO ESPECÍFICA */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .herocontainer {
+        padding: 0;
+        margin: -10px;
+    }
+    
+    .hero h2 {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        margin-bottom: 55px;
+        margin-top: 55px;
+        padding: 0 10px;
+        text-align: center;
+        display: block;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+}
+
+/* VERIFICAÇÃO EXTRA PARA DISPOSITIVOS MUITO PEQUENOS */
+@media (max-width: 360px) {
+    .hero h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        padding: 0 5px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+}
+
+/* GARANTIR VISIBILIDADE EM TODOS OS DISPOSITIVOS */
+.hero h2,
+.hero p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .mvv-grid:hover .mvv-card:not(:hover) {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+    }
+    
+    .mvv-grid::before {
+        display: none !important;
+    }
+    
+    .sectioncontainer h2:nth-last-of-type(1) {
+        color: #1b5e20 !important;
+    }
+}
