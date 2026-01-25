@@ -12,6 +12,16 @@ const CONFIG = {
   KNOWN_FOLDERS: ['html', 'js', 'css', 'data', 'imagens', 'images']
 };
 
+// Estado do zoom
+const ZOOM_STATE = {
+  level: 1,
+  levels: [1, 1.5, 3, 5, 7],
+  currentIndex: 0,
+  posX: 0,
+  posY: 0,
+  panInterval: null
+};
+
 // =============================================
 // FUNÇÕES UTILITÁRIAS
 // =============================================
@@ -100,7 +110,349 @@ function setupCatalogButton() {
 }
 
 // =============================================
-// FUNÇÕES DE GALERIA (ABRIR EM NOVA ABA)
+// FUNÇÕES DO MODAL
+// =============================================
+
+function createModal() {
+  // Verifica se já existe
+  if (document.getElementById('image-modal')) return;
+  
+  const modal = createElement('div', {
+    id: 'image-modal'
+  }, {
+    display: 'none',
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.85)',
+    zIndex: '10000',
+    justifyContent: 'center',
+    alignItems: 'center',
+    cursor: 'zoom-in'
+  });
+  
+  const modalContent = createElement('div', {
+    id: 'modal-content'
+  }, {
+    position: 'relative',
+    maxWidth: '90%',
+    maxHeight: '90%',
+    overflow: 'hidden',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  });
+  
+  const modalImage = createElement('img', {
+    id: 'modal-image',
+    alt: 'Imagem ampliada'
+  }, {
+    maxWidth: '100%',
+    maxHeight: '90vh',
+    objectFit: 'contain',
+    transition: 'transform 0.3s ease',
+    cursor: 'zoom-in',
+    transform: 'scale(1)'
+  });
+  
+  const closeBtn = createElement('button', {
+    id: 'modal-close',
+    innerHTML: '&times;'
+  }, {
+    position: 'absolute',
+    top: '20px',
+    right: '40px',
+    fontSize: '50px',
+    color: 'white',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    zIndex: '10001',
+    fontWeight: 'bold',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+  });
+  
+  const zoomInfo = createElement('div', {
+    id: 'zoom-info',
+    textContent: 'Zoom: 1x'
+  }, {
+    position: 'absolute',
+    bottom: '20px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    color: 'white',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    padding: '10px 20px',
+    borderRadius: '20px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    zIndex: '10001'
+  });
+  
+  // Container dos botões de navegação
+  const navContainer = createElement('div', {
+    id: 'nav-arrows'
+  }, {
+    position: 'absolute',
+    bottom: '80px',
+    right: '40px',
+    width: '120px',
+    height: '120px',
+    pointerEvents: 'none',
+    zIndex: '10002',
+    display: 'none' // Oculto inicialmente
+  });
+  
+  // Criar as 4 setas
+  const arrows = [
+    { id: 'arrow-up', direction: 'up', icon: '↑', style: { top: '0', left: '50%', transform: 'translateX(-50%)' } },
+    { id: 'arrow-down', direction: 'down', icon: '↓', style: { bottom: '0', left: '50%', transform: 'translateX(-50%)' } },
+    { id: 'arrow-left', direction: 'left', icon: '←', style: { left: '0', top: '50%', transform: 'translateY(-50%)' } },
+    { id: 'arrow-right', direction: 'right', icon: '→', style: { right: '0', top: '50%', transform: 'translateY(-50%)' } }
+  ];
+  
+  arrows.forEach(arrow => {
+    const btn = createElement('button', {
+      id: arrow.id,
+      innerHTML: arrow.icon,
+      'data-direction': arrow.direction
+    }, {
+      position: 'absolute',
+      ...arrow.style,
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      backgroundColor: 'rgba(65, 105, 57, 0.8)',
+      color: 'white',
+      fontSize: '24px',
+      fontWeight: 'bold',
+      border: '2px solid white',
+      cursor: 'pointer',
+      pointerEvents: 'auto',
+      transition: 'all 0.2s ease',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      boxShadow: '0 2px 10px rgba(0,0,0,0.5)',
+      zIndex: '10003'
+    });
+    
+    // Efeitos hover
+    btn.onmouseenter = function() {
+      this.style.backgroundColor = 'rgba(65, 105, 57, 1)';
+      this.style.transform = this.style.transform + ' scale(1.1)';
+      startPanning(arrow.direction);
+    };
+    
+    btn.onmouseleave = function() {
+      this.style.backgroundColor = 'rgba(65, 105, 57, 0.8)';
+      const baseTransform = arrow.style.transform || '';
+      this.style.transform = baseTransform;
+      stopPanning();
+    };
+    
+    navContainer.appendChild(btn);
+  });
+  
+  modalContent.appendChild(modalImage);
+  modal.appendChild(modalContent);
+  modal.appendChild(closeBtn);
+  modal.appendChild(zoomInfo);
+  modal.appendChild(navContainer);
+  document.body.appendChild(modal);
+  
+  // Eventos
+  closeBtn.onclick = closeModal;
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  };
+  
+  // Previne scroll do body quando modal está aberto
+  modal.addEventListener('wheel', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+  
+  console.log('Modal criado com sucesso!');
+}
+
+function openModal(imageSrc, imageAlt) {
+  const modal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  
+  if (!modal || !modalImage) {
+    createModal();
+    return openModal(imageSrc, imageAlt);
+  }
+  
+  // Reset zoom state
+  ZOOM_STATE.currentIndex = 0;
+  ZOOM_STATE.level = ZOOM_STATE.levels[0];
+  ZOOM_STATE.posX = 0;
+  ZOOM_STATE.posY = 0;
+  
+  modalImage.src = imageSrc;
+  modalImage.alt = imageAlt;
+  modalImage.style.transform = 'scale(1)';
+  modalImage.style.transformOrigin = 'center center';
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  
+  updateZoomInfo();
+  updateArrowsVisibility();
+  setupImageZoom();
+  
+  console.log('Modal aberto com imagem:', imageSrc);
+}
+
+function closeModal() {
+  const modal = document.getElementById('image-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    
+    // Para qualquer panning em andamento
+    stopPanning();
+    
+    // Reset zoom
+    ZOOM_STATE.currentIndex = 0;
+    ZOOM_STATE.level = 1;
+    ZOOM_STATE.posX = 0;
+    ZOOM_STATE.posY = 0;
+    
+    updateArrowsVisibility();
+    
+    console.log('Modal fechado');
+  }
+}
+
+function updateZoomInfo() {
+  const zoomInfo = document.getElementById('zoom-info');
+  if (zoomInfo) {
+    zoomInfo.textContent = `Zoom: ${ZOOM_STATE.level}x`;
+  }
+}
+
+function updateArrowsVisibility() {
+  const navContainer = document.getElementById('nav-arrows');
+  if (navContainer) {
+    // Detecta se é dispositivo móvel
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                     || window.innerWidth <= 768;
+    
+    // Mostra as setas apenas quando há zoom ativo E não é mobile
+    navContainer.style.display = (ZOOM_STATE.level > 1 && !isMobile) ? 'block' : 'none';
+  }
+}
+
+// =============================================
+// FUNÇÕES DE ZOOM
+// =============================================
+
+function setupImageZoom() {
+  const modalImage = document.getElementById('modal-image');
+  const modal = document.getElementById('image-modal');
+  
+  if (!modalImage) return;
+  
+  // Remove event listeners anteriores
+  const newImage = modalImage.cloneNode(true);
+  modalImage.parentNode.replaceChild(newImage, modalImage);
+  
+  newImage.onclick = (e) => {
+    e.stopPropagation();
+    
+    // Avança para próximo nível de zoom
+    ZOOM_STATE.currentIndex = (ZOOM_STATE.currentIndex + 1) % ZOOM_STATE.levels.length;
+    ZOOM_STATE.level = ZOOM_STATE.levels[ZOOM_STATE.currentIndex];
+    
+    // Atualiza cursor
+    if (ZOOM_STATE.level === 1) {
+      newImage.style.cursor = 'zoom-in';
+      modal.style.cursor = 'zoom-in';
+    } else if (ZOOM_STATE.level === 7) {
+      newImage.style.cursor = 'zoom-out';
+      modal.style.cursor = 'zoom-out';
+    } else {
+      newImage.style.cursor = 'zoom-in';
+      modal.style.cursor = 'zoom-in';
+    }
+    
+    // Reset posição ao voltar para zoom 1x
+    if (ZOOM_STATE.level === 1) {
+      ZOOM_STATE.posX = 0;
+      ZOOM_STATE.posY = 0;
+      newImage.style.transform = 'scale(1)';
+      stopPanning(); // Para qualquer panning ao resetar zoom
+    } else {
+      newImage.style.transform = `scale(${ZOOM_STATE.level}) translate(${ZOOM_STATE.posX}px, ${ZOOM_STATE.posY}px)`;
+    }
+    
+    updateZoomInfo();
+    updateArrowsVisibility();
+    
+    console.log(`Zoom alterado para: ${ZOOM_STATE.level}x`);
+  };
+}
+
+// =============================================
+// FUNÇÕES DE PAN COM SETAS
+// =============================================
+
+function startPanning(direction) {
+  // Para qualquer panning anterior
+  stopPanning();
+  
+  // Só permite pan quando há zoom
+  if (ZOOM_STATE.level === 1) return;
+  
+  const modalImage = document.getElementById('modal-image');
+  if (!modalImage) return;
+  
+  const moveSpeed = 2; // Velocidade do scroll (pixels por frame)
+  
+  ZOOM_STATE.panInterval = setInterval(() => {
+    const maxMove = 200 * ZOOM_STATE.level;
+    
+    switch(direction) {
+      case 'up':
+        ZOOM_STATE.posY += moveSpeed;
+        break;
+      case 'down':
+        ZOOM_STATE.posY -= moveSpeed;
+        break;
+      case 'left':
+        ZOOM_STATE.posX += moveSpeed;
+        break;
+      case 'right':
+        ZOOM_STATE.posX -= moveSpeed;
+        break;
+    }
+    
+    // Limita o movimento
+    ZOOM_STATE.posX = Math.max(-maxMove, Math.min(maxMove, ZOOM_STATE.posX));
+    ZOOM_STATE.posY = Math.max(-maxMove, Math.min(maxMove, ZOOM_STATE.posY));
+    
+    // Aplica transformação
+    modalImage.style.transform = `scale(${ZOOM_STATE.level}) translate(${ZOOM_STATE.posX}px, ${ZOOM_STATE.posY}px)`;
+  }, 16); // ~60 FPS
+  
+  console.log(`Panning iniciado na direção: ${direction}`);
+}
+
+function stopPanning() {
+  if (ZOOM_STATE.panInterval) {
+    clearInterval(ZOOM_STATE.panInterval);
+    ZOOM_STATE.panInterval = null;
+    console.log('Panning parado');
+  }
+}
+
+// =============================================
+// FUNÇÕES DE GALERIA
 // =============================================
 
 function setupGalleryClick() {
@@ -110,22 +462,16 @@ function setupGalleryClick() {
   const images = galeriaContainer.querySelectorAll('img');
   
   images.forEach(img => {
-    // Adiciona cursor pointer
     img.style.cursor = 'pointer';
     
-    // Remove qualquer evento anterior
-    img.onclick = null;
-    
-    // Adiciona evento para abrir em nova aba
-    img.onclick = function(e) {
+    img.onclick = (e) => {
       e.preventDefault();
       e.stopPropagation();
       
-      // Abre a imagem em uma nova aba
-      window.open(this.src, '_blank');
+      // Abre no modal
+      openModal(img.src, img.alt);
     };
     
-    // Adiciona efeitos hover
     img.onmouseover = function() {
       this.style.opacity = '0.85';
       this.style.transform = 'scale(1.02)';
@@ -137,13 +483,12 @@ function setupGalleryClick() {
       this.style.transform = 'scale(1)';
     };
     
-    // Adiciona título para indicar que abre em nova aba
     if (!img.title) {
-      img.title = 'Clique para abrir imagem em uma nova aba';
+      img.title = 'Clique para ampliar a imagem';
     }
   });
   
-  console.log(`Configuradas ${images.length} imagens para abrir em nova aba`);
+  console.log(`Configuradas ${images.length} imagens para abrir no modal`);
 }
 
 // =============================================
@@ -216,7 +561,6 @@ function loadGallery(especie, basePath) {
   galeriaContainer.innerHTML = '';
   
   if (especie.image) {
-    // Processa o caminho da imagem
     let imagePath = especie.image;
     if (imagePath.startsWith('../')) {
       imagePath = imagePath.substring(3);
@@ -231,7 +575,6 @@ function loadGallery(especie, basePath) {
       finalImagePath = `${basePath}${imagePath}`;
     }
     
-    // Cria card da imagem
     const card = createElement('div', {}, {
       cursor: 'pointer',
       width: '250px',
@@ -243,8 +586,7 @@ function loadGallery(especie, basePath) {
       transition: 'all 0.3s'
     });
     
-    // Adiciona título no card
-    card.title = 'Clique para abrir imagem em uma nova aba';
+    card.title = 'Clique para ampliar a imagem';
     
     card.onmouseover = () => {
       card.style.transform = 'translateY(-5px)';
@@ -256,17 +598,16 @@ function loadGallery(especie, basePath) {
       card.style.boxShadow = 'none';
     };
     
-    // Adiciona clique no card também
     card.onclick = (e) => {
       e.stopPropagation();
-      window.open(finalImagePath, '_blank');
+      openModal(finalImagePath, especie.name);
     };
     
     const img = createElement('img', {
       src: finalImagePath,
       alt: especie.name,
       loading: 'lazy',
-      title: 'Clique para abrir imagem em uma nova aba'
+      title: 'Clique para ampliar a imagem'
     }, {
       width: '100%',
       height: '200px',
@@ -288,7 +629,6 @@ function loadGallery(especie, basePath) {
       galeriaSection.style.display = "block";
     }
     
-    // Configura os cliques após carregar a imagem
     setTimeout(() => {
       setupGalleryClick();
     }, 100);
@@ -334,7 +674,6 @@ async function carregarEspecie() {
   }
   
   try {
-    // Carrega dados da espécie
     const especies = await loadSpeciesDataFromJSON(basePath);
     const especie = especies[id];
     
@@ -346,21 +685,23 @@ async function carregarEspecie() {
     
     console.log("ESPÉCIE SELECIONADA:", especie);
     
-    // Configura botões de navegação
     setupFamilyButton(especie);
     setupGenusButton(especie);
     setupCatalogButton();
     
-    // Carrega dados da espécie
     loadSpeciesData(especie);
     
+    // Cria o modal
+    createModal();
+    
+    // Adiciona evento ESC para fechar modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+    
     console.log("Espécie carregada com sucesso!");
-    console.log("Nome:", especie.name);
-    console.log("Família:", especie.family);
-    console.log("Gênero:", especie.genero);
-    console.log("Tem descrição longa?", especie.descricaoLonga ? "Sim" : "Não");
-    console.log("Tem ficha?", especie.ficha ? "Sim" : "Não");
-    console.log("Tem imagem?", especie.image ? "Sim" : "Não");
     
   } catch (erro) {
     console.error("Erro ao carregar espécie:", erro);
