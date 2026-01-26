@@ -13,6 +13,7 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera brasiliana",
+      "Nome popular": "Penicilina, Perpétua-brasileira, Terramicina",
       "Tipo de planta": ["Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
@@ -37,6 +38,7 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera flavecens",
+      "Nome popular": "Apaga-fogo, Perpétua-amarela",
       "Tipo de planta": ["Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
@@ -61,6 +63,7 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera sessilis",
+      "Nome popular": "Orelha-de-macaco, Espinafre-d'água, Periquito",
       "Tipo de planta": ["Medicinal", "Oportunista"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
@@ -85,6 +88,7 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera tenella",
+      "Nome popular": "Apaga-fogo-miúdo, Perpétua-delicada",
       "Tipo de planta": ["Oportunista"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
@@ -109,6 +113,7 @@
     ],
     "ficha": {
       "Nome científico": "Hebanthe eriantha",
+      "Nome popular": "Ginseng-brasileiro, Para-tudo, Suma, Fáfia",
       "Tipo de planta": ["Medicinal"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
@@ -134,6 +139,7 @@
     ],
     "ficha": {
       "Nome científico": "Anacardium occidentale",
+      "Nome popular": "Cajueiro, Caju, Acaju",
       "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
@@ -158,6 +164,7 @@
     ],
     "ficha": {
       "Nome científico": "Justicia secunda",
+      "Nome popular": "Justícia, Erva-de-são-joão",
       "Tipo de planta": ["Medicinal", "Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -183,6 +190,7 @@
     ],
     "ficha": {
       "Nome científico": "Mangifera indica",
+      "Nome popular": "Mangueira, Manga, Manqueira",
       "Tipo de planta": ["Frutífera", "Madeireira", "Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
@@ -207,6 +215,7 @@
     ],
     "ficha": {
       "Nome científico": "Tapirira guianensis",
+      "Nome popular": "Pau-pombo, Tapiriá, Peito-de-pombo",
       "Tipo de planta": ["Madeireira", "Frutífera"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
@@ -231,6 +240,7 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda blanchetii",
+      "Nome popular": "Alamanda-roxa, Dedal-de-dama-roxo",
       "Tipo de planta": ["Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -255,6 +265,7 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda cathartica",
+      "Nome popular": "Alamanda-amarela, Dedal-de-dama, Carolina",
       "Tipo de planta": ["Ornamental", "Medicinal"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -279,6 +290,7 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda polyantha",
+      "Nome popular": "Alamanda-de-flores-múltiplas",
       "Tipo de planta": ["Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -303,6 +315,7 @@
     ],
     "ficha": {
       "Nome científico": "Tabernaemontana divaricata",
+      "Nome popular": "Jasmim-estrela, Leiteira, Flor-de-coral",
       "Tipo de planta": ["Ornamental", "Medicinal"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -328,6 +341,7 @@
     ],
     "ficha": {
       "Nome científico": "Euterpe oleracea",
+      "Nome popular": "Açaizeiro, Açaí, Juçara-do-pará",
       "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
       "Posição taxonômica APG IV": "Monocotiledônea - Arecales",
       "Soldura lateral das pétalas": "Dialitépala ou Gamotépala",
@@ -353,6 +367,7 @@
     ],
     "ficha": {
       "Nome científico": "Saritaea magnifica",
+      "Nome popular": "Cipó-de-flor-roxa, Sariteia-magnífica",
       "Tipo de planta": ["Ornamental"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
@@ -378,6 +393,7 @@
     ],
     "ficha": {
       "Nome científico": "Bixa orellana",
+      "Nome popular": "Urucum, Colorau, Açafroa",
       "Tipo de planta": ["Medicinal", "Industrial"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
       "Soldura lateral das pétalas": "Dialipétala",
@@ -402,6 +418,7 @@
     ],
     "ficha": {
       "Nome científico": "Bixa arborea",
+      "Nome popular": "Urucum-arbóreo, Urucum-do-mato",
       "Tipo de planta": ["Madeireira"],
       "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
       "Soldura lateral das pétalas": "Dialipétala",

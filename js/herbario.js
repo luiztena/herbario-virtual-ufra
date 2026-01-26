@@ -36,7 +36,7 @@
 
 let familias = null;
 let generos = null;
-let especies = null;  // ADICIONADO: Variável para espécies
+let especies = null;
 let bancoBusca = [];
 
 // Função para obter o caminho base do repositório (funciona no GitHub Pages)
@@ -115,7 +115,6 @@ async function carregarGeneros() {
   }
 }
 
-// ADICIONADO: Função para carregar espécies
 async function carregarEspecies() {
   try {
     const basePath = getBasePath();
@@ -191,9 +190,7 @@ async function carregarCards() {
     }
     
     // Substitui todos os caminhos relativos pelos caminhos corretos
-    // Substitui ../html/ pelo basePath + html/
     html = html.replace(/href="\.\.\/html\//g, `href="${basePath}html/`);
-    // Também corrige caminhos de imagens se necessário
     html = html.replace(/src="\s*imagens\//g, `src="${basePath}imagens/`);
     html = html.replace(/src="\s*\.\.\/imagens\//g, `src="${basePath}imagens/`);
     
@@ -203,7 +200,6 @@ async function carregarCards() {
     if (container) {
       container.innerHTML = html;
       
-      // Processa todos os links após inserir no DOM para garantir que estão corretos
       const links = container.querySelectorAll('a.card-link[href*="familia.html"], a.card-link[href*="genero.html"]');
       console.log(`Encontrados ${links.length} links para processar`);
       
@@ -211,19 +207,16 @@ async function carregarCards() {
         const originalHref = link.getAttribute('href');
         console.log('Link original:', originalHref);
         
-        // Se começa com ../html/, substitui
         if (originalHref.startsWith('../html/')) {
-          const newHref = `${basePath}html/${originalHref.substring(8)}`; // Remove '../html/'
+          const newHref = `${basePath}html/${originalHref.substring(8)}`;
           link.setAttribute('href', newHref);
           console.log('Link corrigido para:', newHref);
         }
-        // Se começa com /html/ (sem o nome do repositório), adiciona o basePath
         else if (originalHref.startsWith('/html/') && !originalHref.startsWith(basePath)) {
-          const newHref = `${basePath}html/${originalHref.substring(6)}`; // Remove '/html/'
+          const newHref = `${basePath}html/${originalHref.substring(6)}`;
           link.setAttribute('href', newHref);
           console.log('Link corrigido para:', newHref);
         }
-        // Se começa com html/ (relativo), adiciona o basePath
         else if (originalHref.startsWith('html/') && !originalHref.startsWith(basePath)) {
           const newHref = `${basePath}${originalHref}`;
           link.setAttribute('href', newHref);
@@ -231,7 +224,6 @@ async function carregarCards() {
         }
       });
       
-      // Aplicar filtros após carregar os cards
       aplicarFiltros();
     }
   } catch (e) {
@@ -250,7 +242,6 @@ function montarBancoBusca() {
     const basePath = getBasePath();
     console.log('BasePath detectado para montar banco de busca:', basePath);
     Object.values(familias).forEach(f => {
-      // Corrige caminhos relativos nas páginas das famílias
       let familiaPage = f.page || `${basePath}html/familia.html?id=${f.id}`;
       if (familiaPage.startsWith('../')) {
         familiaPage = familiaPage.replace('../', basePath);
@@ -264,7 +255,8 @@ function montarBancoBusca() {
         name: f.name,
         key: normalize(f.id),
         tipo: "Família",
-        page: familiaPage
+        page: familiaPage,
+        searchTerms: [normalize(f.name), normalize(f.id)]
       });
     });
   }
@@ -278,16 +270,16 @@ function montarBancoBusca() {
         name: g.name,
         key: normalize(g.id),
         tipo: "Gênero",
-        page: `${basePath}html/genero.html?id=${g.id}`
+        page: `${basePath}html/genero.html?id=${g.id}`,
+        searchTerms: [normalize(g.name), normalize(g.id)]
       });
     });
   }
 
-  // ADICIONADO: Espécies
+  // Espécies (COM NOMES POPULARES)
   if (especies) {
     const basePath = getBasePath();
     Object.values(especies).forEach(e => {
-      // Corrige caminhos relativos
       let especiePage = e.page || `${basePath}html/especie.html?id=${e.id}`;
       if (especiePage.startsWith('../')) {
         especiePage = especiePage.replace('../', basePath);
@@ -295,12 +287,37 @@ function montarBancoBusca() {
         especiePage = `${basePath}${especiePage}`;
       }
       
+      // Extrair nome popular da ficha
+      let nomePopular = '';
+      if (e.ficha && e.ficha['Nome popular']) {
+        nomePopular = e.ficha['Nome popular'];
+      }
+      
+      // Criar termos de busca incluindo nome científico, ID e todos os nomes populares
+      const searchTerms = [
+        normalize(e.name),
+        normalize(e.id)
+      ];
+      
+      // Adicionar todos os nomes populares separados
+      if (nomePopular && nomePopular !== 'Desconhecido') {
+        // Separa por vírgula e adiciona cada nome popular
+        const nomesPopulares = nomePopular.split(',').map(n => n.trim());
+        nomesPopulares.forEach(nome => {
+          if (nome) {
+            searchTerms.push(normalize(nome));
+          }
+        });
+      }
+      
       bancoBusca.push({
         id: e.id,
         name: e.name,
+        nomePopular: nomePopular,
         key: normalize(e.id),
         tipo: "Espécie",
-        page: especiePage
+        page: especiePage,
+        searchTerms: searchTerms
       });
     });
   }
@@ -314,7 +331,12 @@ function montarBancoBusca() {
 // UTILITÁRIOS
 // ===============================
 function normalize(text) {
-  return text.toLowerCase().trim().replace(/\s+/g, "");
+  if (!text) return '';
+  return text.toLowerCase()
+    .trim()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove acentos
+    .replace(/\s+/g, '');
 }
 
 function scientificCapitalize(name) {
@@ -325,7 +347,6 @@ function scientificCapitalize(name) {
     .join(" ");
 }
 
-// Função auxiliar para escurecer cores
 function darkenColor(color, percent) {
   const num = parseInt(color.replace("#", ""), 16);
   const amt = Math.round(2.55 * percent);
@@ -368,25 +389,37 @@ function levenshteinDistance(a, b) {
 }
 
 // ===============================
-// BUSCA APROXIMADA
+// BUSCA APROXIMADA (MODIFICADA PARA NOMES POPULARES)
 // ===============================
 function fuzzySearch(query) {
   let best = null;
   let score = Infinity;
 
   bancoBusca.forEach(item => {
-    const d = levenshteinDistance(query, item.key);
-    if (d < score) {
-      score = d;
-      best = item;
+    // Verifica todos os termos de busca do item
+    if (item.searchTerms) {
+      item.searchTerms.forEach(term => {
+        const d = levenshteinDistance(query, term);
+        if (d < score) {
+          score = d;
+          best = item;
+        }
+      });
+    } else {
+      // Fallback para busca antiga
+      const d = levenshteinDistance(query, item.key);
+      if (d < score) {
+        score = d;
+        best = item;
+      }
     }
   });
 
-  return score <= 2 ? best : null;
+  return score <= 3 ? best : null; // Aumentei a tolerância para 3
 }
 
 // ===============================
-// BUSCA PRINCIPAL
+// BUSCA PRINCIPAL (MODIFICADA)
 // ===============================
 function searchPlant() {
   const input = document.getElementById("search-bar");
@@ -401,8 +434,13 @@ function searchPlant() {
   const query = normalize(input.value);
   if (!query) return;
 
-  // 🔹 Busca exata (família, gênero ou espécie)
-  const exato = bancoBusca.find(item => item.key === query);
+  // 🔹 Busca exata em todos os termos de busca
+  const exato = bancoBusca.find(item => {
+    if (item.searchTerms) {
+      return item.searchTerms.some(term => term === query);
+    }
+    return item.key === query;
+  });
 
   if (exato) {
     window.location.href = exato.page;
@@ -413,17 +451,16 @@ function searchPlant() {
   const melhor = fuzzySearch(query);
 
   if (melhor) {
-    // Determinar cor da badge baseada no tipo
     let badgeColor;
     switch(melhor.tipo) {
       case 'Família':
-        badgeColor = '#416939'; // Verde escuro
+        badgeColor = '#416939';
         break;
       case 'Gênero':
-        badgeColor = '#52796f'; // Verde azulado
+        badgeColor = '#52796f';
         break;
       case 'Espécie':
-        badgeColor = '#8a5a44'; // Marrom
+        badgeColor = '#8a5a44';
         break;
       default:
         badgeColor = '#666';
@@ -441,12 +478,18 @@ function searchPlant() {
       margin-left: 10px;
     `;
     
+    // Mostrar nome popular se for espécie e tiver nome popular
+    let displayName = melhor.name;
+    if (melhor.tipo === 'Espécie' && melhor.nomePopular && melhor.nomePopular !== 'Desconhecido') {
+      displayName = `${melhor.name} (${melhor.nomePopular})`;
+    }
+    
     didYouMean.innerHTML = `
       <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
         <span>Você quis dizer</span>
         <div style="display: flex; align-items: center; gap: 6px; background: #f5f7f2; padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd;">
           <span id="vqd" class="suggestion-text">
-            ${melhor.name}
+            ${displayName}
           </span>
           <span style="${badgeStyle}">${melhor.tipo}</span>
         </div>
@@ -461,7 +504,6 @@ function searchPlant() {
       window.location.href = melhor.page;
     };
     
-    // Adicionar efeito hover
     const vqdElement = document.getElementById("vqd");
     vqdElement.style.cursor = "pointer";
     vqdElement.style.color = badgeColor;
@@ -509,7 +551,6 @@ function searchPlant() {
     didYouMean.innerHTML = "";
   };
   
-  // Efeito hover no botão "Tentar novamente"
   const againElement = document.getElementById("again");
   againElement.addEventListener("mouseover", () => {
     againElement.style.backgroundColor = "#416939";
@@ -523,7 +564,7 @@ function searchPlant() {
 }
 
 // ===============================
-// AUTCOMPLETE
+// AUTOCOMPLETE (MODIFICADO PARA NOMES POPULARES)
 // ===============================
 function atualizarAutocomplete() {
   const searchInput = document.getElementById("search-bar");
@@ -536,8 +577,14 @@ function atualizarAutocomplete() {
   
   if (!value) return;
 
+  // Busca em todos os termos de busca
   const resultados = bancoBusca
-    .filter(item => item.key.includes(value))
+    .filter(item => {
+      if (item.searchTerms) {
+        return item.searchTerms.some(term => term.includes(value));
+      }
+      return item.key.includes(value);
+    })
     .slice(0, 8);
 
   if (resultados.length === 0) return;
@@ -545,7 +592,6 @@ function atualizarAutocomplete() {
   resultados.forEach(item => {
     const li = document.createElement("li");
     
-    // Determinar cor da badge baseada no tipo
     let badgeColor;
     switch(item.tipo) {
       case 'Família':
@@ -561,9 +607,19 @@ function atualizarAutocomplete() {
         badgeColor = '#666';
     }
     
+    // Mostrar nome popular no autocomplete
+    let displayName = item.name;
+    let subtitle = '';
+    if (item.tipo === 'Espécie' && item.nomePopular && item.nomePopular !== 'Desconhecido') {
+      subtitle = `<div style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: 2px;">${item.nomePopular}</div>`;
+    }
+    
     li.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-        <span style="font-weight: 500; color: #333;">${item.name}</span>
+        <div style="flex: 1;">
+          <div style="font-weight: 500; color: #333;">${displayName}</div>
+          ${subtitle}
+        </div>
         <span style="
           background-color: ${badgeColor};
           color: white;
@@ -612,11 +668,9 @@ function aplicarFiltros() {
     btn.addEventListener("click", () => {
       const filter = btn.dataset.filter;
       
-      // Ativar botão clicado
       botoesFiltro.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       
-      // Aplicar filtro aos cards
       const cards = document.querySelectorAll(".card-link");
       cards.forEach(link => {
         const card = link.querySelector(".plant-card");
@@ -637,7 +691,6 @@ function aplicarFiltros() {
 // ===============================
 window.addEventListener('unhandledrejection', (event) => {
   console.warn('Promise não tratada:', event.reason);
-  // Previne o erro de aparecer no console
   event.preventDefault();
 });
 
@@ -647,25 +700,22 @@ window.addEventListener('error', (event) => {
 });
 
 // ===============================
-// EVENTOS (VERSÃO CORRIGIDA)
+// EVENTOS
 // ===============================
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM carregado, inicializando...");
   
   try {
-    // Carregar dados (incluindo espécies)
     await Promise.all([
       carregarFamilias(),
       carregarGeneros(),
-      carregarEspecies()  // ADICIONADO: Carrega as espécies
+      carregarEspecies()
     ]);
     
     montarBancoBusca();
     
-    // Carregar cards
     await carregarCards();
     
-    // Configurar eventos de forma segura
     configurarEventos();
     
   } catch (erro) {
@@ -673,12 +723,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-// Função separada para configurar eventos
 function configurarEventos() {
   const searchInput = document.getElementById("search-bar");
   const searchBtn = document.getElementById("search-btn");
   
-  // Botão de busca - tratamento correto
   if (searchBtn) {
     searchBtn.addEventListener("click", (event) => {
       event.preventDefault();
@@ -686,9 +734,7 @@ function configurarEventos() {
     });
   }
   
-  // Eventos do input de busca - tratamento correto
   if (searchInput) {
-    // Enter para buscar
     searchInput.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         event.preventDefault();
@@ -704,7 +750,6 @@ function configurarEventos() {
       }
     });
     
-    // Input para autocomplete - com debounce
     let timeoutId;
     searchInput.addEventListener("input", () => {
       clearTimeout(timeoutId);
@@ -713,7 +758,6 @@ function configurarEventos() {
       }, 150);
     });
     
-    // Foco para mostrar sugestões
     searchInput.addEventListener("focus", () => {
       if (searchInput.value.trim()) {
         atualizarAutocomplete();
@@ -721,7 +765,6 @@ function configurarEventos() {
     });
   }
   
-  // Fechar autocomplete ao clicar fora - versão segura
   document.addEventListener("click", (event) => {
     const searchInput = document.getElementById("search-bar");
     const autocomplete = document.getElementById("autocomplete-list");
@@ -731,5 +774,5 @@ function configurarEventos() {
     if (!searchInput.contains(event.target) && !autocomplete.contains(event.target)) {
       autocomplete.innerHTML = "";
     }
-  }, true); // Use capture phase para garantir execução
+  }, true);
 }

@@ -84,13 +84,14 @@ html {
         .logo img {
             width: 70px;
             height: 70px;
+            margin-left: -100px;
         }
 
         .logo-text {
             display: flex;
             flex-direction: column;
             color: #fafafa;
-           
+            margin-left: -20px;
         }
 
         .university-name {
@@ -1119,3 +1120,4 @@ html {
     }
 }
 }}
+

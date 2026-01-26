@@ -1,214 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <link rel="icon" type="image/png" href="imagens/site-imagem/folha.png">
-    <link rel="stylesheet" href="../css/Herbario.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbário Virtual</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../imagens/site-imagem/folha.png">
 
+<head>
+  <link rel="icon" type="image/png" href="imagens/site-imagem/folha.png">
+  <link rel="stylesheet" href="../css/Herbario.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbário Virtual</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="../imagens/site-imagem/folha.png">
 </head>
 
 <body class="bodyhome">
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="../index.html"><img src="../imagens/site-imagem/brasao.png" class="logo" alt="Brasão UFRA"></a>
-                    <div class="logo-text">
-                        <h1>Universidade Federal Rural da Amazônia  UFRA</h1>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="/html/home.html" style="color: aliceblue;">Início</a></li>
-                        <li><a href="../index.html" style="color: aliceblue;">Plantas</a></li>
-                        <li><a href="#about" style="color: aliceblue;">Sobre</a></li>
-                        <li><a href="#contact" style="color: aliceblue;">Tipos</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="../index.html"><img src="../imagens/site-imagem/brasao.png" class="logo" alt="Brasão UFRA"></a>
+          <div class="logo-text">
+            <h1>Universidade Federal Rural da Amazônia UFRA</h1>
+          </div>
         </div>
-    </header>
+        <nav>
+          <ul>
+            <li><a href="/html/home.html" style="color: aliceblue;">Início</a></li>
+            <li><a href="../index.html" style="color: aliceblue;">Plantas</a></li>
+            <li><a href="#about" style="color: aliceblue;">Contribua</a></li>
+            <li><a href="#contact" style="color: aliceblue;">Categorias</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <!-- ================= HERO ================= -->
-    <section class="hero">
-        <div class="herocontainer">
-            <h2>Preservando o legado botânico da Amazônia</h2>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="herocontainer">
+      <h2>Preservando o legado botânico da Amazônia</h2>
+      <p>
+        Ciência, tecnologia e formação acadêmica integradas para garantir a
+        continuidade do conhecimento botânico.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre" class="section">
+    <div class="sectioncontainer">
+      <h1>Sobre o Herbário F.C.</h1>
+
+      <div class="paragrafo-container">
+        <div class="paragrafo">
+          <p>
+            O Herbário da Universidade Federal Rural da Amazônia (UFRA), denominado
+            <strong>Herbário F.C.</strong>, foi criado em homenagem a
+            <strong>Felisberto Camargo</strong>, um dos grandes pioneiros do
+            agronegócio e das pesquisas botânicas na Amazônia.
+          </p>
+          <p>
+            Fundado em meados do século XX, o herbário surgiu como um centro de
+            referência científica voltado ao estudo, à catalogação e à preservação
+            da flora amazônica. Seus estudos tiveram papel fundamental na
+            consolidação da pesquisa agrícola e botânica na região Norte,
+            contribuindo diretamente para a criação da <strong>EMBRAPA na Amazônia</strong>.
+          </p>
+          <p>
+            Um dos diferenciais do Herbário F.C. sempre foi sua organização
+            inovadora, separando as espécies por tipos de uso e relevância, como
+            plantas <em>madeireiras, ornamentais, oportunistas, medicinais e
+              frutíferas</em>, aproximando a ciência da realidade socioeconômica
+            regional.
+          </p>
+        </div>
+        <div class="imagem">
+          <figure><img src="../imagens/site-imagem/ufra.jpg" alt="Prédio central da UFRA" id="ufra"></figure>
+        </div>
+      </div>
+
+      <h2>O Herbário Virtual</h2>
+      <div class="paragrafo-container">
+        <div class="paragrafo">
+          <p>
+            O <strong>Herbário Virtual F.C.</strong> surge como uma extensão natural
+            do acervo físico, com o objetivo de preservar, organizar e dar
+            continuidade às pesquisas iniciadas por Felisberto Camargo, integrando
+            novas tecnologias às raízes e tradições de décadas de estudo botânico.
+          </p>
+          <p>
+            Através da digitalização de exsicatas, estruturação de dados em sistemas
+            organizados e desenvolvimento de páginas automatizadas, o projeto
+            permite o acesso claro, confiável e democrático às informações
+            científicas.
+          </p>
+          <p>
+            Mais do que um repositório digital, o Herbário Virtual é um
+            <strong>projeto vivo</strong>, pensado para continuar existindo mesmo
+            com a renovação de seus colaboradores, formando novos pesquisadores e
+            fortalecendo a conservação da flora amazônica.
+          </p>
+        </div>
+        <div class="imagem">
+          <figure><img src="../imagens/site-imagem/herbario-virtual.jpg" alt="Exemplo de herbário virtual"
+              id="herbario-virtual"></figure>
+        </div>
+      </div>
+
+      <h2>Formação, Pesquisa e Continuidade</h2>
+      <div class="paragrafo-container">
+        <div class="imagem">
+          <figure><img src="../imagens/site-imagem/exsicatas.jpg" alt="Exsicatas do herbário" id="excicatas"></figure>
+        </div>
+        <div class="paragrafo">
+          <p>
+            O projeto foi concebido para funcionar como uma iniciativa acadêmica de
+            longo prazo, integrando novos alunos, treinando pesquisadores em
+            formação e garantindo que o conhecimento produzido seja revisado,
+            validado e perpetuado.
+            O fluxo de trabalho envolve a coleta, triagem, identificação,
+            digitalização, organização dos dados e publicação das exsicatas, sempre
+            com revisão por supervisores, assegurando rigor científico e
+            padronização.
+            Dessa forma, o Herbário Virtual F.C. contribui diretamente para a
+            formação de <strong>juniores, plenos e futuros pesquisadores
+              seniores</strong>, promovendo a transmissão contínua do conhecimento
+            científico.
+          </p>
+        </div>
+      </div>
+
+      <!-- ================= LEGADO/MANIFESTO ================= -->
+      <h2>O Legado que nos Guia</h2>
+      <div class="paragrafo-container">
+        <div class="paragrafo">
+          <p>
+            O Herbário F.C. não é apenas uma coleção de plantas, mas um <strong>testemunho vivo</strong> da dedicação de
+            gerações de pesquisadores que dedicaram suas vidas a compreender e proteger a biodiversidade amazônica. Cada
+            exsicata guarda não apenas uma espécie vegetal, mas <strong>histórias, conhecimentos tradicionais e
+              descobertas científicas</strong> que formam um patrimônio inestimável.
+
+
+            Nossa missão vai além da catalogação: é sobre <strong>garantir que este legado continue inspirando</strong>
+            futuros botânicos, pesquisadores e comunidades. Acreditamos que o conhecimento só tem valor quando é
+            compartilhado, preservado e utilizado para construir um futuro onde a ciência e a natureza caminhem juntas
+            na conservação da maior floresta tropical do mundo.
+          </p>
+
+          <p>
+            Este acervo representa mais do que um arquivo biológico; é uma <strong>ponte entre gerações</strong> que
+            conecta o trabalho meticuloso dos primeiros naturalistas da Amazônia com as ferramentas digitais do século
+            XXI. Cada identificação, cada nota de campo amarelada pelo tempo, carrega consigo o <strong>zelo de quem
+              acreditou no valor da ciência</strong> como ferramenta de transformação e soberania regional. Preservar
+            este patrimônio é, portanto, um ato de <strong>justiça histórica e responsabilidade futura</strong>,
+            garantindo que as vozes da floresta, tanto as das plantas quanto as dos povos que com ela convivem,
+            continuem ecoando e ensinando. Nosso compromisso é que este herbário seja não um arquivo morto, mas um
+            <strong>organismo em constante diálogo</strong> com a sociedade, inspirando novas perguntas e gerando
+            soluções para os desafios ambientais do nosso tempo.
+
+
+
+            Nossa missão vai além da catalogação: é sobre <strong>garantir que este legado continue inspirando</strong>
+            futuros botânicos, pesquisadores e comunidades. Acreditamos que o conhecimento só tem valor quando é
+            compartilhado, preservado e utilizado para construir um futuro onde a ciência e a natureza caminhem juntas
+            na conservação da maior floresta tropical do mundo.
+          </p>
+          <div class="cards">
+            <img src="../imagens/site-imagem/botanico.jpg" alt="Pesquisador coletando amostras na floresta">
+            <img src="../imagens/site-imagem/botanico2.jpg" alt="Botânica analisando espécies no laboratório">
+            <img src="../imagens/site-imagem/botanico3.jpg" alt="Técnico preparando exsicatas para catalogação">
+            <img src="../imagens/site-imagem/botanico4.jpg" alt="Estudante realizando identificação taxonômica">
+            <img src="../imagens/site-imagem/botanico5.jpg" alt="Pesquisadora registrando dados de campo">
+            <img src="../imagens/site-imagem/botanico6.jpg" alt="Equipe do herbário em trabalho de digitalização">
+          </div>
+        </div>
+      </div>
+
+<!-- ================= MISSÃƒO/VISÃƒO/VALORES ================= -->
+      <div class="mvv-section">
+        <h2 class="mvv-title">Missão, Visão e Valores</h2>
+        <div class="mvv-grid">
+          <div class="mvv-card">
+            <h3>🌿 Missão</h3>
             <p>
-                Ciência, tecnologia e formação acadêmica integradas para garantir a
-                continuidade do conhecimento botânico.
+              Promover a preservação, organização e democratização do conhecimento
+              botânico, integrando o acervo físico do Herbário F.C. às tecnologias
+              digitais, fortalecendo a pesquisa científica e a formação acadêmica.
             </p>
+          </div>
+          <div class="mvv-card">
+            <h3>🌎 Visão</h3>
+            <p>
+              Ser referência acadêmica em herbários digitais na Amazônia,
+              reconhecida pela qualidade dos dados, impacto educacional e
+              continuidade do conhecimento científico.
+            </p>
+          </div>
+          <div class="mvv-card">
+            <h3>🤝 Valores</h3>
+            <ul>
+              <li>Rigor científico</li>
+              <li>Formação intergeracional</li>
+              <li>Educação e pesquisa acadêmica</li>
+              <li>Preservação da biodiversidade</li>
+              <li>Democratização do conhecimento</li>
+              <li>Ética e colaboração</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- ================= SOBRE ================= -->
-    <section id="sobre" class="section">
-        <div class="sectioncontainer">
-            <h1>Sobre o Herbário F.C.</h1>
-            
-            <div class="paragrafo-container">
-                <div class="paragrafo">
-                    <p>
-                        O Herbário da Universidade Federal Rural da Amazônia (UFRA), denominado
-                        <strong>Herbário F.C.</strong>, foi criado em homenagem a
-                        <strong>Felisberto Camargo</strong>, um dos grandes pioneiros do
-                        agronegócio e das pesquisas botânicas na Amazônia.
-                    </p>
-                    <p>
-                        Fundado em meados do século XX, o herbário surgiu como um centro de
-                        referência científica voltado ao estudo, à catalogação e à preservação
-                        da flora amazônica. Seus estudos tiveram papel fundamental na
-                        consolidação da pesquisa agrícola e botânica na região Norte,
-                        contribuindo diretamente para a criação da <strong>EMBRAPA na Amazônia</strong>.
-                    </p>
-                    <p>
-                        Um dos diferenciais do Herbário F.C. sempre foi sua organização
-                        inovadora, separando as espécies por tipos de uso e relevância, como
-                        plantas <em>madeireiras, ornamentais, oportunistas, medicinais e
-                        frutíferas</em>, aproximando a ciência da realidade socioeconômica
-                        regional.
-                    </p>
-                </div>
-                <div class="imagem">
-                    <figure><img src="../imagens/site-imagem/ufra.jpg" alt="Prédio central da UFRA" id="ufra"></figure>
-                </div>
-            </div>
+     <!-- ================= CLASSIFICAÇÃO POR TIPOS DE PLANTAS ================= -->
+<h2>Classificação por Tipos de Plantas</h2>
 
-            <h2>O Herbário Virtual</h2>
-            <div class="paragrafo-container">
-                <div class="paragrafo">
-                    <p>
-                        O <strong>Herbário Virtual F.C.</strong> surge como uma extensão natural
-                        do acervo físico, com o objetivo de preservar, organizar e dar
-                        continuidade às pesquisas iniciadas por Felisberto Camargo, integrando
-                        novas tecnologias às raízes e tradições de décadas de estudo botânico.
-                    </p>
-                    <p>
-                        Através da digitalização de exsicatas, estruturação de dados em sistemas
-                        organizados e desenvolvimento de páginas automatizadas, o projeto
-                        permite o acesso claro, confiável e democrático às informações
-                        científicas.
-                    </p>
-                    <p>
-                        Mais do que um repositório digital, o Herbário Virtual é um
-                        <strong>projeto vivo</strong>, pensado para continuar existindo mesmo
-                        com a renovação de seus colaboradores, formando novos pesquisadores e
-                        fortalecendo a conservação da flora amazônica.
-                    </p>
-                </div>
-                <div class="imagem">
-                    <figure><img src="../imagens/site-imagem/herbario-virtual.jpg" alt="Exemplo de herbário virtual" id="herbario-virtual"></figure>
-                </div>
-            </div>
+<div class="tipos-container">
+  <div class="tipos-intro">
+    <p>
+      Seguindo a tradição inovadora do Herbário F.C., organizamos as espécies por <strong>tipos de uso e
+        relevância socioeconômica</strong>, criando uma ponte entre a ciência botânica e as necessidades da
+      sociedade amazônica. Esta classificação facilita o acesso direto ao conhecimento, transformando dados
+      botânicos em ferramentas práticas para diferentes setores.
+    </p>
+  </div>
 
-            <h2>Formação, Pesquisa e Continuidade</h2>
-            <div class="paragrafo-container">
-                <div class="imagem">
-                    <figure><img src="../imagens/site-imagem/exsicatas.jpg" alt="Exsicatas do herbário" id="excicatas"></figure>
-                </div>
-                <div class="paragrafo">
-                    <p>
-                        O projeto foi concebido para funcionar como uma iniciativa acadêmica de
-                        longo prazo, integrando novos alunos, treinando pesquisadores em
-                        formação e garantindo que o conhecimento produzido seja revisado,
-                        validado e perpetuado.
-                    </p>
-                    <p>
-                        O fluxo de trabalho envolve a coleta, triagem, identificação,
-                        digitalização, organização dos dados e publicação das exsicatas, sempre
-                        com revisão por supervisores, assegurando rigor científico e
-                        padronização.
-                    </p>
-                    <p>
-                        Dessa forma, o Herbário Virtual F.C. contribui diretamente para a
-                        formação de <strong>juniores, plenos e futuros pesquisadores
-                        seniores</strong>, promovendo a transmissão contínua do conhecimento
-                        científico.
-                    </p>
-                </div>
-            </div>
-
-            <!-- ================= MISSÃO/VISÃO/VALORES ================= -->
-            <h2>Missão, Visão e Valores</h2>
-            <div class="mvv-grid">
-                <div class="mvv-card">
-                    <h3>🌿 Missão</h3>
-                    <p>
-                        Promover a preservação, organização e democratização do conhecimento
-                        botânico, integrando o acervo físico do Herbário F.C. às tecnologias
-                        digitais, fortalecendo a pesquisa científica e a formação acadêmica.
-                    </p>
-                </div>
-                <div class="mvv-card">
-                    <h3>🌎 Visão</h3>
-                    <p>
-                        Ser referência acadêmica em herbários digitais na Amazônia,
-                        reconhecida pela qualidade dos dados, impacto educacional e
-                        continuidade do conhecimento científico.
-                    </p>
-                </div>
-                <div class="mvv-card">
-                    <h3>🤝 Valores</h3>
-                    <ul>
-                        <li>Rigor científico</li>
-                        <li>Formação intergeracional</li>
-                        <li>Educação e pesquisa acadêmica</li>
-                        <li>Preservação da biodiversidade</li>
-                        <li>Democratização do conhecimento</li>
-                        <li>Ética e colaboração</li>
-                    </ul>
-                </div>
-            </div>
-        </div> <!-- Fecha .sectioncontainer CORRETAMENTE -->
-    </section> <!-- Fecha #sobre.section -->
-
-    <!-- ================= FOOTER ================= -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Herbário Virtual</h3>
-                    <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao alcance de todos.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Links Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#plants">Catálogo de Plantas</a></li>
-                        <li><a href="#">Contribua</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Categorias</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Plantas Medicinais</a></li>
-                        <li><a href="#">Plantas Ornamentais</a></li>
-                        <li><a href="#">Plantas Frutiferas</a></li>
-                        <li><a href="#">Plantas em Madeireiras</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Herbário Virtual. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+  <!-- 4 CARDS VERTICAIS -->
+  <div class="tipos-grid">
     
-</body>
+    <!-- Card 1: Medicinais -->
+    <div class="tipo-card">
+      <div class="tipo-icon">🌿</div>
+      <h3>Plantas Medicinais</h3>
+      <div class="tipo-content">
+        <p>Espécies com propriedades terapêuticas validadas pela ciência ou pelo uso tradicional secular.</p>
+        <div class="tipo-detalhes">
+          <h4>Principais Aplicações:</h4>
+          <ul>
+            <li><strong>Fitoterapia</strong>: Preparação de remédios naturais</li>
+            <li><strong>Farmácia Viva</strong>: Cultivo em comunidades</li>
+            <li><strong>Pesquisa Científica</strong>: Isolamento de princípios ativos</li>
+          </ul>
+          <h4>Exemplos Notáveis:</h4>
+          <p><em>Copaíba</em> (anti-inflamatório e cicatrizante), <em>Andiroba</em> (analgésico e inseticida natural), 
+          <em>Açaí</em> (antioxidante e energético), <em>Unha-de-gato</em> (imunomoduladora).</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Card 2: Ornamentais -->
+    <div class="tipo-card">
+      <div class="tipo-icon">🌺</div>
+      <h3>Plantas Ornamentais</h3>
+      <div class="tipo-content">
+        <p>Valorizadas por sua beleza estética, cores vibrantes e formas exóticas.</p>
+        <div class="tipo-detalhes">
+          <h4>Principais Usos:</h4>
+          <ul>
+            <li><strong>Paisagismo Urbano</strong>: Praças, jardins públicos</li>
+            <li><strong>Arranjos Florais</strong>: Decoração e eventos</li>
+            <li><strong>Jardins Privados</strong>: Cultivo doméstico</li>
+            <li><strong>Floricultura</strong>: Comércio especializado</li>
+          </ul>
+          <h4>Exemplos Notáveis:</h4>
+          <p><em>Heliconias</em> (flores duráveis e coloridas), <em>Orquídeas amazônicas</em> (raras e exóticas), 
+          <em>Bromélias</em> (formas arquitetônicas), <em>Antúrios</em> (folhagem decorativa).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Frutíferas -->
+    <div class="tipo-card">
+      <div class="tipo-icon">🍈</div>
+      <h3>Plantas Frutíferas</h3>
+      <div class="tipo-content">
+        <p>Produzem frutos comestíveis com alto valor nutricional e econômico.</p>
+        <div class="tipo-detalhes">
+          <h4>Impacto Socioeconômico:</h4>
+          <ul>
+            <li><strong>Segurança Alimentar</strong>: Alimentação local</li>
+            <li><strong>Economia Regional</strong>: Polpas, sucos, doces</li>
+            <li><strong>Agroindústria</strong>: Processamento e exportação</li>
+            <li><strong>Extrativismo Sustentável</strong>: Geração de renda</li>
+          </ul>
+          <h4>Exemplos Notáveis:</h4>
+          <p><em>Cupuaçu</em> (polpa aromática), <em>Bacuri</em> (sabor único), <em>Camu-camu</em> (maior fonte de vitamina C do mundo), 
+          <em>Pupunha</em> (versátil na culinária).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Madeireiras -->
+    <div class="tipo-card">
+      <div class="tipo-icon">🌳</div>
+      <h3>Plantas Madeireiras</h3>
+      <div class="tipo-content">
+        <p>Fornecem madeira de alta qualidade com foco no manejo sustentável.</p>
+        <div class="tipo-detalhes">
+          <h4>Aspectos de Manejo:</h4>
+          <ul>
+            <li><strong>Certificação FSC</strong>: Garantia de sustentabilidade</li>
+            <li><strong>Ciclo de Corte</strong>: Planejamento de longo prazo</li>
+            <li><strong>Reposição Florestal</strong>: Replantio obrigatório</li>
+            <li><strong>Tecnologia da Madeira</strong>: Processamento eficiente</li>
+          </ul>
+          <h4>Exemplos Notáveis:</h4>
+          <p><em>Mogno brasileiro</em> (madeira nobre), <em>Ipê</em> (resistência natural), <em>Cerejeira</em> (acabamento fino), 
+          <em>Cedro</em> (aroma característico).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO DESTACADA PARA OPORTUNISTAS -->
+  <div class="tipo-destaque">
+    <div class="destaque-header">
+      <div class="destaque-icon">🔄</div>
+      <h3>Plantas Oportunistas (Pioneiras): As Engenheiras do Ecossistema</h3>
+    </div>
+    
+    <div class="destaque-content">
+      <div class="destaque-texto">
+        <p>
+          As plantas oportunistas, também conhecidas como <strong>espécies pioneiras</strong>, desempenham um papel 
+          <strong>fundamental na regeneração natural</strong> da floresta amazônica. São as primeiras a colonizar 
+          áreas degradadas por queimadas, desmatamento ou atividades minerárias, criando as condições necessárias 
+          para o estabelecimento de outras espécies.
+        </p>
+        
+        <h4>Mecanismos de Ação:</h4>
+        <ul>
+          <li><strong>Sombra e Microclima</strong>: Criam condições de umidade e temperatura para outras espécies</li>
+          <li><strong>Melhoria do Solo</strong>: Suas raízes decompõem matéria orgânica e fixam nitrogênio</li>
+          <li><strong>Proteção contra Erosão</strong>: Sistema radicular superficial segura o solo</li>
+          <li><strong>Atração de Fauna</strong>: Flores e frutos atraem animais que dispersam outras sementes</li>
+        </ul>
+        
+        <h4>Aplicações Práticas:</h4>
+        <div class="aplicacoes-grid">
+          <div class="aplicacao-item">
+            <h5>🌱 Reflorestamento</h5>
+            <p>Plantio estratégico em áreas degradadas para acelerar a sucessão ecológica</p>
+          </div>
+          <div class="aplicacao-item">
+            <h5>🛡️ Contenção de Erosão</h5>
+            <p>Estabilização de taludes e margens de rios com sistemas radiculares agressivos</p>
+          </div>
+          <div class="aplicacao-item">
+            <h5>♻️ Recuperação de Solos</h5>
+            <p>Melhoria da fertilidade em áreas exauridas por agricultura intensiva</p>
+          </div>
+          <div class="aplicacao-item">
+            <h5>🌿 Agroflorestas</h5>
+            <p>Integração em sistemas agroflorestais como quebra-ventos e cobertura verde</p>
+          </div>
+        </div>
+        
+        <h4>Exemplos Estratégicos:</h4>
+        <p>
+          <strong>Embiruçu</strong> (crescimento rápido, grande copa sombreadora), 
+          <strong>Ingá</strong> (fixação biológica de nitrogênio, frutos para fauna), 
+          <strong>Mutamba</strong> (pioneirismo agressivo, madeira leve para uso local),
+          <strong>Tambaqui</strong> (resistência a solos pobres, produção de biomassa).
+        </p>
+        
+        <div class="destaque-conclusao">
+          <p>
+            Estas espécies não são apenas "oportunistas" - são <strong>verdadeiras engenheiras do ecossistema</strong> 
+            que transformam terras improdutivas em florestas em regeneração. Seu estudo e aplicação são essenciais 
+            para estratégias de <strong>restauração ecológica em larga escala</strong>, representando um dos 
+            legados mais importantes do Herbário F.C. para a conservação da Amazônia.
+          </p>
+        </div>
+      </div>
+      
+      <div class="destaque-imagem">
+        <img src="../imagens/site-imagem/oportunistas.jpg" alt="Processo de regeneração florestal com plantas pioneiras">
+        <p class="legenda"><em>Processo de sucessão ecológica: das pioneiras à floresta madura</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCLUSÃO -->
+  <div class="tipos-conclusao">
+    <p>
+      Esta classificação prática permite que <strong>agricultores, extrativistas, pesquisadores, comunidades tradicionais e gestores públicos</strong> 
+      encontrem rapidamente informações relevantes para suas necessidades específicas. Mais do que uma categorização botânica, 
+      é um <strong>sistema de conhecimento aplicado</strong> que traduz a complexidade científica em soluções tangíveis para 
+      os desafios do desenvolvimento sustentável na Amazônia.
+    </p>
+  </div>
+</div>
+
+<!-- ================= BOTÃO CATÁLOGO ================= -->
+<div class="catalogo-cta">
+    <div class="cta-container">
+        <div class="cta-icon">🌿</div>
+        <div class="cta-content">
+            <h3>Explore o Catálogo Completo</h3>
+            <p>Descubra todas as famílias botânicas catalogadas no Herbário Virtual F.C. Navegue por espécies, fotos detalhadas e informações científicas organizadas por família.</p>
+        </div>
+        <a href="../index.html" class="cta-button">
+            <span>Ir para o Catálogo das Famílias</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+    </div> <!-- Fecha .sectioncontainer CORRETAMENTE -->
+  </section> <!-- Fecha #sobre.section -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Herbário Virtual</h3>
+          <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao alcance de todos.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Links Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="#plants">Catálogo de Plantas</a></li>
+            <li><a href="#">Contribua</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Categorias</h3>
+          <ul class="footer-links">
+            <li><a href="#">Plantas Medicinais</a></li>
+            <li><a href="#">Plantas Ornamentais</a></li>
+            <li><a href="#">Plantas Frutiferas</a></li>
+            <li><a href="#">Plantas em Madeireiras</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Herbário Virtual. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="../js/home.js"></script>  
+</body>
 
 </html>
