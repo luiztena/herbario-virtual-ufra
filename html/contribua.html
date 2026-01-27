@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" type="image/png" href="imagens/site-imagem/folha.png">
+    <link rel="stylesheet" href="../css/Herbario.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbário Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imagens/site-imagem/folha.png">
+</head>
+
+<body class="bodyhome">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../imagens/site-imagem/brasao.png" class="logo"
+                            alt="Brasão UFRA"></a>
+                    <div class="logo-text">
+                        <h1>Universidade Federal Rural da Amazônia UFRA</h1>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/html/home.html" style="color: aliceblue;">Início</a></li>
+                        <li><a href="../index.html" style="color: aliceblue;">Plantas</a></li>
+                        <li><a href="contribua.html" style="color: aliceblue;">Contribua</a></li>
+                        <li><a href="#contact" style="color: aliceblue;">Categorias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="herocontainer">
+            <h2>Contribua na preservação do legado</h2>
+            <p>
+                O herbário necessita revisão constante Sua colaboração é fundamental para aprimorarmos nossa base de
+                dados botânicos e garantir a veracidade e qualidade das informações sobre o conhecimento sobre a flora
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre" class="section">
+        <div class="sectioncontainer">
+            <h1>Revisão de dados</h1>
+
+            <div class="paragrafo-container">
+                <div class="paragrafo">
+                    <p>
+                        O Herbário Virtual é um projeto que é alimentado constantemente com centenas de informações
+                        e revisado frequentemente porém a ajuda de professores e pesquisadores é crucial para se tornar
+                        mais preciso e
+                        abragente, caso deseje contribuir com uma correção, um comentario ou uma critica preencha o
+                        formulario abaixo:
+                    </p>
+                    <h2> Correção de dados</h2>
+                    <p class="section-description">Identificou alguma informação incorreta ou incompleta em nossa base
+                        de dados? Sua contribuição é valiosa para mantermos a precisão científica das informações
+                        disponíveis.</p>
+
+                    <form id="correction-form">
+                        <div class="form-group">
+                            <label for="name-correction">Seu nome:</label>
+                            <input type="text" id="name-correction" name="name-correction" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-correction">Seu e-mail:</label>
+                            <input type="email" id="email-correction" name="email-correction" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plant-name">Nome da planta/espécie:</label>
+                            <input type="text" id="plant-name" name="plant-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correction-type">Tipo de correção:</label>
+                            <select id="correction-type" name="correction-type" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="identification">Identificação incorreta</option>
+                                <option value="location">Localização geográfica errada</option>
+                                <option value="description">Descrição incompleta/inexata</option>
+                                <option value="image">Imagem incorreta</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correction-details">Detalhes da correção:</label>
+                            <textarea id="correction-details" name="correction-details"
+                                placeholder="Descreva detalhadamente a correção necessária, incluindo fontes confiáveis que sustentem sua observação, se possível."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Correção</button>
+                        <div id="correction-success" class="success-message"></div>
+                    </form>
+                </div>
+
+            </div>
+
+            <h2>Feedback e Sugestões</h2>
+            <div class="paragrafo-container">
+                <div class="paragrafo">
+                    <p class="section-description">Compartilhe sua opinião sobre o Herbário Virtual. Sugestões, críticas
+                        construtivas e ideias são sempre bem-vindas para melhorarmos nossa plataforma.</p>
+
+                    <p>
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <label for="name-feedback">Seu nome (opcional):</label>
+                            <input type="text" id="name-feedback" name="name-feedback">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-feedback">Seu e-mail (opcional):</label>
+                            <input type="email" id="email-feedback" name="email-feedback">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tipo de feedback:</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="suggestion" name="feedback-type" value="suggestion" checked>
+                                    <label for="suggestion">Sugestão</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="criticism" name="feedback-type" value="criticism">
+                                    <label for="criticism">Crítica construtiva</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="praise" name="feedback-type" value="praise">
+                                    <label for="praise">Elogio</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="other-feedback" name="feedback-type" value="other">
+                                    <label for="other-feedback">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback-message">Seu feedback:</label>
+                            <textarea id="feedback-message" name="feedback-message"
+                                placeholder="Compartilhe suas ideias, observações ou sugestões para melhorarmos o Herbário Virtual."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn"><i class="fas fa-comment-alt"></i> Enviar Feedback</button>
+                        <div id="feedback-success" class="success-message"></div>
+                    </form>
+                </div>
+            </div>
+
+            <h2>Apoie o Herbário Virtual</h2>
+            <div class="paragrafo-container">
+                <div class="paragrafo">
+                    <p class="section-description">Deseja apoiar nosso projeto de outras formas? Existem várias maneiras
+                        de contribuir para a manutenção e expansão do Herbário Virtual.</p>
+                          <form id="support-form">
+                <div class="form-group">
+                    <label for="name-support">Seu nome:</label>
+                    <input type="text" id="name-support" name="name-support" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email-support">Seu e-mail:</label>
+                    <input type="email" id="email-support" name="email-support" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="support-type">Forma de apoio:</label>
+                    <select id="support-type" name="support-type" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="sponsorship">Patrocínio financeiro</option>
+                        <option value="donation">Doação de materiais/equipamentos</option>
+                        <option value="volunteer">Trabalho voluntário</option>
+                        <option value="partnership">Parceria institucional</option>
+                        <option value="other-support">Outra forma de contribuição</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="support-message">Mensagem (opcional):</label>
+                    <textarea id="support-message" name="support-message" placeholder="Conte-nos mais sobre como você gostaria de contribuir ou solicite informações adicionais."></textarea>
+                </div>
+                
+                <button type="submit" class="btn"><i class="fas fa-handshake"></i> Expressar Interesse</button>
+                <div id="support-success" class="success-message"></div>
+            </form>
+                </div>
+            </div>
+
+          
+        </div> <!-- Fecha .sectioncontainer CORRETAMENTE -->
+    </section> <!-- Fecha #sobre.section -->
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Herbário Virtual</h3>
+                    <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao alcance
+                        de todos.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="#plants">Catálogo de Plantas</a></li>
+                        <li><a href="#">Contribua</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plantas Medicinais</a></li>
+                        <li><a href="#">Plantas Ornamentais</a></li>
+                        <li><a href="#">Plantas Frutiferas</a></li>
+                        <li><a href="#">Plantas em Madeireiras</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Herbário Virtual. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/contribua.js"></script>
+</body>
+
+</html>
