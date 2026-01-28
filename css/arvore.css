@@ -1,0 +1,108 @@
+ .bodyhome {
+      background: url(../imagens/site-imagem/background-texture.jpg) !important;
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      background-attachment: fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+    
+    .content-container {
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    .tree-title {
+      text-align: center;
+      color: white;
+      font-family: "Source Code Pro", monospace;
+      font-size: 2.5rem;
+      margin: 30px 0 40px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      padding: 0 20px;
+    }
+    
+    .tree-container {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tree-image {
+      width: 100%;
+      max-width: 1600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    
+    .tree-image:hover {
+      transform: scale(1.01);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .tree-description {
+      color: white;
+      text-align: center;
+      font-family: "Turret Road", sans-serif;
+      font-size: 1.2rem;
+      margin-top: 25px;
+      padding: 0 20px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    
+    .zoom-note {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .tree-title {
+        font-size: 2rem;
+        margin: 20px 0 30px 0;
+      }
+      
+      .tree-container {
+        padding: 20px;
+        margin: 0 10px 30px 10px;
+      }
+      
+      .tree-description {
+        font-size: 1.1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .tree-title {
+        font-size: 1.7rem;
+        margin: 15px 0 25px 0;
+      }
+      
+      .tree-container {
+        padding: 15px;
+        margin: 0 5px 20px 5px;
+      }
+      
+      .tree-image {
+        border-width: 2px;
+      }
+      
+      .tree-description {
+        font-size: 1rem;
+      }
+    }
+
+    
