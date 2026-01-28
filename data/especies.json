@@ -13,8 +13,14 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera brasiliana",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
+      "Gênero": "Alternanthera",
       "Nome popular": "Penicilina, Perpétua-brasileira, Terramicina",
-      "Tipo de planta": ["Ornamental"],
+      "Tipo de planta": [
+        "Medicinal"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -38,8 +44,14 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera flavecens",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
+      "Gênero": "Alternanthera",
       "Nome popular": "Apaga-fogo, Perpétua-amarela",
-      "Tipo de planta": ["Ornamental"],
+      "Tipo de planta": [
+        "Oportunista","Medicinal"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -63,8 +75,15 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera sessilis",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
+      "Gênero": "Alternanthera",
       "Nome popular": "Orelha-de-macaco, Espinafre-d'água, Periquito",
-      "Tipo de planta": ["Medicinal", "Oportunista"],
+      "Tipo de planta": [
+        "Medicinal",
+        "Oportunista"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -88,8 +107,14 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera tenella",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
+      "Gênero": "Alternanthera",
       "Nome popular": "Apaga-fogo-miúdo, Perpétua-delicada",
-      "Tipo de planta": ["Oportunista"],
+      "Tipo de planta": [
+        "Oportunista","Medicinal"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -113,8 +138,14 @@
     ],
     "ficha": {
       "Nome científico": "Hebanthe eriantha",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
+      "Gênero": "Hebanthe",
       "Nome popular": "Ginseng-brasileiro, Para-tudo, Suma, Fáfia",
-      "Tipo de planta": ["Medicinal"],
+      "Tipo de planta": [
+        "Medicinal"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -139,8 +170,14 @@
     ],
     "ficha": {
       "Nome científico": "Anacardium occidentale",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
+      "Gênero": "Anacardium",
       "Nome popular": "Cajueiro, Caju, Acaju",
-      "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
+      "Tipo de planta": [
+        "Frutífera"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -164,8 +201,15 @@
     ],
     "ficha": {
       "Nome científico": "Justicia secunda",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
+      "Família": "Acanthaceae",
+      "Gênero": "Justicia",
       "Nome popular": "Justícia, Erva-de-são-joão",
-      "Tipo de planta": ["Medicinal", "Ornamental"],
+      "Tipo de planta": [
+        "Medicinal",
+        "Oportunista"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -190,8 +234,15 @@
     ],
     "ficha": {
       "Nome científico": "Mangifera indica",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
+      "Gênero": "Mangifera",
       "Nome popular": "Mangueira, Manga, Manqueira",
-      "Tipo de planta": ["Frutífera", "Madeireira", "Ornamental"],
+      "Tipo de planta": [
+        "Frutífera",
+        "Ornamental"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -215,8 +266,17 @@
     ],
     "ficha": {
       "Nome científico": "Tapirira guianensis",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
+      "Gênero": "Tapirira",
       "Nome popular": "Pau-pombo, Tapiriá, Peito-de-pombo",
-      "Tipo de planta": ["Madeireira", "Frutífera"],
+      "Tipo de planta": [
+        "Oportunista",
+        "Madeireira",
+        "Ornamental",
+        "Medicinal"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -240,8 +300,14 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda blanchetii",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
+      "Gênero": "Allamanda",
       "Nome popular": "Alamanda-roxa, Dedal-de-dama-roxo",
-      "Tipo de planta": ["Ornamental"],
+      "Tipo de planta": [
+        "Ornamental"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -265,8 +331,14 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda cathartica",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
+      "Gênero": "Allamanda",
       "Nome popular": "Alamanda-amarela, Dedal-de-dama, Carolina",
-      "Tipo de planta": ["Ornamental", "Medicinal"],
+      "Tipo de planta": [
+        "Ornamental"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -290,8 +362,14 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda polyantha",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
+      "Gênero": "Allamanda",
       "Nome popular": "Alamanda-de-flores-múltiplas",
-      "Tipo de planta": ["Ornamental"],
+      "Tipo de planta": [
+        "Ornamental"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -315,8 +393,13 @@
     ],
     "ficha": {
       "Nome científico": "Tabernaemontana divaricata",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
+      "Gênero": "Tabernaemontana",
       "Nome popular": "Jasmim-estrela, Leiteira, Flor-de-coral",
-      "Tipo de planta": ["Ornamental", "Medicinal"],
+      "Tipo de planta": [
+        "Ornamental"    ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -341,8 +424,15 @@
     ],
     "ficha": {
       "Nome científico": "Euterpe oleracea",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Arecales",
+      "Família": "Arecaceae",
+      "Gênero": "Euterpe",
       "Nome popular": "Açaizeiro, Açaí, Juçara-do-pará",
-      "Tipo de planta": ["Frutífera", "Medicinal", "Madeireira"],
+      "Tipo de planta": [
+        "Frutífera",
+        "Madeireira"
+      ],
       "Posição taxonômica APG IV": "Monocotiledônea - Arecales",
       "Soldura lateral das pétalas": "Dialitépala ou Gamotépala",
       "Número de verticilos protetores": "Diclamídea",
@@ -353,22 +443,28 @@
       "Sequência numérica": "Monocotiledônea - Arecales"
     }
   },
-  "saritaea-magnifica": {
-    "id": "saritaea-magnifica",
-    "name": "Saritaea magnifica",
-    "genero": "saritaea",
+  "bignonia-magnifica": {
+    "id": "bignonia-magnifica",
+    "name": "Bignonia magnifica",
+    "genero": "bignonia",
     "family": "bignoniaceae",
-    "image": "../imagens/especies/bignoniaceae/saritaea/saritaea-magnifica.jpg",
-    "page": "../html/especie.html?id=saritaea-magnifica",
+    "image": "../imagens/especies/bignoniaceae/bignonia/bignonia-magnifica.jpg",
+    "page": "../html/especie.html?id=bignonia-magnifica",
     "descricaoLonga": [
-      "Saritaea magnifica é uma trepadeira ornamental da família Bignoniaceae.",
+      "Bignonia magnifica é uma trepadeira ornamental da família Bignoniaceae.",
       "Conhecida por suas magníficas flores roxas em forma de trombeta.",
       "Muito utilizada em paisagismo para cobrir cercas e pérgolas."
     ],
     "ficha": {
       "Nome científico": "Saritaea magnifica",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
+      "Família": "Bignoniaceae",
+      "Gênero": "Bignonia",
       "Nome popular": "Cipó-de-flor-roxa, Sariteia-magnífica",
-      "Tipo de planta": ["Ornamental"],
+      "Tipo de planta": [
+        "Ornamental"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -393,8 +489,15 @@
     ],
     "ficha": {
       "Nome científico": "Bixa orellana",
-      "Nome popular": "Urucum, Colorau, Açafroa",
-      "Tipo de planta": ["Medicinal", "Industrial"],
+      "Clado": "Rosídeas",
+      "Ordem": "Malvales",
+      "Família": "Bixaceae",
+      "Gênero": "Bixa",
+      "Nome popular": "Urucum",
+      "Tipo de planta": [
+        "Medicinal",
+        "Frutifera"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -418,8 +521,14 @@
     ],
     "ficha": {
       "Nome científico": "Bixa arborea",
+      "Clado": "Rosídeas",
+      "Ordem": "Malvales",
+      "Família": "Bixaceae",
+      "Gênero": "Bixa",
       "Nome popular": "Urucum-arbóreo, Urucum-do-mato",
-      "Tipo de planta": ["Madeireira"],
+      "Tipo de planta": [
+        "Madeireira"
+      ],
       "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",

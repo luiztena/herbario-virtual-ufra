@@ -11,6 +11,8 @@
     ],
     "ficha": {
       "Nome científico": "Acanthaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -33,6 +35,8 @@
     ],
     "ficha": {
       "Nome científico": "Amaranthaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -55,6 +59,8 @@
     ],
     "ficha": {
       "Nome científico": "Anacardiaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -77,6 +83,8 @@
     ],
     "ficha": {
       "Nome científico": "Annonaceae",
+      "Clado": "Magnoliídeas",
+      "Ordem": "Magnoliales",
       "Posição taxonômica APG IV": "Angiospermas basais",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -99,6 +107,8 @@
     ],
     "ficha": {
       "Nome científico": "Apocynaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -121,6 +131,8 @@
     ],
     "ficha": {
       "Nome científico": "Arecaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Arecales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -143,6 +155,8 @@
     ],
     "ficha": {
       "Nome científico": "Asteraceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Asterales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -165,6 +179,8 @@
     ],
     "ficha": {
       "Nome científico": "Bignoniaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -187,6 +203,8 @@
     ],
     "ficha": {
       "Nome científico": "Bixaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malvales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -209,6 +227,8 @@
     ],
     "ficha": {
       "Nome científico": "Boraginaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Boraginales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -219,7 +239,6 @@
       "Sequência numérica": "1-2-3-4-5-7"
     }
   },
-
   "cactaceae": {
     "id": "cactaceae",
     "name": "Cactaceae",
@@ -232,6 +251,8 @@
     ],
     "ficha": {
       "Nome científico": "Cactaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Homoclamídea",
@@ -254,6 +275,8 @@
     ],
     "ficha": {
       "Nome científico": "Chrysobalanaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -276,6 +299,8 @@
     ],
     "ficha": {
       "Nome científico": "Cleomaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Brassicales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -298,6 +323,8 @@
     ],
     "ficha": {
       "Nome científico": "Combretaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Myrtales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -320,6 +347,8 @@
     ],
     "ficha": {
       "Nome científico": "Convolvulaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Solanales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -342,6 +371,8 @@
     ],
     "ficha": {
       "Nome científico": "Costaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Zingiberales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -364,6 +395,8 @@
     ],
     "ficha": {
       "Nome científico": "Cucurbitaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Cucurbitales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -386,6 +419,8 @@
     ],
     "ficha": {
       "Nome científico": "Cyperaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Poales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -408,6 +443,8 @@
     ],
     "ficha": {
       "Nome científico": "Dilleniaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Dilleniales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -418,7 +455,6 @@
       "Sequência numérica": "1-2-9-10-13-18"
     }
   },
-
   "erythroxylaceae": {
     "id": "erythroxylaceae",
     "name": "Erythroxylaceae",
@@ -431,6 +467,8 @@
     ],
     "ficha": {
       "Nome científico": "Erythroxylaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -441,7 +479,6 @@
       "Sequência numérica": "1-2-9-10-13-19"
     }
   },
-
   "euphorbiaceae": {
     "id": "euphorbiaceae",
     "name": "Euphorbiaceae",
@@ -454,6 +491,8 @@
     ],
     "ficha": {
       "Nome científico": "Euphorbiaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -476,6 +515,8 @@
     ],
     "ficha": {
       "Nome científico": "Fabaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Fabales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -498,6 +539,8 @@
     ],
     "ficha": {
       "Nome científico": "Heliconiaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Zingiberales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -520,6 +563,8 @@
     ],
     "ficha": {
       "Nome científico": "Hypericaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -542,6 +587,8 @@
     ],
     "ficha": {
       "Nome científico": "Lacistemataceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -564,6 +611,8 @@
     ],
     "ficha": {
       "Nome científico": "Lamiaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -586,6 +635,8 @@
     ],
     "ficha": {
       "Nome científico": "Lauraceae",
+      "Clado": "Magnoliídeas",
+      "Ordem": "Laurales",
       "Posição taxonômica APG IV": "Angiospermas basais",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -608,6 +659,8 @@
     ],
     "ficha": {
       "Nome científico": "Linderniaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -630,6 +683,8 @@
     ],
     "ficha": {
       "Nome científico": "Lythraceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Myrtales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -640,7 +695,6 @@
       "Sequência numérica": "1-2-9-10-14-22"
     }
   },
- 
   "malpighiaceae": {
     "id": "malpighiaceae",
     "name": "Malpighiaceae",
@@ -653,6 +707,8 @@
     ],
     "ficha": {
       "Nome científico": "Malpighiaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -675,6 +731,8 @@
     ],
     "ficha": {
       "Nome científico": "Malvaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malvales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -697,6 +755,8 @@
     ],
     "ficha": {
       "Nome científico": "Melastomataceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Myrtales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -719,6 +779,8 @@
     ],
     "ficha": {
       "Nome científico": "Meliaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -741,6 +803,8 @@
     ],
     "ficha": {
       "Nome científico": "Moraceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Rosales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -763,6 +827,8 @@
     ],
     "ficha": {
       "Nome científico": "Myristicaceae",
+      "Clado": "Magnoliídeas",
+      "Ordem": "Magnoliales",
       "Posição taxonômica APG IV": "Angiospermas basais",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -785,6 +851,8 @@
     ],
     "ficha": {
       "Nome científico": "Myrtaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Myrtales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -807,6 +875,8 @@
     ],
     "ficha": {
       "Nome científico": "Nyctaginaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Homoclamídea",
@@ -829,6 +899,8 @@
     ],
     "ficha": {
       "Nome científico": "Oleaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -851,6 +923,8 @@
     ],
     "ficha": {
       "Nome científico": "Orchidaceae",
+      "Clado": "Monocotiledôneas",
+      "Ordem": "Asparagales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -861,7 +935,6 @@
       "Sequência numérica": "1-8"
     }
   },
-  
   "oxalidaceae": {
     "id": "oxalidaceae",
     "name": "Oxalidaceae",
@@ -874,6 +947,8 @@
     ],
     "ficha": {
       "Nome científico": "Oxalidaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Oxalidales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -896,6 +971,8 @@
     ],
     "ficha": {
       "Nome científico": "Passifloraceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -918,6 +995,8 @@
     ],
     "ficha": {
       "Nome científico": "Pedaliaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -940,6 +1019,8 @@
     ],
     "ficha": {
       "Nome científico": "Phytolaccaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Homoclamídea",
@@ -962,6 +1043,8 @@
     ],
     "ficha": {
       "Nome científico": "Piperaceae",
+      "Clado": "Magnoliídeas",
+      "Ordem": "Piperales",
       "Posição taxonômica APG IV": "Angiospermas basais",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea",
@@ -984,6 +1067,8 @@
     ],
     "ficha": {
       "Nome científico": "Plantaginaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -1006,6 +1091,8 @@
     ],
     "ficha": {
       "Nome científico": "Poaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Poales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -1028,6 +1115,8 @@
     ],
     "ficha": {
       "Nome científico": "Polygonaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Homoclamídea",
@@ -1050,6 +1139,8 @@
     ],
     "ficha": {
       "Nome científico": "Portulacaceae",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Homoclamídea",
@@ -1072,6 +1163,8 @@
     ],
     "ficha": {
       "Nome científico": "Rosaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Rosales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1094,6 +1187,8 @@
     ],
     "ficha": {
       "Nome científico": "Rubiaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -1116,6 +1211,8 @@
     ],
     "ficha": {
       "Nome científico": "Rutaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1138,6 +1235,8 @@
     ],
     "ficha": {
       "Nome científico": "Salicaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea",
@@ -1160,6 +1259,8 @@
     ],
     "ficha": {
       "Nome científico": "Sapindaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1182,6 +1283,8 @@
     ],
     "ficha": {
       "Nome científico": "Sapotaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Ericales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1204,6 +1307,8 @@
     ],
     "ficha": {
       "Nome científico": "Solanaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Solanales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -1226,6 +1331,8 @@
     ],
     "ficha": {
       "Nome científico": "Turneraceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Malpighiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1248,6 +1355,8 @@
     ],
     "ficha": {
       "Nome científico": "Urticaceae",
+      "Clado": "Rosídeas",
+      "Ordem": "Rosales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Aclamídea ou homoclamídea",
@@ -1270,6 +1379,8 @@
     ],
     "ficha": {
       "Nome científico": "Verbenaceae",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
       "Posição taxonômica APG IV": "Eudicotiledônea",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -1292,6 +1403,8 @@
     ],
     "ficha": {
       "Nome científico": "Xanthorrhoeaceae",
+      "Clado": "Monocotiledôneas",
+      "Ordem": "Asparagales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",
@@ -1314,6 +1427,8 @@
     ],
     "ficha": {
       "Nome científico": "Zingiberaceae",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Zingiberales",
       "Posição taxonômica APG IV": "Monocotiledônea",
       "Soldura lateral das pétalas": "Arquiclamídea",
       "Número de verticilos protetores": "Diclamídea",

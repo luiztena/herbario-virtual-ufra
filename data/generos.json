@@ -12,12 +12,39 @@
     ],
     "ficha": {
       "Nome científico": "Alternanthera",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
       "Posição do ovário": "Súpero",
       "Número de estames comparado ao número de pétalas": "Variável",
       "Tipo de folha": "Simples, oposta"
+    }
+  },
+  "bignonia": {
+    "id": "bignonia",
+    "name": "Bignonia",
+    "family": "bignoniaceae",
+    "image": "imagens/genero/bignoniaceae/bignonia.jpg",
+    "page": "../html/genero.html?id=bignonia",
+    "descricaoLonga": [
+      "Bignonia é um gênero de trepadeiras da família Bignoniaceae, conhecidas por suas belas flores roxas.",
+      "A espécie mais conhecida é Saritaea magnifica, popular no paisagismo tropical.",
+      "As plantas são vigorosas e florescem abundantemente, sendo ideais para cobrir pérgolas e muros."
+    ],
+    "ficha": {
+      "Nome científico": "Bignonia",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
+      "Família": "Bignoniaceae",
+      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
+      "Soldura lateral das pétalas": "Gamopétala",
+      "Número de verticilos protetores": "Diclamídea",
+      "Posição do ovário": "Súpero",
+      "Número de estames comparado ao número de pétalas": "Oligostêmone",
+      "Tipo de folha": "Simples ou composta"
     }
   },
   "hebanthe": {
@@ -33,6 +60,9 @@
     ],
     "ficha": {
       "Nome científico": "Hebanthe",
+      "Clado": "Núcleo das Eudicotiledôneas",
+      "Ordem": "Caryophyllales",
+      "Família": "Amaranthaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Caryophyllales",
       "Soldura lateral das pétalas": "Dialipétala ou apétala",
       "Número de verticilos protetores": "Monoclamídea ou Diclamídea",
@@ -54,6 +84,9 @@
     ],
     "ficha": {
       "Nome científico": "Anacardium",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -75,6 +108,9 @@
     ],
     "ficha": {
       "Nome científico": "Mangifera",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -96,6 +132,9 @@
     ],
     "ficha": {
       "Nome científico": "Tapirira",
+      "Clado": "Rosídeas",
+      "Ordem": "Sapindales",
+      "Família": "Anacardiaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Sapindales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -117,6 +156,9 @@
     ],
     "ficha": {
       "Nome científico": "Justicia",
+      "Clado": "Asterídeas",
+      "Ordem": "Lamiales",
+      "Família": "Acanthaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -138,6 +180,9 @@
     ],
     "ficha": {
       "Nome científico": "Allamanda",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -159,6 +204,9 @@
     ],
     "ficha": {
       "Nome científico": "Tabernaemontana",
+      "Clado": "Asterídeas",
+      "Ordem": "Gentianales",
+      "Família": "Apocynaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Gentianales",
       "Soldura lateral das pétalas": "Gamopétala",
       "Número de verticilos protetores": "Diclamídea",
@@ -180,33 +228,15 @@
     ],
     "ficha": {
       "Nome científico": "Euterpe",
+      "Clado": "Monocotiledôneas (Commelinídeas)",
+      "Ordem": "Arecales",
+      "Família": "Arecaceae",
       "Posição taxonômica APG IV": "Monocotiledônea - Arecales",
       "Soldura lateral das pétalas": "Dialitépala",
       "Número de verticilos protetores": "Diclamídea",
       "Posição do ovário": "Súpero",
       "Número de estames comparado ao número de pétalas": "Variável",
       "Tipo de folha": "Composta pinada (palmeira)"
-    }
-  },
-  "saritaea": {
-    "id": "saritaea",
-    "name": "Saritaea",
-    "family": "bignoniaceae",
-    "image": "imagens/genero/bignoniaceae/saritaea.jpg",
-    "page": "../html/genero.html?id=saritaea",
-    "descricaoLonga": [
-      "Saritaea é um gênero de trepadeiras da família Bignoniaceae, conhecidas por suas belas flores roxas.",
-      "A espécie mais conhecida é Saritaea magnifica, popular no paisagismo tropical.",
-      "As plantas são vigorosas e florescem abundantemente, sendo ideais para cobrir pérgolas e muros."
-    ],
-    "ficha": {
-      "Nome científico": "Saritaea",
-      "Posição taxonômica APG IV": "Eudicotiledônea - Lamiales",
-      "Soldura lateral das pétalas": "Gamopétala",
-      "Número de verticilos protetores": "Diclamídea",
-      "Posição do ovário": "Súpero",
-      "Número de estames comparado ao número de pétalas": "Oligostêmone",
-      "Tipo de folha": "Simples ou composta"
     }
   },
   "bixa": {
@@ -222,6 +252,9 @@
     ],
     "ficha": {
       "Nome científico": "Bixa",
+      "Clado": "Rosídeas",
+      "Ordem": "Malvales",
+      "Família": "Bixaceae",
       "Posição taxonômica APG IV": "Eudicotiledônea - Malvales",
       "Soldura lateral das pétalas": "Dialipétala",
       "Número de verticilos protetores": "Diclamídea",
