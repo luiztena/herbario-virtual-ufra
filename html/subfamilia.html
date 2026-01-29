@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" type="image/png" href="../imagens/site-imagem/folha.png">
+    <meta charset="UTF-8">
+    <title>Subfamília Botânica</title>
+    <link rel="stylesheet" href="../css/Herbario.css">
+    <link rel="stylesheet" href="../css/familia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../imagens/site-imagem/brasao.png" class="logo" alt="Brasão UFRA"></a>
+                    <div class="logo-text">
+                        <h1>Universidade Federal Rural da Amazônia UFRA</h1>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html" style="color: aliceblue;">Início</a></li>
+                        <li><a href="../index.html" style="color: aliceblue;">Plantas</a></li>
+                        <li><a href="contribua.html" style="color: aliceblue;">Contribua</a></li>
+                        <li><a href="categorias.html" style="color: aliceblue;">Categorias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="mainfamily">
+        <!-- CABEÇALHO DA SUBFAMÍLIA -->
+        <div class="cabe">
+            <h1 id="subfamilia-nome"></h1>
+            <p style="visibility: hidden;" id="subfamilia-descricao"></p>
+        </div>
+
+        <!-- DESCRIÇÃO LONGA -->
+        <article id="subfamilia-artigo"></article>
+
+        <!-- FICHA BOTÂNICA -->
+        <aside class="ficha-botanica">
+            <h3>Ficha Botânica</h3>
+            <ul id="ficha-lista"></ul>
+        </aside>
+
+        <!-- CATÁLOGO DE GÊNEROS DA SUBFAMÍLIA -->
+        <section class="catalogo-generos" id="generos-section">
+            <h3>Gêneros desta Subfamília</h3>
+            <div class="cards-container" id="generos-container"></div>
+        </section>
+
+        <!-- BOTÕES DE NAVEGAÇÃO -->
+        <div class="back-to-catalog-container">
+            <a id="back-to-family-btn" class="back-to-catalog-btn">
+                <i class="fas fa-arrow-left"></i>
+                Voltar à página da família
+            </a>
+            <a href="../index.html" class="back-to-catalog-btn back-to-index-btn">
+                <i class="fas fa-home"></i>
+                Voltar ao catálogo de famílias
+            </a>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Herbário Virtual</h3>
+                    <p>Explore a diversidade vegetal através do nosso catálogo digital. Conhecimento botânico ao alcance de todos.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="../index.html">Catálogo de Plantas</a></li>
+                        <li><a href="contribua.html">Contribua</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="categorias.html?filter=medicinal">Plantas Medicinais</a></li>
+                        <li><a href="categorias.html?filter=ornamental">Plantas Ornamentais</a></li>
+                        <li><a href="categorias.html?filter=frutifera">Plantas Frutíferas</a></li>
+                        <li><a href="categorias.html?filter=madeireira">Plantas Madeireiras</a></li>
+                        <li><a href="categorias.html?filter=oportunista">Plantas Oportunistas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Herbário Virtual. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/subfamilia.js"></script>
+</body>
+
+</html>

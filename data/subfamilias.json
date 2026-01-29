@@ -1,0 +1,62 @@
+{
+  "mimosoideae": {
+    "id": "mimosoideae",
+    "name": "Mimosoideae",
+    "family": "fabaceae",
+    "image": "../imagens/subfamilias/fabaceae/mimosoideae.jpg",
+    "page": "../html/subfamilia.html?id=mimosoideae",
+    "descricaoLonga": [
+      "Mimosoideae é uma subfamília de Fabaceae caracterizada por suas flores pequenas e numerosas, geralmente agrupadas em espigas ou capítulos globosos.",
+      "As folhas são tipicamente bipinadas e muitas espécies possuem espinhos.",
+      "Inclui gêneros importantes como Acacia, Mimosa, Inga e Pentaclethra."
+    ],
+    "ficha": {
+      "Nome científico": "Mimosoideae",
+      "Família": "Fabaceae",
+      "Características": "Flores actinomorfas, estames vistosos",
+      "Distribuição": "Tropical e subtropical",
+      "Número de gêneros": "Aproximadamente 80",
+      "Importância": "Madeireiras, ornamentais, fixação de nitrogênio"
+    }
+  },
+  "caesalpinioideae": {
+    "id": "caesalpinioideae",
+    "name": "Caesalpinioideae",
+    "family": "fabaceae",
+    "image": "../imagens/subfamilias/fabaceae/caesalpinioideae.jpg",
+    "page": "../html/subfamilia.html?id=caesalpinioideae",
+    "descricaoLonga": [
+      "Caesalpinioideae é uma subfamília de Fabaceae com flores geralmente zigomorfas e pétalas sobrepostas.",
+      "Muitas espécies têm importância ornamental devido às suas flores coloridas e vistosas.",
+      "Inclui árvores tropicais importantes como o pau-brasil (Paubrasilia echinata) e a sibipiruna (Poincianella pluviosa)."
+    ],
+    "ficha": {
+      "Nome científico": "Caesalpinioideae",
+      "Família": "Fabaceae",
+      "Características": "Flores zigomorfas, pétalas imbricadas",
+      "Distribuição": "Principalmente tropical",
+      "Número de gêneros": "Aproximadamente 150",
+      "Importância": "Ornamentais, madeireiras, medicinais"
+    }
+  },
+  "papilionoideae": {
+    "id": "papilionoideae",
+    "name": "Papilionoideae",
+    "family": "fabaceae",
+    "image": "../imagens/subfamilias/fabaceae/papilionoideae.jpg",
+    "page": "../html/subfamilia.html?id=papilionoideae",
+    "descricaoLonga": [
+      "Papilionoideae é a maior subfamília de Fabaceae, com flores papilionáceas características (em forma de borboleta).",
+      "Inclui muitas plantas de importância agrícola como feijão, soja, ervilha e amendoim.",
+      "As flores possuem uma estrutura típica com estandarte, asas e quilha."
+    ],
+    "ficha": {
+      "Nome científico": "Papilionoideae",
+      "Família": "Fabaceae",
+      "Características": "Flores papilionáceas (tipo borboleta)",
+      "Distribuição": "Cosmopolita",
+      "Número de gêneros": "Mais de 500",
+      "Importância": "Alimentação, forragem, fixação de nitrogênio"
+    }
+  }
+}

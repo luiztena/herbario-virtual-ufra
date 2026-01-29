@@ -35,6 +35,7 @@
 
 
 let familias = null;
+let subfamilias = null;  // ← NOVO: subfamílias
 let generos = null;
 let especies = null;
 let bancoBusca = [];
@@ -99,6 +100,25 @@ async function carregarFamilias() {
     console.log("Famílias carregadas:", familias);
   } catch (erro) {
     console.error("Erro:", erro);
+  }
+}
+
+// ← NOVO: Função para carregar subfamílias
+async function carregarSubfamilias() {
+  try {
+    const resposta = await fetch("data/subfamilias.json");
+    if (!resposta.ok) {
+      console.warn("subfamilias.json não encontrado (normal se não usar Fabaceae)");
+      subfamilias = {};
+      return;
+    }
+    
+    subfamilias = await resposta.json();
+    Object.freeze(subfamilias);
+    console.log("Subfamílias carregadas:", subfamilias);
+  } catch (erro) {
+    console.warn("Erro ao carregar subfamilias.json:", erro);
+    subfamilias = {};
   }
 }
 
@@ -259,6 +279,29 @@ function montarBancoBusca() {
         searchTerms: [normalize(f.name), normalize(f.id)]
       });
     });
+  }
+
+  // ← NOVO: Subfamílias
+  if (subfamilias && Object.keys(subfamilias).length > 0) {
+    const basePath = getBasePath();
+    Object.values(subfamilias).forEach(s => {
+      let subfamiliaPage = s.page || `${basePath}html/subfamilia.html?id=${s.id}`;
+      if (subfamiliaPage.startsWith('../')) {
+        subfamiliaPage = subfamiliaPage.replace('../', basePath);
+      } else if (!subfamiliaPage.startsWith('/') && !subfamiliaPage.startsWith('http')) {
+        subfamiliaPage = `${basePath}${subfamiliaPage}`;
+      }
+      
+      bancoBusca.push({
+        id: s.id,
+        name: s.name,
+        key: normalize(s.id),
+        tipo: "Subfamília",
+        page: subfamiliaPage,
+        searchTerms: [normalize(s.name), normalize(s.id)]
+      });
+    });
+    console.log(`${Object.keys(subfamilias).length} subfamílias adicionadas ao banco de busca`);
   }
 
   // Gêneros
@@ -456,6 +499,9 @@ function searchPlant() {
       case 'Família':
         badgeColor = '#416939';
         break;
+      case 'Subfamília':  // ← NOVO: cor para subfamília
+        badgeColor = '#5a7c4a';
+        break;
       case 'Gênero':
         badgeColor = '#52796f';
         break;
@@ -597,6 +643,9 @@ function atualizarAutocomplete() {
       case 'Família':
         badgeColor = '#416939';
         break;
+      case 'Subfamília':  // ← NOVO: cor para subfamília
+        badgeColor = '#5a7c4a';
+        break;
       case 'Gênero':
         badgeColor = '#52796f';
         break;
@@ -708,6 +757,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     await Promise.all([
       carregarFamilias(),
+      carregarSubfamilias(),  // ← NOVO: carrega subfamílias
       carregarGeneros(),
       carregarEspecies()
     ]);
